@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../apitest/static/css/templatemo_main.css">
+</head>
+<body>
+<div class="container ">
+         <ol class="breadcrumb ">
+            <li><a href="/report_detail/?id={{report_id}}">测试报告</a></li>
+            <li class="active">{{ interface.name }}</li>
+          </ol>
+          <div class="logo">
+          <h1 class="">{{ interface.name }}</h1>
+          </div>
+          <p class="margin-bottom-15">点击用例名称查看对比结果 ........</p>
+            {% for data in cases_details %}
+            <div class="panel-group " id="accordion">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title ">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#{{ data.title }}{{ data.params }}" class="collapsed">
+                         {{ data.title }}
+                        </a>
+
+                          {% if data.result == 'success' %}
+                              <span class="fa fa-check has-feedback"></span>
+                          {% elif data.result == 'fail' %}
+                              <span class="fa fa-times has-error"></span>
+                          {% else %}
+                              <span class="fa fa-warning has-feedback"></span>
+                          {% endif %}
+                           <a href="/edit_testcase/?project_id={{ interface.project_id }}&interface_id={{ interface.id }}&case_id={{ data.case_id }}"style="float: right">重新编辑用例</a>
+                      </h4>
+                    </div>
+                    <div id="{{ data.title }}{{ data.params }}" class="panel-collapse collapse" style="height: 1px;">
+                      <div class="panel-body">
+                          <div class="row">
+                              <div class="col-md-12 margin-bottom-15">
+                                    <label for="lastName" class="control-label">参数:</label>
+                                    {{ data.parms }}
+                              </div>
+                                <div class="col-md-6 margin-bottom-15">
+                                    <label for="lastName" class="control-label">预期结果</label>
+                                     <textarea name ="note" class="form-control" rows="10" >{{ data.ex_result }}</textarea>
+                              </div>
+                              <div class="col-md-6 margin-bottom-15">
+                                    <label for="lastName" class="control-label">实际结果</label>
+                                    <textarea name ="note" class="form-control" rows="10" >{{ data.real_result }}</textarea>
+                              </div>
+                          </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            {% endfor %}
+       </div>
+  <script src="../apitest/static/js/jquery.min.js"></script>
+  <script src="../apitest/static/js/bootstrap.min.js"></script>
+  <script src="../apitest/static/js/templatemo_script.js"></script>
+</body>
+</html>

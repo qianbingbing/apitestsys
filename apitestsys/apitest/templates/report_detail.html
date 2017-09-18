@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>报告详情</title>
+    <link rel="stylesheet" href="../static/css/templatemo_main.css">
+    <script src="../static/assets/js/libs/jquery.min.js"></script>
+    <script src="../static/assets/js/libs/bootstrap.min.js"></script>
+    <script src="../static/assets/js/libs/templatemo_script.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="">
+    <div class="row">
+        <ol class="breadcrumb">
+            <li><a href="/result/">报告列表</a></li>
+            <li class="active">测试报告</li>
+          </ol>
+        <div class="page-header">
+            <h1>接口测试报告
+                <small>Design By qianbingbing</small>
+            </h1>
+        </div>
+    </div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">测试结果</div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>执行时间: <span class="label label-default">3</span></h3>
+        </div>
+        <div class="col-md-4">
+            <h3>接口总数: <span class="label label-success">2</span></h3>
+        </div>
+        <div class="col-md-4">
+            <h3>用例总数: <span class="label label-success">1</span></h3>
+        </div>
+        <div class="col-md-4">
+            <h3>测试通过: <span class="label label-success">4</span></h3>
+        </div>
+        <div class="col-md-4">
+            <h3>测试失败: <span class="label label-danger">6</span></h3>
+        </div>
+        <div class="col-md-4">
+            <h3>通过率: <span class="label label-warning">7</span></h3>
+        </div>
+    </div>
+    <div>
+        <br/>
+        <br/>
+    </div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">运行情况查看</div>
+    </div>
+   <div class="table-responsive">
+
+                <table class="table table-striped table-hover table-bordered">
+                  <thead>
+                    <tr>
+                      <th>接口名称</th>
+                      <th>方法名称</th>
+                      <th>状态</th>
+                      <th>详情</th>
+                    </tr>
+                  </thead>
+                    {% for detail in details %}
+                  <tbody>
+                  <tr>
+                      <td>{{ detail.interface_name}}</td>
+                      <td>{{ detail.func_name }}</td>
+                      <td>{{ detail.interface_result }}</td>
+                      <td><a href="/cases_detail/?id={{ detail.id }}&interface_id={{ detail.interface_id }}&report_id={{ report_id }}">查看详情情况</a></td>
+                  </tbody>
+                    {% endfor %}
+                </table>
+              </div>
+    </div>
+</div>
+</body>
+</html>

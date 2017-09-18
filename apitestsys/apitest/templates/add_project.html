@@ -1,0 +1,252 @@
+{% extends 'base.html' %}
+{% block main_content %}
+    <main class="main">
+       <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/index/">首页</a></li>
+            <li class="breadcrumb-item active">项目管理</li>
+        </ol>
+       <div class="col-md-12 mb-12">
+           <ul class="nav nav-tabs" role="tablist">
+               <li class="nav-item">
+                   <a class="nav-link active" data-toggle="tab" href="#home4" role="tab" aria-controls="home"><i class="icon-calculator"></i> 基本信息</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" data-toggle="tab" href="#profile4" role="tab" aria-controls="profile"><i class="icon-basket-loaded"></i> 测试环境</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" data-toggle="tab" href="#messages4" role="tab" aria-controls="messages"><i class="icon-pie-chart"></i> 邮件通知</a>
+               </li>
+           </ul>
+           <div class="tab-content">
+               <!--111111111-->
+               <div class="tab-pane active" id="home4" role="tabpanel">
+                   <div class="card">
+                       <div class="card-header">
+                           <i class="fa fa-align-justify"></i><strong>项目基本信息</strong>
+                       </div>
+                       <div class="card-block">
+                           <form action="" method="post" enctype="multipart/form-data" class="form-horizontal ">
+                               <div class="form-group row">
+                                   <label class="col-md-1 form-control-label" for="text-input">项目名称</label>
+                                   <div class="col-md-11">
+                                       <input type="text" id="text-input" name="text-input" class="form-control" placeholder="项目名称">
+                                       <span class="help-block"></span>
+                                   </div>
+                               </div>
+                               <div class="form-group row">
+                                            <label class="col-md-1 form-control-label" for="select">接口类型</label>
+                                            <div class="col-md-11">
+                                                <select id="select" name="select" class="form-control">
+                                                    <option value="0">请选择接口类型</option>
+                                                    <option value="1">Option #1</option>
+                                                    <option value="2">Option #2</option>
+                                                    <option value="3">Option #3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                               <div class="form-group row">
+                                   <label class="col-md-1 form-control-label" for="textarea-input">项目描述</label>
+                                   <div class="col-md-11">
+                                       <textarea id="textarea-input" name="textarea-input" rows="9" class="form-control" placeholder="项目描述..."></textarea>
+                                   </div>
+                               </div>
+                           </form>
+                       </div>
+                       <div class="card-footer">
+                           <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> 返回</button>
+                           <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> 下一步</button>
+                       </div>
+                   </div>
+               </div>
+               <!--222222222-->
+               <div class="tab-pane" id="profile4" role="tabpanel">
+                   <div class="col-lg-12">
+                       <div class="card">
+                           <div class="card-header">
+                               <i class="fa fa-align-justify"></i><strong>测试环境设置</strong>
+                           </div>
+                           <div class="card-block">
+                               <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>名称</th>
+                                                <th>ip或域名</th>
+                                                <th>端口</th>
+                                                <th>数据库地址</th>
+                                                <th>操作</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="text" placeholder="请输入环境名称" class="form-control"></td>
+                                                <td><input type="text" placeholder="请输入ip/域名地址" class="form-control"></td>
+                                                <td><input type="text" placeholder="80" class="form-control"></td>
+                                                <td>
+                                                    <div class="form-control">
+                                                        <span>aasdasd</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#primaryModal">
+                                                                关联数据库
+                                                        </button>
+                                                        <button type="button" class="btn btn-outline-success">
+                                                            <span><i class="el-icon-circle-check"></i> 保存</span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-outline-warning">
+                                                            <span><i class="el-icon-delete"></i> 删除</span>
+                                                        </button>
+                                                    </div>
+                                                    <div id="show"></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                           </div>
+                           <div class="card-block">
+                           <button type="button" class="btn btn-success"><i class="fa fa-magic"></i> 新增</button>
+                           </div>
+                           <div class="card-footer">
+                           <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> 上一步</button>
+                           <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> 下一步</button>
+                       </div>
+                       </div>
+                   </div>
+
+               </div>
+               <!--333333333-->
+               <div class="tab-pane" id="messages4" role="tabpanel">
+                   <div class="col-md-12">
+                       <div class="card">
+                           <div class="card-header">
+                                    <i class="fa fa-align-justify"></i><strong>邮件通知设置</strong>
+                           </div>
+                           <div class="card-block">
+                               <form action="" method="post" enctype="multipart/form-data" class="form-horizontal ">
+                                   <div class="form-group row">
+                                       <label class="col-md-1 form-control-label" for="text-input">是否发送邮件</label>
+                                       <div class="col-md-11">
+                                        <label class="switch switch-text switch-pill switch-warning">
+                                        <input type="checkbox" class="switch-input" checked="">
+                                        <span class="switch-label" data-on="On" data-off="Off"></span>
+                                        <span class="switch-handle"></span>
+                                    </label>
+                                       </div>
+                                   </div>
+                                   <div class="form-group row">
+                                       <label class="col-md-1 form-control-label" for="email-input">发件人账号</label>
+                                       <div class="col-md-5">
+                                           <input type="" id="email-input" name="email-input" class="form-control" placeholder="请输入账号">
+                                           <span class="help-block"></span>
+                                       </div>
+                                       <div class="col-md-5">
+                                           <input type="password" id="email-input" name="email-input" class="form-control" placeholder="请输入密码">
+                                           <span class="help-block"></span>
+                                       </div>
+                                   </div>
+                                   <div class="form-group row">
+                                       <label class="col-md-1 form-control-label" for="textarea-input">主送人</label>
+                                            <div class="col-md-10">
+                                                <textarea id="textarea-input" name="textarea-input" rows="2" class="form-control" placeholder="可填写多个主送人"></textarea>
+                                            </div>
+                                   </div>
+                                   <div class="form-group row">
+                                       <label class="col-md-1 form-control-label" for="textarea-input">抄送人</label>
+                                            <div class="col-md-10">
+                                                <textarea id="textarea-input" name="textarea-input" rows="2" class="form-control" placeholder="可填写多个抄送人"></textarea>
+                                            </div>
+                                   </div>
+                                   <div class="form-group row">
+                                       <label class="col-md-1 form-control-label" for="textarea-input">邮件主题</label>
+                                            <div class="col-md-10">
+                                                <textarea id="textarea-input" name="textarea-input" rows="1" class="form-control" placeholder=""></textarea>
+                                            </div>
+                                   </div>
+                                   <div class="form-group row">
+                                       <label class="col-md-1 form-control-label" for="textarea-input">邮件内容</label>
+                                            <div class="col-md-11">
+                                                <textarea id="textarea-input" name="textarea-input" rows="9" class="form-control" placeholder="Content.."></textarea>
+                                            </div>
+                                   </div>
+                               </form>
+                           </div>
+                           <div class="card-footer">
+                           <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> 上一步</button>
+                           <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> 完成</button>
+                       </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="modal fade" id="primaryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="" aria-hidden="true">
+                    <div class="modal-lg modal-primary" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">关联数据库</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="" method="post" enctype="multipart/form-data" class="form-horizontal ">
+                                        <div class="form-group row">
+                                            <label class="col-md-3 form-control-label" for="text-input">数据库类型</label>
+                                            <div class="col-md-9">
+                                                <select id="select_type" name="select_type" class="form-control">
+                                                    <option value="1" >MySQL</option>
+                                                    <option value="2">Mongo</option>
+                                                    <option value="3">Oracle</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-3 form-control-label" for="email-input">IP地址</label>
+                                            <div class="col-md-9">
+                                                <input type="email" id="email-input" name="email-input" class="form-control" placeholder="请输入IP地址">
+                                                <span class="help-block"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-3 form-control-label" for="password-input">端口</label>
+                                            <div class="col-md-9">
+                                                <input type="text" id="port-input" name="port-input" class="form-control" placeholder="请输入端口">
+                                                <span class="help-block"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-3 form-control-label" for="password-input">用户名</label>
+                                            <div class="col-md-9">
+                                                <input type="text" id="username-input" name="username-input" class="form-control" placeholder="请输入用户名">
+                                                <span class="help-block"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-3 form-control-label" for="password-input">密码</label>
+                                            <div class="col-md-9">
+                                                <input type="password" id="password-input" name="password-input" class="form-control" placeholder="请输入密码">
+                                                <span class="help-block"></span>
+                                            </div>
+                                        </div>
+                                       <div class="form-group row">
+                                            <label class="col-md-3 form-control-label" for="password-input">数据库名</label>
+                                            <div class="col-md-9">
+                                                <input type="text" id="dbname-input" name="dbname-input" class="form-control" placeholder="请输入数据库名称">
+                                                <span class="help-block"></span>
+                                            </div>
+                                        </div>
+                                    </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+           </div>
+       </div>
+
+    </main>
+{% endblock %}

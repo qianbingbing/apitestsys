@@ -1,0 +1,327 @@
+{% extends 'base.html' %}
+{% block main_content %}
+    <main class="main">
+       <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">首页</a></li>
+            <li class="breadcrumb-item"><a href="#">项目列表</a></li>
+            <li class="breadcrumb-item active">新增接口</li>
+        </ol>
+       <div class="col-md-12 mb-12">
+           <ul class="nav nav-tabs" role="tablist">
+               <li class="nav-item">
+                   <a class="nav-link active" data-toggle="tab" href="#case1" role="tab" aria-controls="home"><i class="icon-calculator"></i> 基本信息&请求&返回</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" data-toggle="tab" href="#case2" role="tab" aria-controls="profile"><i class="icon-basket-loaded"></i> 前置操作</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" data-toggle="tab" href="#case4" role="tab" aria-controls="messages"><i class="icon-pie-chart"></i> 数据库检查</a>
+               </li>
+           </ul>
+           <div class="tab-content">
+               <!--111111111-->
+               <div class="tab-pane active" id="case1" role="tabpanel">
+                   <div class="card">
+                       <div class="card-header" href="#case1_1" >
+                           <strong>接口基本信息</strong>
+                       </div>
+                       <div class="card-block active" id="case1_1">
+                           <div class="row">
+                               <div class="col-sm-6">
+                                   <div class="form-group">
+                                       <label for="cvv">项目名称</label>
+                                       <input type="text" class="form-control" id="cvv" placeholder="123" disabled>
+                                   </div>
+                               </div>
+                               <div class="col-sm-6">
+                                   <div class="form-group">
+                                       <label for="cvv">接口名称</label>
+                                       <input type="text" class="form-control" id="cvv" placeholder="123" disabled>
+                                   </div>
+                               </div>
+                           </div>
+                           <!--/.row-->
+                           <div class="row">
+                               <div class="col-sm-6">
+                                   <div class="form-group">
+                                       <label for="cvv">用例名称</label>
+                                       <input type="text" class="form-control" id="cvv" placeholder="123">
+                                   </div>
+                               </div>
+                               <div class="col-sm-6">
+                                   <div class="form-group">
+                                       <label for="cvv">用例序号</label>
+                                       <input type="text" class="form-control" id="cvv" placeholder="123">
+                                   </div>
+                               </div>
+                           </div>
+                           <!--/.row-->
+                           <div class="row">
+                               <div class="form-group col-sm-6">
+                                   <label for="ccmonth">重要等级</label>
+                                   <select class="form-control" id="ccmonth">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                   </select>
+                               </div>
+                               <div class="form-group col-sm-6">
+                                   <label for="ccmonth">是否执行</label>
+                                   <select class="form-control" id="ccmonth">
+                                       <option>是</option>
+                                       <option>否</option>
+                                   </select>
+                               </div>
+                           </div>
+                           <!--/.row-->
+                       </div>
+                   </div>
+                   <div class="card">
+                       <div class="card-header" href="#case1_2">
+                           <strong>数据库变量</strong>
+                       </div>
+                       <div class="card-block" id="case1_2" style="display: none">
+                           <table class="table table-hover table-outline mb-0 hidden-sm-down">
+                           <thead class="thead-default">
+                           <tr>
+                                <th class="text-center">名称</th>
+                                <th class="text-center">变量名</th>
+                                <th class="text-center">SQL语句</th>
+                                <th class="text-center">自定义变量名</th>
+                                <th class="text-center">操作</th>
+                           </tr>
+                           </thead>
+                           <tbody>
+                                <tr>
+                                    <td class="text-center">
+                                        <div class="small text-muted">
+                                           <input type="text" placeholder="请输入" class="form-control">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="small text-muted">
+                                            <input type="text" placeholder="请输入" class="form-control">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="small text-muted">
+                                            <input type="text" placeholder="请输入" class="form-control">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="small text-muted">
+                                            <input type="text" placeholder="请输入" class="form-control">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="cell">
+                                            <button type="button" class="btn btn-outline-warning">
+                                                <span><i class="el-icon-delete"></i> 删除</span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                           </tbody>
+                       </table>
+                           <div class="card-block">
+                           <button type="button" class="btn btn-success"><i class="fa fa-magic"></i> 新增</button>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="card" >
+                       <div class="card-header" href="#case1_2">
+                           <strong>请求参数</strong>
+                       </div>
+                       <div class="card-block" id="case1_2" style="display: none">
+                           <table class="table table-hover table-outline mb-0 hidden-sm-down">
+                           <thead class="thead-default">
+                           <tr>
+                                <th class="text-center">字段名</th>
+                                <th class="text-center">默认值</th>
+                                <th class="text-center">操作</th>
+                           </tr>
+                           </thead>
+                           <tbody>
+                                <tr>
+                                    <td class="text-center">
+                                        <div class="small text-muted">
+                                           <input type="text" placeholder="请输入" class="form-control">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="small text-muted">
+                                            <input type="text" placeholder="请输入" class="form-control">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="cell">
+                                            <button type="button" class="btn btn-outline-warning">
+                                                <span><i class="el-icon-delete"></i> 删除</span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                           </tbody>
+                       </table>
+                           <div class="card-block">
+                           <button type="button" class="btn btn-success"><i class="fa fa-magic"></i> 新增</button>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="card">
+                       <div class="card-header">
+                           <strong>返回结果</strong>
+                       </div>
+                       <div class="card-block" style="display: none">
+                           <table class="table table-hover table-outline mb-0 hidden-sm-down">
+                           <thead class="thead-default">
+                           <tr>
+                                <th class="text-center">字段名</th>
+                                <th class="text-center">默认值</th>
+                                <th class="text-center">操作</th>
+                           </tr>
+                           </thead>
+                           <tbody>
+                                <tr>
+                                    <td class="text-center">
+                                        <div class="small text-muted">
+                                           <input type="text" placeholder="请输入" class="form-control">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="small text-muted">
+                                            <input type="text" placeholder="请输入" class="form-control">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="cell">
+                                            <button type="button" class="btn btn-outline-warning">
+                                                <span><i class="el-icon-delete"></i> 删除</span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                           </tbody>
+                       </table>
+                           <div class="card-block">
+                           <button type="button" class="btn btn-success "><i class="fa fa-magic"></i> 新增</button>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="card-footer">
+                           <button type="reset" class="btn btn-danger "><i class="fa fa-ban"></i> 测试</button>
+                           <button type="submit" class="btn btn-primary "><i class="fa fa-dot-circle-o"></i> 保存</button>
+                   </div>
+               </div>
+               <!--222222222-->
+               <div class="tab-pane" id="case2" role="tabpanel">
+                   <div class="card">
+                       <div class="card-header">
+                           <strong>前置操作</strong>
+                       </div>
+                       <div class="card-block">
+                           <table class="table table-hover table-outline mb-0 hidden-sm-down">
+                                <thead class="thead-default">
+                           <tr>
+                                <th class="text-center">接口</th>
+                                <th class="text-center">用例</th>
+                                <th class="text-center">操作</th>
+                           </tr>
+                           </thead>
+                               <tbody>
+                                <tr>
+                                    <td class="text-center">
+                                        <div class="small text-muted">
+                                           <input type="text" placeholder="请输入" class="form-control">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="small text-muted">
+                                            <input type="text" placeholder="请输入" class="form-control">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="cell">
+                                            <button type="button" class="btn btn-outline-warning">
+                                                <span><i class="el-icon-delete"></i> 删除</span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                           </tbody>
+                            </table>
+                           <div class="card-block">
+                           <button type="button" class="btn btn-success"><i class="fa fa-magic"></i> 新增</button>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="card-footer">
+                           <button type="submit" class="btn btn-primary "><i class="fa fa-dot-circle-o"></i> 保存</button>
+                   </div>
+               </div>
+               <!----33333333--->
+               <div class="tab-pane" id="case4" role="tabpanel">
+                   <div class="card">
+                       <div class="card-header">
+                           <strong>检查数据库</strong>
+                       </div>
+                       <div class="card-block">
+                           <table class="table table-hover table-outline mb-0 hidden-sm-down">
+                           <thead class="thead-default">
+                           <tr>
+                                <th class="text-center">检查点名称</th>
+                                <th class="text-center">SQL语句</th>
+                                <th class="text-center">预期结果</th>
+                                <th class="text-center">操作</th>
+                           </tr>
+                           </thead>
+                           <tbody>
+                                <tr>
+                                    <td class="text-center">
+                                        <div class="small text-muted">
+                                           <input type="text" placeholder="请输入" class="form-control">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="small text-muted">
+                                           <input type="text" placeholder="请输入" class="form-control">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="small text-muted">
+                                            <input type="text" placeholder="请输入" class="form-control">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="cell">
+                                            <button type="button" class="btn btn-outline-warning">
+                                                <span><i class="el-icon-delete"></i> 删除</span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                           </tbody>
+                       </table>
+                           <div class="card-block">
+                           <button type="button" class="btn btn-success"><i class="fa fa-magic"></i> 新增</button>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="card-footer">
+                           <button type="submit" class="btn btn-primary "><i class="fa fa-dot-circle-o"></i> 保存</button>
+                        </div>
+               </div>
+           </div>
+           <script src="../static/assets/js/libs/jquery.min.js"></script>
+           <script>
+            $(".card-header").each(function () {
+          $(this).click(function () {
+              var next = $(this).next();
+              next.toggle();
+        })
+    })
+    </script>
+       </div>
+    </main>
+{% endblock %}
