@@ -33,6 +33,7 @@ $(document).ready(function($){
 
     var cUrl = String(window.location).split('?')[0];
 
+
     if (cUrl.substr(cUrl.length - 1) == '#') {
       cUrl = cUrl.slice(0,-1);
     }
@@ -131,7 +132,7 @@ function capitalizeFirstLetter(string) {
 }
 
 function init(url) {
-
+    console.log("123123123")
   /* ---------- Tooltip ---------- */
   $('[rel="tooltip"],[data-rel="tooltip"]').tooltip({"placement":"bottom",delay: { show: 400, hide: 200 }});
 
@@ -150,5 +151,7 @@ $(".card-header").each(function () {
           $("#myModal").show();
     })
 
-
-
+function next (number)
+{
+    $("#tablist").find(".nav-link").eq(number).tab('show')
+}

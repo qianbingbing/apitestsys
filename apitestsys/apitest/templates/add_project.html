@@ -6,15 +6,15 @@
             <li class="breadcrumb-item active">项目管理</li>
         </ol>
        <div class="col-md-12 mb-12">
-           <ul class="nav nav-tabs" role="tablist">
+           <ul class="nav nav-tabs" id="tablist" role="tablist">
                <li class="nav-item">
-                   <a class="nav-link active" data-toggle="tab" href="#home4" role="tab" aria-controls="home"><i class="icon-calculator"></i> 基本信息</a>
+                   <a class="nav-link active"  data-toggle="tab" href="#home4" role="tab" aria-controls="home"><i class="icon-calculator"></i> 基本信息</a>
                </li>
                <li class="nav-item">
-                   <a class="nav-link" data-toggle="tab" href="#profile4" role="tab" aria-controls="profile"><i class="icon-basket-loaded"></i> 测试环境</a>
+                   <a class="nav-link" id="test_env" data-toggle="tab" href="#profile4" role="tab" aria-controls="profile"><i class="icon-basket-loaded"></i> 测试环境</a>
                </li>
                <li class="nav-item">
-                   <a class="nav-link" data-toggle="tab" href="#messages4" role="tab" aria-controls="messages"><i class="icon-pie-chart"></i> 邮件通知</a>
+                   <a class="nav-link" id="email_setting"data-toggle="tab" href="#messages4" role="tab" aria-controls="messages"><i class="icon-pie-chart"></i> 邮件通知</a>
                </li>
            </ul>
            <div class="tab-content">
@@ -29,14 +29,14 @@
                                <div class="form-group row">
                                    <label class="col-md-1 form-control-label" for="text-input">项目名称</label>
                                    <div class="col-md-11">
-                                       <input type="text" id="text-input" name="text-input" class="form-control" placeholder="项目名称">
+                                       <input type="text" id="project-name" name="project-name" class="form-control" placeholder="项目名称">
                                        <span class="help-block"></span>
                                    </div>
                                </div>
                                <div class="form-group row">
                                             <label class="col-md-1 form-control-label" for="select">接口类型</label>
                                             <div class="col-md-11">
-                                                <select id="select" name="select" class="form-control">
+                                                <select id="interface-type" name="interface-type" class="form-control">
                                                     <option value="0">请选择接口类型</option>
                                                     <option value="1">Option #1</option>
                                                     <option value="2">Option #2</option>
@@ -47,14 +47,14 @@
                                <div class="form-group row">
                                    <label class="col-md-1 form-control-label" for="textarea-input">项目描述</label>
                                    <div class="col-md-11">
-                                       <textarea id="textarea-input" name="textarea-input" rows="9" class="form-control" placeholder="项目描述..."></textarea>
+                                       <textarea id="project-desc" name="project-desc" rows="9" class="form-control" placeholder="项目描述..."></textarea>
                                    </div>
                                </div>
                            </form>
                        </div>
                        <div class="card-footer">
                            <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> 返回</button>
-                           <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> 下一步</button>
+                           <button type="submit" class="btn btn-sm btn-primary" id ="commit" onclick="next(1)"><i class="fa fa-dot-circle-o"></i> 下一步</button>
                        </div>
                    </div>
                </div>
@@ -78,12 +78,12 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><input type="text" placeholder="请输入环境名称" class="form-control"></td>
-                                                <td><input type="text" placeholder="请输入ip/域名地址" class="form-control"></td>
-                                                <td><input type="text" placeholder="80" class="form-control"></td>
+                                                <td><input type="text" placeholder="请输入环境名称" class="form-control" id="ev-name" name="ev-name"></td>
+                                                <td><input type="text" placeholder="请输入ip/域名地址" class="form-control" id="ev-ip" name="ev-ip"></td>
+                                                <td><input type="text" placeholder="80" class="form-control" id="ev-port" name="ev-port"></td>
                                                 <td>
                                                     <div class="form-control">
-                                                        <span>aasdasd</span>
+                                                        <span>请先设置数据库</span>
                                                     </div>
                                                 </td>
                                                 <td>
@@ -108,8 +108,8 @@
                            <button type="button" class="btn btn-success"><i class="fa fa-magic"></i> 新增</button>
                            </div>
                            <div class="card-footer">
-                           <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> 上一步</button>
-                           <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> 下一步</button>
+                           <button type="reset" class="btn btn-sm btn-danger" onclick="next(0)"><i class="fa fa-ban" ></i> 上一步</button>
+                           <button type="submit" class="btn btn-sm btn-primary" onclick="next(2)"><i class="fa fa-dot-circle-o"></i> 下一步</button>
                        </div>
                        </div>
                    </div>
@@ -137,42 +137,42 @@
                                    <div class="form-group row">
                                        <label class="col-md-1 form-control-label" for="email-input">发件人账号</label>
                                        <div class="col-md-5">
-                                           <input type="" id="email-input" name="email-input" class="form-control" placeholder="请输入账号">
+                                           <input type="" id="email-usernamne" name="email-usernamne" class="form-control" placeholder="请输入账号">
                                            <span class="help-block"></span>
                                        </div>
                                        <div class="col-md-5">
-                                           <input type="password" id="email-input" name="email-input" class="form-control" placeholder="请输入密码">
+                                           <input type="password" id="email-password" name="email-password" class="form-control" placeholder="请输入密码">
                                            <span class="help-block"></span>
                                        </div>
                                    </div>
                                    <div class="form-group row">
                                        <label class="col-md-1 form-control-label" for="textarea-input">主送人</label>
                                             <div class="col-md-10">
-                                                <textarea id="textarea-input" name="textarea-input" rows="2" class="form-control" placeholder="可填写多个主送人"></textarea>
+                                                <textarea id="email-receiver" name="email-receiver" rows="2" class="form-control" placeholder="可填写多个主送人"></textarea>
                                             </div>
                                    </div>
                                    <div class="form-group row">
                                        <label class="col-md-1 form-control-label" for="textarea-input">抄送人</label>
                                             <div class="col-md-10">
-                                                <textarea id="textarea-input" name="textarea-input" rows="2" class="form-control" placeholder="可填写多个抄送人"></textarea>
+                                                <textarea id="email-cc" name="email-cc" rows="2" class="form-control" placeholder="可填写多个抄送人"></textarea>
                                             </div>
                                    </div>
                                    <div class="form-group row">
                                        <label class="col-md-1 form-control-label" for="textarea-input">邮件主题</label>
                                             <div class="col-md-10">
-                                                <textarea id="textarea-input" name="textarea-input" rows="1" class="form-control" placeholder=""></textarea>
+                                                <textarea id="email-subject" name="email-subject" rows="1" class="form-control" placeholder=""></textarea>
                                             </div>
                                    </div>
                                    <div class="form-group row">
                                        <label class="col-md-1 form-control-label" for="textarea-input">邮件内容</label>
                                             <div class="col-md-11">
-                                                <textarea id="textarea-input" name="textarea-input" rows="9" class="form-control" placeholder="Content.."></textarea>
+                                                <textarea id="email-msg" name="email-msg" rows="9" class="form-control" placeholder="Content.."></textarea>
                                             </div>
                                    </div>
                                </form>
                            </div>
                            <div class="card-footer">
-                           <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> 上一步</button>
+                           <button type="reset" class="btn btn-sm btn-danger" onclick="next(1)"><i class="fa fa-ban"></i> 上一步</button>
                            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> 完成</button>
                        </div>
                        </div>
@@ -193,7 +193,7 @@
                                         <div class="form-group row">
                                             <label class="col-md-3 form-control-label" for="text-input">数据库类型</label>
                                             <div class="col-md-9">
-                                                <select id="select_type" name="select_type" class="form-control">
+                                                <select id="db_type" name="db_type" class="form-control">
                                                     <option value="1" >MySQL</option>
                                                     <option value="2">Mongo</option>
                                                     <option value="3">Oracle</option>
@@ -203,35 +203,35 @@
                                         <div class="form-group row">
                                             <label class="col-md-3 form-control-label" for="email-input">IP地址</label>
                                             <div class="col-md-9">
-                                                <input type="email" id="email-input" name="email-input" class="form-control" placeholder="请输入IP地址">
+                                                <input type="email" id="db-ip" name="db-ip" class="form-control" placeholder="请输入IP地址">
                                                 <span class="help-block"></span>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-md-3 form-control-label" for="password-input">端口</label>
                                             <div class="col-md-9">
-                                                <input type="text" id="port-input" name="port-input" class="form-control" placeholder="请输入端口">
+                                                <input type="text" id="db-port" name="db-port" class="form-control" placeholder="请输入端口">
                                                 <span class="help-block"></span>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-md-3 form-control-label" for="password-input">用户名</label>
                                             <div class="col-md-9">
-                                                <input type="text" id="username-input" name="username-input" class="form-control" placeholder="请输入用户名">
+                                                <input type="text" id="db-username" name="db-username" class="form-control" placeholder="请输入用户名">
                                                 <span class="help-block"></span>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-md-3 form-control-label" for="password-input">密码</label>
                                             <div class="col-md-9">
-                                                <input type="password" id="password-input" name="password-input" class="form-control" placeholder="请输入密码">
+                                                <input type="password" id="db-password" name="db-password" class="form-control" placeholder="请输入密码">
                                                 <span class="help-block"></span>
                                             </div>
                                         </div>
                                        <div class="form-group row">
                                             <label class="col-md-3 form-control-label" for="password-input">数据库名</label>
                                             <div class="col-md-9">
-                                                <input type="text" id="dbname-input" name="dbname-input" class="form-control" placeholder="请输入数据库名称">
+                                                <input type="text" id="db-name" name="db-name" class="form-control" placeholder="请输入数据库名称">
                                                 <span class="help-block"></span>
                                             </div>
                                         </div>
@@ -247,6 +247,5 @@
                     <!-- /.modal-dialog -->
            </div>
        </div>
-
     </main>
 {% endblock %}

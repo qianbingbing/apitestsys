@@ -113,9 +113,9 @@ class Trequest(models.Model):
 
 # 测试用例-检查返回结果
 class Tresponse(models.Model):
-    # 返回key
+    # 返回结果key
     response_key = models.CharField(max_length=20)
-    # 返回value
+    # 返回结果value
     response_value = models.CharField(max_length=20)
     # 关联用例基础信息
     basic = models.ForeignKey('Testcase')

@@ -2,9 +2,9 @@
 {% block main_content %}
     <main class="main">
        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">首页</a></li>
-            <li class="breadcrumb-item"><a href="#">项目列表</a></li>
-            <li class="breadcrumb-item active">新增接口</li>
+            <li class="breadcrumb-item"><a href="/index/">首页</a></li>
+            <li class="breadcrumb-item"><a href="#">接口列表</a></li>
+            <li class="breadcrumb-item active">新增用例</li>
         </ol>
        <div class="col-md-12 mb-12">
            <ul class="nav nav-tabs" role="tablist">
@@ -22,10 +22,10 @@
                <!--111111111-->
                <div class="tab-pane active" id="case1" role="tabpanel">
                    <div class="card">
-                       <div class="card-header" href="#case1_1" >
+                       <div class="card-header">
                            <strong>接口基本信息</strong>
                        </div>
-                       <div class="card-block active" id="case1_1">
+                       <div class="card-block">
                            <div class="row">
                                <div class="col-sm-6">
                                    <div class="form-group">
@@ -313,15 +313,6 @@
                         </div>
                </div>
            </div>
-           <script src="../static/assets/js/libs/jquery.min.js"></script>
-           <script>
-            $(".card-header").each(function () {
-          $(this).click(function () {
-              var next = $(this).next();
-              next.toggle();
-        })
-    })
-    </script>
        </div>
     </main>
 {% endblock %}

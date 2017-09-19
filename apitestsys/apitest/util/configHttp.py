@@ -1,6 +1,6 @@
 import requests
 from apitest.util.Log import MyLog as Log
-
+import traceback
 class ConfigHttp:
     def __init__(self):
         global host, port,timeout
@@ -30,22 +30,24 @@ class ConfigHttp:
     def set_files(self, file):
         self.files = file
 
-    # defined http get method
+
+# defined http get method
     def get(self):
         try:
             response = requests.get(self.url, params=self.params, headers=self.headers, timeout=float(timeout))
             # response.raise_for_status()
             return response
-        except requests.exceptions.Timeout:
-            self.logger.error("Time out!")
-            return None
+        except :
+            self.logger.error("some exception have been catched!")
+            return traceback.format_exc()
 
-    # defined http post method
+
+# defined http post method
     def post(self):
         try:
             response = requests.post(self.url, headers=self.headers, data=self.data, files=self.files, timeout=float(timeout))
             # response.raise_for_status()
             return response
-        except requests.exceptions.Timeout:
-            self.logger.error("Time out!")
-            return None
+        except:
+            self.logger.error("some exception have been catched!")
+            return traceback.format_exc()

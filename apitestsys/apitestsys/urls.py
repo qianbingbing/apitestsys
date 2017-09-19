@@ -31,5 +31,4 @@ urlpatterns = [
     url(r'^commissonList/', views.commissonList),
     url(r'^reportList/', views.reportList),
     url(r'^reportDetail/', views.reportDetail),
-
 ]
