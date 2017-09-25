@@ -21,11 +21,12 @@
                <!--111111111-->
                <div class="tab-pane active" id="home4" role="tabpanel">
                    <div class="card">
+                       <form action="/save_project_base/" method="POST" enctype="multipart/form-data" class="form-horizontal " id="form1" >
                        <div class="card-header">
                            <i class="fa fa-align-justify"></i><strong>项目基本信息</strong>
                        </div>
                        <div class="card-block">
-                           <form action="" method="post" enctype="multipart/form-data" class="form-horizontal ">
+                               <input type="text" id="project-id" name="project-id" class="form-control" placeholder="项目id" value="{{ id }}" style="display: none">
                                <div class="form-group row">
                                    <label class="col-md-1 form-control-label" for="text-input">项目名称</label>
                                    <div class="col-md-11">
@@ -50,12 +51,13 @@
                                        <textarea id="project-desc" name="project-desc" rows="9" class="form-control" placeholder="项目描述..."></textarea>
                                    </div>
                                </div>
-                           </form>
+
                        </div>
                        <div class="card-footer">
-                           <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> 返回</button>
-                           <button type="submit" class="btn btn-sm btn-primary" id ="commit" onclick="next(1)"><i class="fa fa-dot-circle-o"></i> 下一步</button>
+                           <button type="button" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> 返回</button>
+                           <button type="button" class="btn btn-sm btn-primary" id ="commit" onclick="next()"><i class="fa fa-dot-circle-o"></i> 下一步</button>
                        </div>
+                       </form>
                    </div>
                </div>
                <!--222222222-->
@@ -78,14 +80,10 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><input type="text" placeholder="请输入环境名称" class="form-control" id="ev-name" name="ev-name"></td>
-                                                <td><input type="text" placeholder="请输入ip/域名地址" class="form-control" id="ev-ip" name="ev-ip"></td>
-                                                <td><input type="text" placeholder="80" class="form-control" id="ev-port" name="ev-port"></td>
-                                                <td>
-                                                    <div class="form-control">
-                                                        <span>请先设置数据库</span>
-                                                    </div>
-                                                </td>
+                                                <td><input type="text" placeholder="请输入环境名称" class="form-control" id="ev-name" name="ev-name1"></td>
+                                                <td><input type="text" placeholder="请输入ip/域名地址" class="form-control" id="ev-ip" name="ev-ip1"></td>
+                                                <td><input type="text" placeholder="80" class="form-control" id="ev-port" name="ev-port1"></td>
+                                                <td><input type="text" placeholder="请关联数据库" class="form-control" id="ev-db" name="ev-db" disabled=""></td>
                                                 <td>
                                                     <div class="cell">
                                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#primaryModal">
@@ -108,12 +106,11 @@
                            <button type="button" class="btn btn-success"><i class="fa fa-magic"></i> 新增</button>
                            </div>
                            <div class="card-footer">
-                           <button type="reset" class="btn btn-sm btn-danger" onclick="next(0)"><i class="fa fa-ban" ></i> 上一步</button>
-                           <button type="submit" class="btn btn-sm btn-primary" onclick="next(2)"><i class="fa fa-dot-circle-o"></i> 下一步</button>
+                           <button type="button" class="btn btn-sm btn-danger" onclick="targeTo(0)"><i class="fa fa-ban" ></i> 上一步</button>
+                           <button type="button" class="btn btn-sm btn-primary" onclick="next()"><i class="fa fa-dot-circle-o"></i> 下一步</button>
                        </div>
                        </div>
                    </div>
-
                </div>
                <!--333333333-->
                <div class="tab-pane" id="messages4" role="tabpanel">
@@ -172,8 +169,9 @@
                                </form>
                            </div>
                            <div class="card-footer">
-                           <button type="reset" class="btn btn-sm btn-danger" onclick="next(1)"><i class="fa fa-ban"></i> 上一步</button>
-                           <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> 完成</button>
+                           <button type="button" class="btn btn-sm btn-danger" onclick="targeTo(1)"><i class="fa fa-ban"></i> 上一步</button>
+                           <button type="submit" class="btn btn-sm btn-primary" onclick="next()"><i class="fa fa-dot-circle-o"></i> 完成</button>
+
                        </div>
                        </div>
                    </div>
@@ -249,3 +247,6 @@
        </div>
     </main>
 {% endblock %}
+
+
+

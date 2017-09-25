@@ -31,4 +31,6 @@ urlpatterns = [
     url(r'^commissonList/', views.commissonList),
     url(r'^reportList/', views.reportList),
     url(r'^reportDetail/', views.reportDetail),
+    url(r'^save_project_base/', views.save_base),
+    url(r'^ajax_dict/', views.ajax_dict),
 ]

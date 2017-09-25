@@ -2,7 +2,6 @@
 from __future__ import unicode_literals
 from django.db import models
 # Create your models here.
-
 # 项目设置-测试环境
 class Environment(models.Model):
     name = models.IntegerField(null=True)
@@ -24,15 +23,18 @@ class Database(models.Model):
 
 # 项目设置-基础信息
 class Project(models.Model):
+    # 项目id
+    id = models.CharField(max_length=32, primary_key=True)
     # 项目名称
     name = models.CharField(max_length=20, null=True)
     # 项目描述
     desc = models.CharField(max_length=40, null=True)
     # 项目接口类型
-    interfaceType = models.CharField(max_length=100, null=True)
+    interface_type = models.CharField(max_length=100, null=True)
     # 项目邮箱设置
     email_setting = models.CharField(max_length=1000, null=True)
-
+    # ceshi
+    test = models.CharField(max_length=100)
 #接口
 class Interface(models.Model):
     # 项目id
@@ -78,7 +80,7 @@ class Testcase(models.Model):
     # 用例编号
     case_number = models.IntegerField()
     # 用例序号
-    case_index= models.IntegerField()
+    case_index = models.IntegerField()
 
 #测试用例-预置操作
 class Tpreoperation(models.Model):

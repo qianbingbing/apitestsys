@@ -151,7 +151,36 @@ $(".card-header").each(function () {
           $("#myModal").show();
     })
 
-function next (number)
+function next()
 {
-    $("#tablist").find(".nav-link").eq(number).tab('show')
+    $.ajax({
+            //几个参数需要注意一下
+                type: "POST",//方法类型
+                dataType: "json",//预期服务器返回的数据类型
+                url: "/ajax_dict/" ,//url
+                data: $("#form1").serialize(),
+                success: function (result) {
+                    console.log(result);//打印服务端返回的数据(调试用)
+                    if ( result.status == "ok" ) {
+                        console.log(result.message)
+                        targeTo(1)
+                    }
+                    else{
+                      alert(result.message);
+                    }
+                },
+                error : function() {
+                    alert("服务器异常");
+                }
+            });
+}
+function guid() {
+    function S4() {
+        return (((1+Math.random())*0x10000)|0).toString(16).substring(1);
+    }
+    var uuid = (S4()+S4()+S4()+S4()+S4()+S4()+S4()+S4());
+    window.location="/addProject/?id="+ uuid;
+}
+function targeTo(number){
+  $("#tablist").find(".nav-link").eq(number).tab("show")
 }
