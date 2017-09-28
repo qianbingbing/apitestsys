@@ -51,11 +51,10 @@
                                        <textarea id="project-desc" name="project-desc" rows="9" class="form-control" placeholder="项目描述..."></textarea>
                                    </div>
                                </div>
-
                        </div>
                        <div class="card-footer">
                            <button type="button" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> 返回</button>
-                           <button type="button" class="btn btn-sm btn-primary" id ="commit" onclick="next()"><i class="fa fa-dot-circle-o"></i> 下一步</button>
+                           <button type="button" class="btn btn-sm btn-primary" id ="commit" onclick="save_project_base()"><i class="fa fa-dot-circle-o"></i> 下一步</button>
                        </div>
                        </form>
                    </div>
@@ -82,11 +81,12 @@
                                             <tr>
                                                 <td><input type="text" placeholder="请输入环境名称" class="form-control" id="ev-name" name="ev-name1"></td>
                                                 <td><input type="text" placeholder="请输入ip/域名地址" class="form-control" id="ev-ip" name="ev-ip1"></td>
-                                                <td><input type="text" placeholder="80" class="form-control" id="ev-port" name="ev-port1"></td>
+                                                <td><input type="text" placeholder="8080" class="form-control" id="ev-port" name="ev-port1"></td>
                                                 <td><input type="text" placeholder="请关联数据库" class="form-control" id="ev-db" name="ev-db" disabled=""></td>
                                                 <td>
                                                     <div class="cell">
-                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#primaryModal">
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#primaryModal"
+                                                        onclick="get_project()">
                                                                 关联数据库
                                                         </button>
                                                         <button type="button" class="btn btn-outline-success">
@@ -100,14 +100,14 @@
                                                 </td>
                                             </tr>
                                         </tbody>
-                                    </table>
+                               </table>
                            </div>
                            <div class="card-block">
                            <button type="button" class="btn btn-success"><i class="fa fa-magic"></i> 新增</button>
                            </div>
                            <div class="card-footer">
                            <button type="button" class="btn btn-sm btn-danger" onclick="targeTo(0)"><i class="fa fa-ban" ></i> 上一步</button>
-                           <button type="button" class="btn btn-sm btn-primary" onclick="next()"><i class="fa fa-dot-circle-o"></i> 下一步</button>
+                           <button type="button" class="btn btn-sm btn-primary" onclick=""><i class="fa fa-dot-circle-o"></i> 下一步</button>
                        </div>
                        </div>
                    </div>
@@ -170,13 +170,14 @@
                            </div>
                            <div class="card-footer">
                            <button type="button" class="btn btn-sm btn-danger" onclick="targeTo(1)"><i class="fa fa-ban"></i> 上一步</button>
-                           <button type="submit" class="btn btn-sm btn-primary" onclick="next()"><i class="fa fa-dot-circle-o"></i> 完成</button>
+                           <button type="submit" class="btn btn-sm btn-primary" onclick=""><i class="fa fa-dot-circle-o"></i> 完成</button>
 
                        </div>
                        </div>
                    </div>
                </div>
            </div>
+
            <div class="modal fade" id="primaryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="" aria-hidden="true">
                     <div class="modal-lg modal-primary" role="document">
                         <div class="modal-content">
@@ -236,8 +237,8 @@
                                     </form>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                                <button type="button" class="btn btn-primary">保存</button>
                             </div>
                         </div>
                         <!-- /.modal-content -->

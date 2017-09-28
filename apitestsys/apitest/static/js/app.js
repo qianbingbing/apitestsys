@@ -132,7 +132,6 @@ function capitalizeFirstLetter(string) {
 }
 
 function init(url) {
-    console.log("123123123")
   /* ---------- Tooltip ---------- */
   $('[rel="tooltip"],[data-rel="tooltip"]').tooltip({"placement":"bottom",delay: { show: 400, hide: 200 }});
 
@@ -151,16 +150,16 @@ $(".card-header").each(function () {
           $("#myModal").show();
     })
 
-function next()
+function save_project_base()
 {
     $.ajax({
             //几个参数需要注意一下
                 type: "POST",//方法类型
                 dataType: "json",//预期服务器返回的数据类型
-                url: "/ajax_dict/" ,//url
+                url: "/save_project_base/" ,//url
                 data: $("#form1").serialize(),
                 success: function (result) {
-                    console.log(result);//打印服务端返回的数据(调试用)
+
                     if ( result.status == "ok" ) {
                         console.log(result.message)
                         targeTo(1)
@@ -174,6 +173,27 @@ function next()
                 }
             });
 }
+function get_project()
+{
+    $.ajax({
+            //几个参数需要注意一下
+                type: "get",//方法类型
+                dataType: "json",//预期服务器返回的数据类型
+                url: "/get_project/?project_id=944bd14f7ce1143bb61225802fb45d28" ,//url
+                success: function (result) {
+                    if ( result.status == "ok" ) {
+                        console.log(result.result)
+                    }
+                    else{
+                      alert(result.result);
+                    }
+                },
+                error : function() {
+                    alert("服务器异常");
+                }
+            });
+}
+
 function guid() {
     function S4() {
         return (((1+Math.random())*0x10000)|0).toString(16).substring(1);

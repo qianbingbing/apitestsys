@@ -31,6 +31,7 @@ urlpatterns = [
     url(r'^commissonList/', views.commissonList),
     url(r'^reportList/', views.reportList),
     url(r'^reportDetail/', views.reportDetail),
-    url(r'^save_project_base/', views.save_base),
-    url(r'^ajax_dict/', views.ajax_dict),
+    url(r'^save_project_base/', views.save_project_base),
+    url(r'^get_project/', views.get_project),
+    url(r'^save_project_env/', views.save_project_env),
 ]

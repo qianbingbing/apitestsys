@@ -4,11 +4,12 @@ from django.db import models
 # Create your models here.
 # 项目设置-测试环境
 class Environment(models.Model):
-    name = models.IntegerField(null=True)
+    name = models.CharField(max_length=20,null=True)
     ip = models.CharField(max_length=20, null=True)
     port = models.CharField(max_length=40, null=True)
-    checked = models.CharField(max_length=40, null=True)
-    project_id = models.IntegerField(null=True)
+    checked = models.BooleanField()
+    project_id = models.CharField(max_length=100, null=True)
+    data_base = models.CharField(max_length=200, null=True)
 
 # 项目设置-数据库
 class Database(models.Model):
@@ -20,7 +21,6 @@ class Database(models.Model):
     password = models.CharField(max_length=40, null=True)
     name = models.CharField(max_length=40, null=True)
 
-
 # 项目设置-基础信息
 class Project(models.Model):
     # 项目id
@@ -31,10 +31,28 @@ class Project(models.Model):
     desc = models.CharField(max_length=40, null=True)
     # 项目接口类型
     interface_type = models.CharField(max_length=100, null=True)
-    # 项目邮箱设置
-    email_setting = models.CharField(max_length=1000, null=True)
-    # ceshi
-    test = models.CharField(max_length=100)
+
+#项目设置-邮箱设置
+class Email(models.Model):
+    # 项目id
+    project_id = models.CharField(max_length=32, primary_key=True)
+    # 开关
+    switch = models.BooleanField()
+    # 用户名
+    user_name = models.CharField(max_length=20, null=True)
+    # 密码
+    password = models.CharField(max_length=40, null=True)
+    # 发件人
+    sender = models.CharField(max_length=20, null=True)
+    # 主送人
+    receiver = models.CharField(max_length=100, null=True)
+    # 抄送人
+    cc = models.CharField(max_length=100, null=True)
+    # 邮件主题
+    subject = models.CharField(max_length=100, null=True)
+    # 邮件内容
+    context = models.CharField(max_length=1000, null=True)
+
 #接口
 class Interface(models.Model):
     # 项目id
