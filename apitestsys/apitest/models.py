@@ -2,6 +2,8 @@
 from __future__ import unicode_literals
 from django.db import models
 # Create your models here.
+
+
 # 项目设置-测试环境
 class Environment(models.Model):
     name = models.CharField(max_length=20,null=True)
@@ -9,7 +11,8 @@ class Environment(models.Model):
     port = models.CharField(max_length=40, null=True)
     checked = models.BooleanField()
     project_id = models.CharField(max_length=100, null=True)
-    data_base = models.CharField(max_length=200, null=True)
+    data_base_id = models.CharField(max_length=200, null=True)
+
 
 # 项目设置-数据库
 class Database(models.Model):
@@ -20,6 +23,7 @@ class Database(models.Model):
     username = models.CharField(max_length=40, null=True)
     password = models.CharField(max_length=40, null=True)
     name = models.CharField(max_length=40, null=True)
+
 
 # 项目设置-基础信息
 class Project(models.Model):
@@ -32,7 +36,8 @@ class Project(models.Model):
     # 项目接口类型
     interface_type = models.CharField(max_length=100, null=True)
 
-#项目设置-邮箱设置
+
+# 项目设置-邮箱设置
 class Email(models.Model):
     # 项目id
     project_id = models.CharField(max_length=32, primary_key=True)
@@ -53,7 +58,8 @@ class Email(models.Model):
     # 邮件内容
     context = models.CharField(max_length=1000, null=True)
 
-#接口
+
+# 接口
 class Interface(models.Model):
     # 项目id
     project_id = models.IntegerField()
@@ -72,7 +78,8 @@ class Interface(models.Model):
     # 返回结果
     response = models.CharField(max_length=100)
 
-#测试任务
+
+# 测试任务
 class Commission(models.Model):
     # 任务编号
     identifier = models.IntegerField()
@@ -89,6 +96,7 @@ class Commission(models.Model):
     # 测试结果
     test_result = models.CharField(max_length=10)
 
+
 # 测试用例-基础信息
 class Testcase(models.Model):
     # 项目名称
@@ -100,7 +108,8 @@ class Testcase(models.Model):
     # 用例序号
     case_index = models.IntegerField()
 
-#测试用例-预置操作
+
+# 测试用例-预置操作
 class Tpreoperation(models.Model):
     # 接口名称
     interface_name = models.CharField(max_length=10)
@@ -109,7 +118,8 @@ class Tpreoperation(models.Model):
     # 关联用例基础信息
     basic = models.ForeignKey('Testcase')
 
-#测试用例-据库变量
+
+# 测试用例-据库变量
 class Tdatavar(models.Model):
     # 名称
     name = models.CharField(max_length=10)
@@ -122,6 +132,7 @@ class Tdatavar(models.Model):
     # 关联用例基础信息
     basic = models.ForeignKey('Testcase')
 
+
 # 测试用例-请求数据
 class Trequest(models.Model):
     # 请求key
@@ -130,6 +141,7 @@ class Trequest(models.Model):
     request_value = models.CharField(max_length=20)
     # 关联用例基础信息
     basic = models.ForeignKey('Testcase')
+
 
 # 测试用例-检查返回结果
 class Tresponse(models.Model):
@@ -140,7 +152,8 @@ class Tresponse(models.Model):
     # 关联用例基础信息
     basic = models.ForeignKey('Testcase')
 
-#测试用例-检查数据库
+
+# 测试用例-检查数据库
 class Tcheckdb(models.Model):
     # 检查点名称
     name = models.CharField(max_length=20)

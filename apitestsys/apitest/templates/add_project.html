@@ -21,7 +21,7 @@
                <!--111111111-->
                <div class="tab-pane active" id="home4" role="tabpanel">
                    <div class="card">
-                       <form action="/save_project_base/" method="POST" enctype="multipart/form-data" class="form-horizontal " id="form1" >
+                       <form  method="POST" enctype="multipart/form-data" class="form-horizontal " id="form1" >
                        <div class="card-header">
                            <i class="fa fa-align-justify"></i><strong>项目基本信息</strong>
                        </div>
@@ -38,10 +38,9 @@
                                             <label class="col-md-1 form-control-label" for="select">接口类型</label>
                                             <div class="col-md-11">
                                                 <select id="interface-type" name="interface-type" class="form-control">
-                                                    <option value="0">请选择接口类型</option>
-                                                    <option value="1">Option #1</option>
-                                                    <option value="2">Option #2</option>
-                                                    <option value="3">Option #3</option>
+                                                    <option value="1">REST</option>
+                                                    <option value="2">XML</option>
+                                                    <option value="3">AAA</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -67,7 +66,7 @@
                                <i class="fa fa-align-justify"></i><strong>测试环境设置</strong>
                            </div>
                            <div class="card-block">
-                               <table class="table">
+                               <table class="table" id="env_table">
                                         <thead>
                                             <tr>
                                                 <th>名称</th>
@@ -78,32 +77,11 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td><input type="text" placeholder="请输入环境名称" class="form-control" id="ev-name" name="ev-name1"></td>
-                                                <td><input type="text" placeholder="请输入ip/域名地址" class="form-control" id="ev-ip" name="ev-ip1"></td>
-                                                <td><input type="text" placeholder="8080" class="form-control" id="ev-port" name="ev-port1"></td>
-                                                <td><input type="text" placeholder="请关联数据库" class="form-control" id="ev-db" name="ev-db" disabled=""></td>
-                                                <td>
-                                                    <div class="cell">
-                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#primaryModal"
-                                                        onclick="get_project()">
-                                                                关联数据库
-                                                        </button>
-                                                        <button type="button" class="btn btn-outline-success">
-                                                            <span><i class="el-icon-circle-check"></i> 保存</span>
-                                                        </button>
-                                                        <button type="button" class="btn btn-outline-warning">
-                                                            <span><i class="el-icon-delete"></i> 删除</span>
-                                                        </button>
-                                                    </div>
-                                                    <div id="show"></div>
-                                                </td>
-                                            </tr>
                                         </tbody>
                                </table>
                            </div>
                            <div class="card-block">
-                           <button type="button" class="btn btn-success"><i class="fa fa-magic"></i> 新增</button>
+                           <button type="button" class="btn btn-success" data-toggle="modal" data-target="#primaryModal2" onclick=""><i class="fa fa-magic" ></i> 新增</button>
                            </div>
                            <div class="card-footer">
                            <button type="button" class="btn btn-sm btn-danger" onclick="targeTo(0)"><i class="fa fa-ban" ></i> 上一步</button>
@@ -177,7 +155,7 @@
                    </div>
                </div>
            </div>
-
+           <!--关联数据库弹窗-->
            <div class="modal fade" id="primaryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="" aria-hidden="true">
                     <div class="modal-lg modal-primary" role="document">
                         <div class="modal-content">
@@ -239,6 +217,51 @@
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
                                 <button type="button" class="btn btn-primary">保存</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+           </div>
+           <!--新增测试环境弹窗-->
+           <div class="modal fade" id="primaryModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="" aria-hidden="true">
+                    <div class="modal-lg modal-primary" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">新增测试环境</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form id ="env_from" action="" method="post" enctype="multipart/form-data" class="form-horizontal ">
+                                    <input type="text" id="project-id" name="project-id" class="form-control" placeholder="项目id" value="{{ id }}" style="display: none">
+                                        <div class="form-group row">
+                                            <label class="col-md-3 form-control-label" for="email-input">名称</label>
+                                            <div class="col-md-9">
+                                                <input type="text" id="env-name" name="env-name" class="form-control" placeholder="请输入测试环境名称">
+                                                <span class="help-block"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-3 form-control-label" for="password-input">ip或域名</label>
+                                            <div class="col-md-9">
+                                                <input type="text" id="env-ip" name="env-ip" class="form-control" placeholder="请输入ip或域名">
+                                                <span class="help-block"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-3 form-control-label" for="password-input">端口</label>
+                                            <div class="col-md-9">
+                                                <input type="text" id="env-port" name="env-port" class="form-control" placeholder="请输入端口">
+                                                <span class="help-block"></span>
+                                            </div>
+                                        </div>
+                                    </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                                <button type="button" class="btn btn-primary" onclick=save_env()>保存</button>
                             </div>
                         </div>
                         <!-- /.modal-content -->

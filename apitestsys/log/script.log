@@ -1,0 +1,126 @@
+2017-10-17 11:15:25,963 [Thread-33:9620] [django.request:152] [base:get_response] [WARNING]- Not Found: /commissonList/
+2017-10-17 11:19:55,766 [Thread-52:2092] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-10-17 11:27:40,200 [Thread-36:6796] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-10-17 11:27:43,546 [Thread-38:8652] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-10-17 11:33:39,519 [Thread-2:10672] [django.request:152] [base:get_response] [WARNING]- Not Found: /
+2017-10-17 11:33:40,111 [Thread-3:10580] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-10-17 11:45:13,040 [Thread-45:5308] [django.request:152] [base:get_response] [WARNING]- Not Found: /get_db/
+2017-10-17 11:45:17,282 [Thread-46:10076] [django.request:152] [base:get_response] [WARNING]- Not Found: /get_db/
+2017-10-17 11:46:36,099 [Thread-47:10332] [django.request:152] [base:get_response] [WARNING]- Not Found: /get_db/
+2017-10-17 11:46:45,706 [Thread-48:10120] [django.request:152] [base:get_response] [WARNING]- Not Found: /get_db/
+2017-10-17 12:19:17,480 [Thread-49:5552] [django.request:152] [base:get_response] [WARNING]- Not Found: /get_db/
+2017-10-17 14:49:12,401 [Thread-3:8396] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-10-17 15:13:25,529 [Thread-2:8228] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /get_envs/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\apitestsys\apitest\views.py", line 82, in get_envs
+    print envs['fields']
+TypeError: string indices must be integers
+2017-10-17 15:17:32,069 [Thread-2:8228] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /get_envs/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\apitestsys\apitest\views.py", line 81, in get_envs
+    envs = query_json("Environment", {"project_id": project_id})
+  File "E:\apitestsys\apitest\views.py", line 206, in query_json
+    result.append(i.fields)
+AttributeError: 'unicode' object has no attribute 'fields'
+2017-10-17 15:41:40,733 [Thread-31:3436] [django.request:152] [base:get_response] [WARNING]- Not Found: /get_db/
+2017-10-17 16:29:23,582 [Thread-2:8676] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /get_envs/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\apitestsys\apitest\views.py", line 83, in get_envs
+    return JsonResponse({"status": "ok", "result": envs})
+  File "C:\Python27\lib\site-packages\django\http\response.py", line 530, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "C:\Python27\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Python27\lib\json\encoder.py", line 201, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python27\lib\json\encoder.py", line 264, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Python27\lib\site-packages\django\core\serializers\json.py", line 124, in default
+    return super(DjangoJSONEncoder, self).default(o)
+  File "C:\Python27\lib\json\encoder.py", line 178, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <QuerySet [<Environment: Environment object>, <Environment: Environment object>, <Environment: Environment object>, <Environment: Environment object>]> is not JSON serializable
+2017-10-17 16:31:39,778 [Thread-2:6740] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /get_envs/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\apitestsys\apitest\views.py", line 82, in get_envs
+    print i['project_id']
+TypeError: 'Environment' object is not subscriptable
+2017-10-17 16:31:55,048 [Thread-8:9420] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /get_envs/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\apitestsys\apitest\views.py", line 82, in get_envs
+    print i['project_id']
+TypeError: 'Environment' object is not subscriptable
+2017-10-17 16:56:00,285 [Thread-2:10516] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /get_envs/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\apitestsys\apitest\views.py", line 89, in get_envs
+    database = query_json("Database",{"project_env_id": id})
+  File "E:\apitestsys\apitest\views.py", line 213, in query_json
+    querySet = table.objects.filter(**filter)
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1210, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1104, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "C:\Python27\lib\site-packages\django\db\models\lookups.py", line 24, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python27\lib\site-packages\django\db\models\lookups.py", line 74, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 1853, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string or a number, not 'builtin_function_or_method'
+2017-10-17 17:24:51,509 [Thread-2:11052] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /get_envs/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\apitestsys\apitest\views.py", line 92, in get_envs
+    print result["database"]
+KeyError: u'database'

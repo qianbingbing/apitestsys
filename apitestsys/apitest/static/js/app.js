@@ -126,11 +126,10 @@ $(document).on('click', '.card-actions a', function(e){
   }
 
 });
-
+var num = 0;
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
-
 function init(url) {
   /* ---------- Tooltip ---------- */
   $('[rel="tooltip"],[data-rel="tooltip"]').tooltip({"placement":"bottom",delay: { show: 400, hide: 200 }});
@@ -139,19 +138,16 @@ function init(url) {
   $('[rel="popover"],[data-rel="popover"],[data-toggle="popover"]').popover();
 
 }
-
 $(".card-header").each(function () {
           $(this).click(function () {
               var next = $(this).next();
               next.toggle();
         })
     })
-    $("#db_dialog").click(function () {
+$("#db_dialog").click(function () {
           $("#myModal").show();
     })
-
-function save_project_base()
-{
+function save_project_base() {
     $.ajax({
             //几个参数需要注意一下
                 type: "POST",//方法类型
@@ -159,13 +155,12 @@ function save_project_base()
                 url: "/save_project_base/" ,//url
                 data: $("#form1").serialize(),
                 success: function (result) {
-
                     if ( result.status == "ok" ) {
-                        console.log(result.message)
                         targeTo(1)
+                        alert(result.message);
                     }
                     else{
-                      alert(result.message);
+                        alert(result.message);
                     }
                 },
                 error : function() {
@@ -173,13 +168,137 @@ function save_project_base()
                 }
             });
 }
-function get_project()
-{
+function get_project() {
     $.ajax({
             //几个参数需要注意一下
                 type: "get",//方法类型
                 dataType: "json",//预期服务器返回的数据类型
                 url: "/get_project/?project_id=944bd14f7ce1143bb61225802fb45d28" ,//url
+                success: function (result) {
+                    if ( result.status == "ok" ) {
+
+                    }
+                    else{
+                      alert(result.result);
+                    }
+                },
+                error : function() {
+                    alert("服务器异常");
+                }
+            });
+}
+//获取url中的参数
+function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+            if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+function guid() {
+    function S4() {
+        return (((1+Math.random())*0x10000)|0).toString(16).substring(1);
+    }
+    var uuid = (S4()+S4()+S4()+S4()+S4()+S4()+S4()+S4());
+    window.location="/addProject/?id="+ uuid;
+}
+
+
+
+
+function targeTo(number){
+  $("#tablist").find(".nav-link").eq(number).tab("show")
+}
+
+
+
+
+function getEnvs() {
+    var project_id = $.getUrlParam('id');
+    $.ajax({
+                type: "get",//方法类型
+                dataType: "json",//预期服务器返回的数据类型
+                url: "/get_envs/?project_id=%s"%project_id ,//url
+                success: function (result) {
+                    if ( result.status == "ok" ) {
+                        console.log(result.result)
+
+                    }
+                    else{
+                      alert(result.result);
+                    }
+                },
+                error : function() {
+                    alert("服务器异常");
+                }
+            });
+}
+function saveEnv(){
+}
+function addtr() {
+    var len = $("#env_table").find("tbody").find("tr").length;
+    if (len<5){
+        var trhtml = "<tr>\n" +
+            "<td><input type=\"text\" placeholder=\"请输入环境名称\" class=\"form-control\" id=\"ev-name\" name=\"ev-name1\"></td>\n" +
+            "<td><input type=\"text\" placeholder=\"请输入ip/域名地址\" class=\"form-control\" id=\"ev-ip\" name=\"ev-ip1\"></td>\n" +
+            "<td><input type=\"text\" placeholder=\"8080\" class=\"form-control\" id=\"ev-port\" name=\"ev-port1\"></td>\n" +
+            "<td><input type=\"text\" placeholder=\"请关联数据库\" class=\"form-control\" id=\"ev-db\" name=\"ev-db\" disabled=\"\"></td>\n" +
+            "<td>\n" +
+            " <div class=\"cell\">\n" +
+            "<button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#primaryModal\"\n" +
+            "onclick=\"getDB()\">\n" +
+            " 关联数据库\n" +
+            "</button>\n" +
+            "<button type=\"button\" class=\"btn btn-outline-warning\" onclick='deleteTr(this)'>\n" +
+            "<span><i class=\"el-icon-delete\" ></i> 删除</span>\n" +
+            "</button>\n" +
+            "</div>\n" +
+            "<div id=\"show\"></div>\n" +
+            "</td>\n" +
+            "</tr>"
+        $("#env_table").append(trhtml)
+        num = num + 1
+    }
+    else{
+        window.alert("最多添加五个测试环境")
+    }
+
+}
+function save_env() {
+    $.ajax({
+            //几个参数需要注意一下
+                type: "POST",//方法类型
+                dataType: "json",//预期服务器返回的数据类型
+                url: "/save_env/" ,//url
+                data: $("#env_from").serialize(),
+                success: function (result) {
+                    if ( result.status == "ok" ) {
+                        targeTo(1)
+                        alert(result.message);
+                    }
+                    else{
+                        alert(result.message);
+                    }
+                },
+                error : function() {
+                    alert("服务器异常");
+                }
+            });
+
+}
+function deleteTr(Tr) {
+     var flag = window.confirm("您确定要删除?");
+     if(!flag){
+         return false;
+         } else {
+          $(Tr).parent().parent().parent().remove();
+          num = num - 1
+         }
+      }
+function getDB() {
+    $.ajax({
+
+                type: "get",//方法类型
+                dataType: "json",//预期服务器返回的数据类型
+                url: "/get_db/?env_id=" ,//url
                 success: function (result) {
                     if ( result.status == "ok" ) {
                         console.log(result.result)
@@ -192,15 +311,4 @@ function get_project()
                     alert("服务器异常");
                 }
             });
-}
-
-function guid() {
-    function S4() {
-        return (((1+Math.random())*0x10000)|0).toString(16).substring(1);
-    }
-    var uuid = (S4()+S4()+S4()+S4()+S4()+S4()+S4()+S4());
-    window.location="/addProject/?id="+ uuid;
-}
-function targeTo(number){
-  $("#tablist").find(".nav-link").eq(number).tab("show")
 }
