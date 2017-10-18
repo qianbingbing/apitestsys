@@ -85,7 +85,7 @@
                            </div>
                            <div class="card-footer">
                            <button type="button" class="btn btn-sm btn-danger" onclick="targeTo(0)"><i class="fa fa-ban" ></i> 上一步</button>
-                           <button type="button" class="btn btn-sm btn-primary" onclick=""><i class="fa fa-dot-circle-o"></i> 下一步</button>
+                           <button type="button" class="btn btn-sm btn-primary" onclick="targeTo(2)"><i class="fa fa-dot-circle-o"></i> 下一步</button>
                        </div>
                        </div>
                    </div>
@@ -98,12 +98,13 @@
                                     <i class="fa fa-align-justify"></i><strong>邮件通知设置</strong>
                            </div>
                            <div class="card-block">
-                               <form action="" method="post" enctype="multipart/form-data" class="form-horizontal ">
+                               <form id="email-form" action="" method="post" enctype="multipart/form-data" class="form-horizontal ">
+                                   <input type="text" id="project-id" name="project-id" class="form-control" placeholder="项目id" value="{{ id }}" style="display: none">
                                    <div class="form-group row">
                                        <label class="col-md-1 form-control-label" for="text-input">是否发送邮件</label>
                                        <div class="col-md-11">
                                         <label class="switch switch-text switch-pill switch-warning">
-                                        <input type="checkbox" class="switch-input" checked="">
+                                        <input id="email-switch" name="email-switch" type="checkbox" class="switch-input" checked="">
                                         <span class="switch-label" data-on="On" data-off="Off"></span>
                                         <span class="switch-handle"></span>
                                     </label>
@@ -112,7 +113,7 @@
                                    <div class="form-group row">
                                        <label class="col-md-1 form-control-label" for="email-input">发件人账号</label>
                                        <div class="col-md-5">
-                                           <input type="" id="email-usernamne" name="email-usernamne" class="form-control" placeholder="请输入账号">
+                                           <input  id="email-username" name="email-username" class="form-control" placeholder="请输入账号">
                                            <span class="help-block"></span>
                                        </div>
                                        <div class="col-md-5">
@@ -141,14 +142,14 @@
                                    <div class="form-group row">
                                        <label class="col-md-1 form-control-label" for="textarea-input">邮件内容</label>
                                             <div class="col-md-11">
-                                                <textarea id="email-msg" name="email-msg" rows="9" class="form-control" placeholder="Content.."></textarea>
+                                                <textarea id="email-content" name="email-content" rows="9" class="form-control" placeholder="Content.."></textarea>
                                             </div>
                                    </div>
                                </form>
                            </div>
                            <div class="card-footer">
                            <button type="button" class="btn btn-sm btn-danger" onclick="targeTo(1)"><i class="fa fa-ban"></i> 上一步</button>
-                           <button type="submit" class="btn btn-sm btn-primary" onclick=""><i class="fa fa-dot-circle-o"></i> 完成</button>
+                           <button type="button" class="btn btn-sm btn-primary" onclick="saveEmailsetting()"><i class="fa fa-dot-circle-o"></i> 完成</button>
 
                        </div>
                        </div>
@@ -234,7 +235,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <form id ="env_from" action="" method="post" enctype="multipart/form-data" class="form-horizontal ">
+                                <form id ="env_from" method="POST" enctype="multipart/form-data" class="form-horizontal ">
                                     <input type="text" id="project-id" name="project-id" class="form-control" placeholder="项目id" value="{{ id }}" style="display: none">
                                         <div class="form-group row">
                                             <label class="col-md-3 form-control-label" for="email-input">名称</label>
@@ -261,7 +262,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
-                                <button type="button" class="btn btn-primary" onclick=save_env()>保存</button>
+                                <button type="button" class="btn btn-primary" onclick=saveEnv()>保存</button>
                             </div>
                         </div>
                         <!-- /.modal-content -->

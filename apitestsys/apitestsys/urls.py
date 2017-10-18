@@ -33,7 +33,7 @@ urlpatterns = [
     url(r'^reportDetail/', views.report_detail),
     url(r'^save_project_base/', views.save_project_base),
     url(r'^get_project/', views.get_project),
-    url(r'^save_project_env/', views.save_project_env),
     url(r'^get_envs/', views.get_envs),
     url(r'^save_env/', views.save_env),
+    url(r'^save_email/', views.save_email),
 ]

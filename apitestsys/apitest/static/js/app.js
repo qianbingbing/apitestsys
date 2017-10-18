@@ -157,10 +157,10 @@ function save_project_base() {
                 success: function (result) {
                     if ( result.status == "ok" ) {
                         targeTo(1)
-                        alert(result.message);
+                        alert(result.result);
                     }
                     else{
-                        alert(result.message);
+                        alert(result.result);
                     }
                 },
                 error : function() {
@@ -200,17 +200,9 @@ function guid() {
     var uuid = (S4()+S4()+S4()+S4()+S4()+S4()+S4()+S4());
     window.location="/addProject/?id="+ uuid;
 }
-
-
-
-
 function targeTo(number){
   $("#tablist").find(".nav-link").eq(number).tab("show")
 }
-
-
-
-
 function getEnvs() {
     var project_id = $.getUrlParam('id');
     $.ajax({
@@ -220,7 +212,6 @@ function getEnvs() {
                 success: function (result) {
                     if ( result.status == "ok" ) {
                         console.log(result.result)
-
                     }
                     else{
                       alert(result.result);
@@ -230,8 +221,6 @@ function getEnvs() {
                     alert("服务器异常");
                 }
             });
-}
-function saveEnv(){
 }
 function addtr() {
     var len = $("#env_table").find("tbody").find("tr").length;
@@ -262,7 +251,7 @@ function addtr() {
     }
 
 }
-function save_env() {
+function saveEnv() {
     $.ajax({
             //几个参数需要注意一下
                 type: "POST",//方法类型
@@ -271,11 +260,31 @@ function save_env() {
                 data: $("#env_from").serialize(),
                 success: function (result) {
                     if ( result.status == "ok" ) {
-                        targeTo(1)
-                        alert(result.message);
+                        $('#primaryModal2').modal("hide")
+                        alert(result.result)
                     }
                     else{
-                        alert(result.message);
+                        alert(result.result);
+                    }
+                },
+                error : function() {
+                    alert("服务器异常");
+                }
+            });
+}
+function saveEmailsetting(){
+     $.ajax({
+            //几个参数需要注意一下
+                type: "POST",//方法类型
+                dataType: "json",//预期服务器返回的数据类型
+                url: "/save_email/" ,//url
+                data: $("#email-form").serialize(),
+                success: function (result) {
+                    if ( result.status == "ok" ) {
+                        alert(result.result)
+                    }
+                    else{
+                        alert(result.result);
                     }
                 },
                 error : function() {

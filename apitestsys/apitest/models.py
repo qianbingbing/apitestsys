@@ -6,13 +6,12 @@ from django.db import models
 
 # 项目设置-测试环境
 class Environment(models.Model):
-    name = models.CharField(max_length=20,null=True)
+    name = models.CharField(max_length=20, null=True)
     ip = models.CharField(max_length=20, null=True)
     port = models.CharField(max_length=40, null=True)
-    checked = models.BooleanField()
+    checked = models.CharField(max_length=10, null=True)
     project_id = models.CharField(max_length=100, null=True)
     data_base_id = models.CharField(max_length=200, null=True)
-
 
 # 项目设置-数据库
 class Database(models.Model):
@@ -40,11 +39,11 @@ class Project(models.Model):
 # 项目设置-邮箱设置
 class Email(models.Model):
     # 项目id
-    project_id = models.CharField(max_length=32, primary_key=True)
+    project_id = models.CharField(max_length=32, null=True)
     # 开关
-    switch = models.BooleanField()
+    switch = models.CharField(max_length=10, null=True)
     # 用户名
-    user_name = models.CharField(max_length=20, null=True)
+    username = models.CharField(max_length=20, null=True)
     # 密码
     password = models.CharField(max_length=40, null=True)
     # 发件人
@@ -56,7 +55,7 @@ class Email(models.Model):
     # 邮件主题
     subject = models.CharField(max_length=100, null=True)
     # 邮件内容
-    context = models.CharField(max_length=1000, null=True)
+    content = models.CharField(max_length=1000, null=True)
 
 
 # 接口

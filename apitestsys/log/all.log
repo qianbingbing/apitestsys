@@ -1050,3 +1050,1015 @@ VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <Regex
             WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
             ORDER BY name; args=None
 2017-10-17 18:32:25,338 [Dummy-1:7560] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:23:50,545 [Dummy-1:1112] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:23:50,608 [Dummy-1:1112] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:23:58,052 [Thread-2:4228] [django.server:124] [basehttp:log_message] [INFO]- "GET /index/ HTTP/1.1" 200 32101
+2017-10-18 10:23:58,401 [Thread-4:4844] [django.server:124] [basehttp:log_message] [INFO]- "GET /index/img/avatars/7.jpg HTTP/1.1" 200 32101
+2017-10-18 10:23:58,493 [Thread-3:6000] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/app.js HTTP/1.1" 200 9181
+2017-10-18 10:24:01,016 [Thread-5:7696] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/?id=90385deebde5f0f7c39b34c7ba951736 HTTP/1.1" 200 42680
+2017-10-18 10:24:01,078 [Thread-6:7708] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/app.js HTTP/1.1" 304 0
+2017-10-18 10:24:01,101 [Thread-7:7852] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/img/avatars/7.jpg HTTP/1.1" 200 42624
+2017-10-18 10:24:16,482 [Thread-8:8384] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:24:16,486 [Thread-8:8384] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('asdsd', 'asdasd', 'asdasd', NULL, '90385deebde5f0f7c39b34c7ba951736', NULL); args=[u'asdsd', u'asdasd', u'asdasd', None, u'90385deebde5f0f7c39b34c7ba951736', None]
+2017-10-18 10:24:16,713 [Thread-8:8384] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:24:16,729 [Thread-8:8384] [django.db.backends:91] [utils:execute] [DEBUG]- (0.016) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:24:16,790 [Thread-8:8384] [django.server:124] [basehttp:log_message] [ERROR]- "POST /save_env/ HTTP/1.1" 500 18128
+2017-10-18 10:24:32,145 [Thread-9:8528] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:24:32,150 [Thread-9:8528] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('asdsd', 'asdasd', 'asdasd', NULL, '90385deebde5f0f7c39b34c7ba951736', NULL); args=[u'asdsd', u'asdasd', u'asdasd', None, u'90385deebde5f0f7c39b34c7ba951736', None]
+2017-10-18 10:24:32,239 [Thread-9:8528] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:24:32,253 [Thread-9:8528] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:24:32,319 [Thread-9:8528] [django.server:124] [basehttp:log_message] [ERROR]- "POST /save_env/ HTTP/1.1" 500 18128
+2017-10-18 10:25:54,161 [Dummy-1:8864] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:25:54,161 [Dummy-1:8864] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:26:01,115 [Thread-2:8892] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:26:01,124 [Thread-2:8892] [django.db.backends:91] [utils:execute] [DEBUG]- (0.003) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('asdsd', 'asdasd', 'asdasd', NULL, '90385deebde5f0f7c39b34c7ba951736', NULL); args=[u'asdsd', u'asdasd', u'asdasd', None, u'90385deebde5f0f7c39b34c7ba951736', None]
+2017-10-18 10:26:01,229 [Thread-2:8892] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:26:01,234 [Thread-2:8892] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:26:01,296 [Thread-2:8892] [django.server:124] [basehttp:log_message] [ERROR]- "POST /save_env/ HTTP/1.1" 500 18128
+2017-10-18 10:29:40,923 [Thread-3:7792] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:29:40,926 [Thread-3:7792] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('asdsd', 'asdasd', 'asdasd', NULL, '90385deebde5f0f7c39b34c7ba951736', NULL); args=[u'asdsd', u'asdasd', u'asdasd', None, u'90385deebde5f0f7c39b34c7ba951736', None]
+2017-10-18 10:29:40,994 [Thread-3:7792] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:29:41,003 [Thread-3:7792] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:29:41,038 [Thread-3:7792] [django.server:124] [basehttp:log_message] [ERROR]- "POST /save_env/ HTTP/1.1" 500 18128
+2017-10-18 10:29:46,671 [Thread-4:8376] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/?id=90385deebde5f0f7c39b34c7ba951736 HTTP/1.1" 200 42670
+2017-10-18 10:29:46,737 [Thread-5:8468] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/img/avatars/7.jpg HTTP/1.1" 200 42614
+2017-10-18 10:29:46,775 [Thread-6:8544] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/app.js HTTP/1.1" 304 0
+2017-10-18 10:29:55,997 [Thread-7:8564] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:29:56,000 [Thread-7:8564] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('asdasda', 'asdasdasd', 'asdasdasdasd', NULL, '90385deebde5f0f7c39b34c7ba951736', NULL); args=[u'asdasda', u'asdasdasd', u'asdasdasdasd', None, u'90385deebde5f0f7c39b34c7ba951736', None]
+2017-10-18 10:29:56,072 [Thread-7:8564] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:29:56,082 [Thread-7:8564] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:29:56,121 [Thread-7:8564] [django.server:124] [basehttp:log_message] [ERROR]- "POST /save_env/ HTTP/1.1" 500 18139
+2017-10-18 10:32:24,908 [Dummy-1:9040] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:32:24,908 [Dummy-1:9040] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:32:31,390 [Thread-2:8344] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:32:31,394 [Thread-2:8344] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('asdasda', 'asdasdasd', 'asdasdasdasd', NULL, '90385deebde5f0f7c39b34c7ba951736', NULL); args=[u'asdasda', u'asdasdasd', u'asdasdasdasd', None, u'90385deebde5f0f7c39b34c7ba951736', None]
+2017-10-18 10:32:31,466 [Thread-2:8344] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:32:31,482 [Thread-2:8344] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:32:31,513 [Thread-2:8344] [django.server:124] [basehttp:log_message] [ERROR]- "POST /save_env/ HTTP/1.1" 500 18139
+2017-10-18 10:32:46,411 [Dummy-1:6268] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:32:46,411 [Dummy-1:6268] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:33:20,719 [Dummy-1:9128] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:33:20,750 [Dummy-1:9128] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:33:21,775 [Thread-2:8700] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:33:21,790 [Thread-2:8700] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('asdasda', 'asdasdasd', 'asdasdasdasd', NULL, '90385deebde5f0f7c39b34c7ba951736', NULL); args=[u'asdasda', u'asdasdasd', u'asdasdasdasd', None, u'90385deebde5f0f7c39b34c7ba951736', None]
+2017-10-18 10:33:21,834 [Thread-2:8700] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:33:21,838 [Thread-2:8700] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:33:21,862 [Thread-2:8700] [django.server:124] [basehttp:log_message] [ERROR]- "POST /save_env/ HTTP/1.1" 500 18139
+2017-10-18 10:33:34,658 [Dummy-1:2356] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:33:34,674 [Dummy-1:2356] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:33:41,717 [Thread-2:7684] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:33:41,720 [Thread-2:7684] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('asdasda', 'asdasdasd', 'asdasdasdasd', NULL, '90385deebde5f0f7c39b34c7ba951736', NULL); args=[u'asdasda', u'asdasdasd', u'asdasdasdasd', None, u'90385deebde5f0f7c39b34c7ba951736', None]
+2017-10-18 10:33:41,796 [Thread-2:7684] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:33:41,803 [Thread-2:7684] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:33:41,846 [Thread-2:7684] [django.server:124] [basehttp:log_message] [ERROR]- "POST /save_env/ HTTP/1.1" 500 18139
+2017-10-18 10:34:32,555 [Dummy-1:3276] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:34:32,562 [Dummy-1:3276] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:34:58,857 [Dummy-1:8376] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:34:58,865 [Dummy-1:8376] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:35:04,476 [Thread-2:2804] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:35:04,480 [Thread-2:2804] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('asdasda', 'asdasdasd', 'asdasdasdasd', NULL, '90385deebde5f0f7c39b34c7ba951736', NULL); args=[u'asdasda', u'asdasdasd', u'asdasdasdasd', None, u'90385deebde5f0f7c39b34c7ba951736', None]
+2017-10-18 10:35:04,559 [Thread-2:2804] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:35:04,573 [Thread-2:2804] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:35:04,621 [Thread-2:2804] [django.server:124] [basehttp:log_message] [ERROR]- "POST /save_env/ HTTP/1.1" 500 18139
+2017-10-18 10:37:59,573 [Dummy-1:4772] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:37:59,588 [Dummy-1:4772] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:38:53,144 [Thread-2:5096] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:38:53,150 [Thread-2:5096] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('asdasda', 'asdasdasd', 'asdasdasdasd', NULL, '90385deebde5f0f7c39b34c7ba951736', NULL); args=[u'asdasda', u'asdasdasd', u'asdasdasdasd', None, u'90385deebde5f0f7c39b34c7ba951736', None]
+2017-10-18 10:38:53,253 [Thread-2:5096] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:38:53,262 [Thread-2:5096] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:38:53,316 [Thread-2:5096] [django.server:124] [basehttp:log_message] [ERROR]- "POST /save_env/ HTTP/1.1" 500 18139
+2017-10-18 10:39:15,308 [Dummy-6:8264] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:39:15,400 [Dummy-6:8264] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:39:19,026 [Thread-7:7344] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/?id=72b491e02f4c821e3020679ddeaeff66 HTTP/1.1" 200 42670
+2017-10-18 10:39:19,183 [Thread-8:8616] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/app.js HTTP/1.1" 304 0
+2017-10-18 10:39:19,194 [Thread-9:1112] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/img/avatars/7.jpg HTTP/1.1" 200 42614
+2017-10-18 10:40:09,194 [Thread-10:9076] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:40:09,210 [Thread-10:9076] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('12312', '123123', '12312321', NULL, '72b491e02f4c821e3020679ddeaeff66', NULL); args=[u'12312', u'123123', u'12312321', None, u'72b491e02f4c821e3020679ddeaeff66', None]
+2017-10-18 10:40:09,788 [Thread-10:9076] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:40:09,897 [Thread-10:9076] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:40:10,693 [Thread-10:9076] [django.server:124] [basehttp:log_message] [ERROR]- "POST /save_env/ HTTP/1.1" 500 18846
+2017-10-18 10:41:02,690 [MainThread:7264] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:41:02,690 [MainThread:7264] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:41:13,644 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.016) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:41:13,644 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:41:13,644 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:41:13,644 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:41:13,753 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) PRAGMA foreign_keys; args=None
+2017-10-18 10:41:13,767 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) PRAGMA foreign_keys = 0; args=None
+2017-10-18 10:41:13,767 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:41:13,767 [MainThread:3212] [django.db.backends.schema:111] [schema:execute] [DEBUG]- ALTER TABLE "apitest_environment" RENAME TO "apitest_environment__old"; (params ())
+2017-10-18 10:41:13,783 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) ALTER TABLE "apitest_environment" RENAME TO "apitest_environment__old"; args=()
+2017-10-18 10:41:13,783 [MainThread:3212] [django.db.backends.schema:111] [schema:execute] [DEBUG]- CREATE TABLE "apitest_environment" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(20) NULL, "ip" varchar(20) NULL, "port" varchar(40) NULL, "checked" bool NOT NULL, "project_id" varchar(100) NULL, "data_base_id" varchar(200) NULL); (params None)
+2017-10-18 10:41:13,799 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.016) CREATE TABLE "apitest_environment" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(20) NULL, "ip" varchar(20) NULL, "port" varchar(40) NULL, "checked" bool NOT NULL, "project_id" varchar(100) NULL, "data_base_id" varchar(200) NULL); args=None
+2017-10-18 10:41:13,799 [MainThread:3212] [django.db.backends.schema:111] [schema:execute] [DEBUG]- INSERT INTO "apitest_environment" ("checked", "name", "ip", "id", "project_id", "data_base_id", "port") SELECT "checked", "name", "ip", "id", "project_id", "data_base", "port" FROM "apitest_environment__old"; (params ())
+2017-10-18 10:41:13,799 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) INSERT INTO "apitest_environment" ("checked", "name", "ip", "id", "project_id", "data_base_id", "port") SELECT "checked", "name", "ip", "id", "project_id", "data_base", "port" FROM "apitest_environment__old"; args=()
+2017-10-18 10:41:13,799 [MainThread:3212] [django.db.backends.schema:111] [schema:execute] [DEBUG]- DROP TABLE "apitest_environment__old"; (params ())
+2017-10-18 10:41:13,815 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.015) DROP TABLE "apitest_environment__old"; args=()
+2017-10-18 10:41:13,940 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) PRAGMA foreign_keys = 0; args=None
+2017-10-18 10:41:13,940 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:41:13,940 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:41:13,956 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.016) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('apitest', '0005_auto_20171018_1041', '2017-10-18 02:41:13.940000'); args=['apitest', u'0005_auto_20171018_1041', u'2017-10-18 02:41:13.940000']
+2017-10-18 10:41:14,033 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:41:14,049 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:41:14,111 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'logentry' AND "django_content_type"."app_label" = 'admin'); args=('logentry', 'admin')
+2017-10-18 10:41:14,127 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.015) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+2017-10-18 10:41:14,127 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+2017-10-18 10:41:14,127 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'group' AND "django_content_type"."app_label" = 'auth'); args=('group', 'auth')
+2017-10-18 10:41:14,127 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'permission' AND "django_content_type"."app_label" = 'auth'); args=('permission', 'auth')
+2017-10-18 10:41:14,142 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'user' AND "django_content_type"."app_label" = 'auth'); args=('user', 'auth')
+2017-10-18 10:41:14,142 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+2017-10-18 10:41:14,142 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+2017-10-18 10:41:14,157 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'contenttype' AND "django_content_type"."app_label" = 'contenttypes'); args=('contenttype', 'contenttypes')
+2017-10-18 10:41:14,157 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+2017-10-18 10:41:14,157 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+2017-10-18 10:41:14,174 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'session' AND "django_content_type"."app_label" = 'sessions'); args=('session', 'sessions')
+2017-10-18 10:41:14,174 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+2017-10-18 10:41:14,174 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+2017-10-18 10:41:14,190 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'environment' AND "django_content_type"."app_label" = 'apitest'); args=('environment', 'apitest')
+2017-10-18 10:41:14,190 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'database' AND "django_content_type"."app_label" = 'apitest'); args=('database', 'apitest')
+2017-10-18 10:41:14,190 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tcheckdb' AND "django_content_type"."app_label" = 'apitest'); args=('tcheckdb', 'apitest')
+2017-10-18 10:41:14,204 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'commission' AND "django_content_type"."app_label" = 'apitest'); args=('commission', 'apitest')
+2017-10-18 10:41:14,204 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'project' AND "django_content_type"."app_label" = 'apitest'); args=('project', 'apitest')
+2017-10-18 10:41:14,204 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'email' AND "django_content_type"."app_label" = 'apitest'); args=('email', 'apitest')
+2017-10-18 10:41:14,204 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tresponse' AND "django_content_type"."app_label" = 'apitest'); args=('tresponse', 'apitest')
+2017-10-18 10:41:14,220 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'interface' AND "django_content_type"."app_label" = 'apitest'); args=('interface', 'apitest')
+2017-10-18 10:41:14,220 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tdatavar' AND "django_content_type"."app_label" = 'apitest'); args=('tdatavar', 'apitest')
+2017-10-18 10:41:14,220 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'testcase' AND "django_content_type"."app_label" = 'apitest'); args=('testcase', 'apitest')
+2017-10-18 10:41:14,236 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tpreoperation' AND "django_content_type"."app_label" = 'apitest'); args=('tpreoperation', 'apitest')
+2017-10-18 10:41:14,236 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'trequest' AND "django_content_type"."app_label" = 'apitest'); args=('trequest', 'apitest')
+2017-10-18 10:41:14,236 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18)
+2017-10-18 10:41:14,252 [MainThread:3212] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'apitest'; args=('apitest',)
+2017-10-18 10:42:27,323 [Thread-11:3408] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:42:27,355 [Thread-11:3408] [django.db.backends:91] [utils:execute] [DEBUG]- (0.016) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('12312', '123123', '12312321', NULL, '72b491e02f4c821e3020679ddeaeff66', NULL); args=[u'12312', u'123123', u'12312321', None, u'72b491e02f4c821e3020679ddeaeff66', None]
+2017-10-18 10:42:27,947 [Thread-11:3408] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:42:28,088 [Thread-11:3408] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:42:28,711 [Thread-11:3408] [django.server:124] [basehttp:log_message] [ERROR]- "POST /save_env/ HTTP/1.1" 500 18812
+2017-10-18 10:43:30,992 [Thread-12:8268] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/?id=72b491e02f4c821e3020679ddeaeff66 HTTP/1.1" 200 42670
+2017-10-18 10:43:31,122 [Thread-13:5528] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/app.js HTTP/1.1" 304 0
+2017-10-18 10:43:31,187 [Thread-14:8736] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/img/avatars/7.jpg HTTP/1.1" 200 42614
+2017-10-18 10:43:31,688 [Thread-15:8544] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/?id=72b491e02f4c821e3020679ddeaeff66 HTTP/1.1" 200 42670
+2017-10-18 10:43:31,796 [Thread-16:9072] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/img/avatars/7.jpg HTTP/1.1" 200 42614
+2017-10-18 10:43:39,062 [Dummy-1:4932] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:43:39,078 [Dummy-1:4932] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:43:51,309 [Thread-2:6004] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:43:51,319 [Thread-2:6004] [django.db.backends:91] [utils:execute] [DEBUG]- (0.007) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('asdasd', 'asdasd', 'asdasdsad', NULL, '72b491e02f4c821e3020679ddeaeff66', NULL); args=[u'asdasd', u'asdasd', u'asdasdsad', None, u'72b491e02f4c821e3020679ddeaeff66', None]
+2017-10-18 10:43:51,437 [Thread-2:6004] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:43:51,437 [Thread-2:6004] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "apitest_environment"."id", "apitest_environment"."name", "apitest_environment"."ip", "apitest_environment"."port", "apitest_environment"."checked", "apitest_environment"."project_id", "apitest_environment"."data_base_id" FROM "apitest_environment" LIMIT 21; args=()
+2017-10-18 10:43:51,483 [Thread-2:6004] [django.server:124] [basehttp:log_message] [ERROR]- "POST /save_env/ HTTP/1.1" 500 18098
+2017-10-18 10:47:44,342 [Dummy-1:9808] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:47:44,342 [Dummy-1:9808] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:47:54,450 [MainThread:9924] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:47:54,450 [MainThread:9924] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:47:55,105 [Dummy-1:9944] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:47:55,121 [Dummy-1:9944] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:47:55,838 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:47:55,855 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:47:55,855 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:47:55,855 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:47:55,933 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) PRAGMA foreign_keys; args=None
+2017-10-18 10:47:55,933 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) PRAGMA foreign_keys = 0; args=None
+2017-10-18 10:47:55,933 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:47:55,947 [MainThread:9940] [django.db.backends.schema:111] [schema:execute] [DEBUG]- ALTER TABLE "apitest_environment" RENAME TO "apitest_environment__old"; (params ())
+2017-10-18 10:47:55,947 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) ALTER TABLE "apitest_environment" RENAME TO "apitest_environment__old"; args=()
+2017-10-18 10:47:55,947 [MainThread:9940] [django.db.backends.schema:111] [schema:execute] [DEBUG]- CREATE TABLE "apitest_environment" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(20) NULL, "ip" varchar(20) NULL, "port" varchar(40) NULL, "project_id" varchar(100) NULL, "data_base_id" varchar(200) NULL, "checked" varchar(10) NULL); (params None)
+2017-10-18 10:47:55,947 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) CREATE TABLE "apitest_environment" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(20) NULL, "ip" varchar(20) NULL, "port" varchar(40) NULL, "project_id" varchar(100) NULL, "data_base_id" varchar(200) NULL, "checked" varchar(10) NULL); args=None
+2017-10-18 10:47:55,947 [MainThread:9940] [django.db.backends.schema:111] [schema:execute] [DEBUG]- INSERT INTO "apitest_environment" ("checked", "name", "ip", "id", "project_id", "data_base_id", "port") SELECT "checked", "name", "ip", "id", "project_id", "data_base_id", "port" FROM "apitest_environment__old"; (params ())
+2017-10-18 10:47:55,963 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.016) INSERT INTO "apitest_environment" ("checked", "name", "ip", "id", "project_id", "data_base_id", "port") SELECT "checked", "name", "ip", "id", "project_id", "data_base_id", "port" FROM "apitest_environment__old"; args=()
+2017-10-18 10:47:55,963 [MainThread:9940] [django.db.backends.schema:111] [schema:execute] [DEBUG]- DROP TABLE "apitest_environment__old"; (params ())
+2017-10-18 10:47:55,963 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) DROP TABLE "apitest_environment__old"; args=()
+2017-10-18 10:47:56,058 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) PRAGMA foreign_keys = 0; args=None
+2017-10-18 10:47:56,072 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:47:56,072 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:47:56,088 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.016) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('apitest', '0006_auto_20171018_1047', '2017-10-18 02:47:56.073000'); args=['apitest', u'0006_auto_20171018_1047', u'2017-10-18 02:47:56.073000']
+2017-10-18 10:47:56,167 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:47:56,167 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:47:56,244 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'logentry' AND "django_content_type"."app_label" = 'admin'); args=('logentry', 'admin')
+2017-10-18 10:47:56,259 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+2017-10-18 10:47:56,259 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+2017-10-18 10:47:56,276 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'group' AND "django_content_type"."app_label" = 'auth'); args=('group', 'auth')
+2017-10-18 10:47:56,276 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'permission' AND "django_content_type"."app_label" = 'auth'); args=('permission', 'auth')
+2017-10-18 10:47:56,276 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'user' AND "django_content_type"."app_label" = 'auth'); args=('user', 'auth')
+2017-10-18 10:47:56,292 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+2017-10-18 10:47:56,292 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+2017-10-18 10:47:56,306 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'contenttype' AND "django_content_type"."app_label" = 'contenttypes'); args=('contenttype', 'contenttypes')
+2017-10-18 10:47:56,306 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+2017-10-18 10:47:56,322 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+2017-10-18 10:47:56,322 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'session' AND "django_content_type"."app_label" = 'sessions'); args=('session', 'sessions')
+2017-10-18 10:47:56,322 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+2017-10-18 10:47:56,338 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+2017-10-18 10:47:56,354 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'environment' AND "django_content_type"."app_label" = 'apitest'); args=('environment', 'apitest')
+2017-10-18 10:47:56,354 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'database' AND "django_content_type"."app_label" = 'apitest'); args=('database', 'apitest')
+2017-10-18 10:47:56,354 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tcheckdb' AND "django_content_type"."app_label" = 'apitest'); args=('tcheckdb', 'apitest')
+2017-10-18 10:47:56,369 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.016) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'commission' AND "django_content_type"."app_label" = 'apitest'); args=('commission', 'apitest')
+2017-10-18 10:47:56,369 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'project' AND "django_content_type"."app_label" = 'apitest'); args=('project', 'apitest')
+2017-10-18 10:47:56,369 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'email' AND "django_content_type"."app_label" = 'apitest'); args=('email', 'apitest')
+2017-10-18 10:47:56,384 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tresponse' AND "django_content_type"."app_label" = 'apitest'); args=('tresponse', 'apitest')
+2017-10-18 10:47:56,384 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'interface' AND "django_content_type"."app_label" = 'apitest'); args=('interface', 'apitest')
+2017-10-18 10:47:56,384 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tdatavar' AND "django_content_type"."app_label" = 'apitest'); args=('tdatavar', 'apitest')
+2017-10-18 10:47:56,401 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'testcase' AND "django_content_type"."app_label" = 'apitest'); args=('testcase', 'apitest')
+2017-10-18 10:47:56,401 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tpreoperation' AND "django_content_type"."app_label" = 'apitest'); args=('tpreoperation', 'apitest')
+2017-10-18 10:47:56,401 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'trequest' AND "django_content_type"."app_label" = 'apitest'); args=('trequest', 'apitest')
+2017-10-18 10:47:56,415 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18)
+2017-10-18 10:47:56,415 [MainThread:9940] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'apitest'; args=('apitest',)
+2017-10-18 10:48:03,308 [Thread-2:9980] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:48:03,316 [Thread-2:9980] [django.db.backends:91] [utils:execute] [DEBUG]- (0.007) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('asdasd', 'asdasd', 'asdasdsad', NULL, '72b491e02f4c821e3020679ddeaeff66', NULL); args=[u'asdasd', u'asdasd', u'asdasdsad', None, u'72b491e02f4c821e3020679ddeaeff66', None]
+2017-10-18 10:48:03,417 [Thread-2:9980] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_env/ HTTP/1.1" 200 66
+2017-10-18 10:48:07,220 [Thread-3:9984] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:48:07,220 [Thread-3:9984] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('asdasd', 'asdasd', 'asdasdsad', NULL, '72b491e02f4c821e3020679ddeaeff66', NULL); args=[u'asdasd', u'asdasd', u'asdasdsad', None, u'72b491e02f4c821e3020679ddeaeff66', None]
+2017-10-18 10:48:07,309 [Thread-3:9984] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_env/ HTTP/1.1" 200 66
+2017-10-18 10:49:08,690 [Dummy-1:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:49:08,704 [Dummy-1:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:49:50,874 [MainThread:7808] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:49:50,874 [MainThread:7808] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:49:52,792 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.016) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:49:52,792 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:49:52,792 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:49:52,809 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:49:53,167 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:49:53,183 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:49:53,183 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'logentry' AND "django_content_type"."app_label" = 'admin'); args=('logentry', 'admin')
+2017-10-18 10:49:53,198 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+2017-10-18 10:49:53,198 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+2017-10-18 10:49:53,198 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'group' AND "django_content_type"."app_label" = 'auth'); args=('group', 'auth')
+2017-10-18 10:49:53,198 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'permission' AND "django_content_type"."app_label" = 'auth'); args=('permission', 'auth')
+2017-10-18 10:49:53,213 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'user' AND "django_content_type"."app_label" = 'auth'); args=('user', 'auth')
+2017-10-18 10:49:53,213 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+2017-10-18 10:49:53,213 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+2017-10-18 10:49:53,230 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'contenttype' AND "django_content_type"."app_label" = 'contenttypes'); args=('contenttype', 'contenttypes')
+2017-10-18 10:49:53,230 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+2017-10-18 10:49:53,230 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+2017-10-18 10:49:53,244 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'session' AND "django_content_type"."app_label" = 'sessions'); args=('session', 'sessions')
+2017-10-18 10:49:53,244 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+2017-10-18 10:49:53,244 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+2017-10-18 10:49:53,260 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'environment' AND "django_content_type"."app_label" = 'apitest'); args=('environment', 'apitest')
+2017-10-18 10:49:53,260 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'database' AND "django_content_type"."app_label" = 'apitest'); args=('database', 'apitest')
+2017-10-18 10:49:53,260 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tcheckdb' AND "django_content_type"."app_label" = 'apitest'); args=('tcheckdb', 'apitest')
+2017-10-18 10:49:53,260 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'commission' AND "django_content_type"."app_label" = 'apitest'); args=('commission', 'apitest')
+2017-10-18 10:49:53,276 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'project' AND "django_content_type"."app_label" = 'apitest'); args=('project', 'apitest')
+2017-10-18 10:49:53,276 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'email' AND "django_content_type"."app_label" = 'apitest'); args=('email', 'apitest')
+2017-10-18 10:49:53,276 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tresponse' AND "django_content_type"."app_label" = 'apitest'); args=('tresponse', 'apitest')
+2017-10-18 10:49:53,276 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tdatavar' AND "django_content_type"."app_label" = 'apitest'); args=('tdatavar', 'apitest')
+2017-10-18 10:49:53,292 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'testcase' AND "django_content_type"."app_label" = 'apitest'); args=('testcase', 'apitest')
+2017-10-18 10:49:53,292 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'interface' AND "django_content_type"."app_label" = 'apitest'); args=('interface', 'apitest')
+2017-10-18 10:49:53,292 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tpreoperation' AND "django_content_type"."app_label" = 'apitest'); args=('tpreoperation', 'apitest')
+2017-10-18 10:49:53,292 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'trequest' AND "django_content_type"."app_label" = 'apitest'); args=('trequest', 'apitest')
+2017-10-18 10:49:53,308 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18)
+2017-10-18 10:49:53,308 [MainThread:9428] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'apitest'; args=('apitest',)
+2017-10-18 10:50:03,884 [Dummy-1:9488] [django.db.backends:91] [utils:execute] [DEBUG]- (0.016) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 10:50:03,884 [Dummy-1:9488] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 10:53:09,614 [Thread-2:5328] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:53:09,621 [Thread-2:5328] [django.db.backends:91] [utils:execute] [DEBUG]- (0.006) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('asdasd', 'asdasd', 'asdasdsad', NULL, '72b491e02f4c821e3020679ddeaeff66', NULL); args=[u'asdasd', u'asdasd', u'asdasdsad', None, u'72b491e02f4c821e3020679ddeaeff66', None]
+2017-10-18 10:53:09,763 [Thread-2:5328] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_env/ HTTP/1.1" 200 66
+2017-10-18 10:53:12,881 [Thread-3:9576] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/?id=72b491e02f4c821e3020679ddeaeff66 HTTP/1.1" 200 42670
+2017-10-18 10:53:13,013 [Thread-4:9288] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/img/avatars/7.jpg HTTP/1.1" 200 42614
+2017-10-18 10:53:13,161 [Thread-5:8984] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/app.js HTTP/1.1" 200 9278
+2017-10-18 10:53:41,538 [Thread-6:9792] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:53:41,545 [Thread-6:9792] [django.db.backends:91] [utils:execute] [DEBUG]- (0.004) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('1阿迪萨斯', '啊撒大声地', '阿萨德', NULL, '72b491e02f4c821e3020679ddeaeff66', NULL); args=[u'1\u963f\u8fea\u8428\u65af', u'\u554a\u6492\u5927\u58f0\u5730', u'\u963f\u8428\u5fb7', None, u'72b491e02f4c821e3020679ddeaeff66', None]
+2017-10-18 10:53:41,638 [Thread-6:9792] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_env/ HTTP/1.1" 200 66
+2017-10-18 10:53:44,773 [Thread-7:9828] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:53:44,773 [Thread-7:9828] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('1阿迪萨斯', '啊撒大声地', '阿萨德', NULL, '72b491e02f4c821e3020679ddeaeff66', NULL); args=[u'1\u963f\u8fea\u8428\u65af', u'\u554a\u6492\u5927\u58f0\u5730', u'\u963f\u8428\u5fb7', None, u'72b491e02f4c821e3020679ddeaeff66', None]
+2017-10-18 10:53:44,861 [Thread-7:9828] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_env/ HTTP/1.1" 200 66
+2017-10-18 10:53:57,940 [Thread-8:9580] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/?id=72b491e02f4c821e3020679ddeaeff66 HTTP/1.1" 200 42670
+2017-10-18 10:53:58,029 [Thread-10:9696] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/app.js HTTP/1.1" 200 9221
+2017-10-18 10:53:58,036 [Thread-9:7284] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/img/avatars/7.jpg HTTP/1.1" 200 42614
+2017-10-18 10:54:04,188 [Thread-11:2508] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) BEGIN; args=None
+2017-10-18 10:54:04,197 [Thread-11:2508] [django.db.backends:91] [utils:execute] [DEBUG]- (0.006) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('阿达', '阿萨德', '阿萨德', NULL, '72b491e02f4c821e3020679ddeaeff66', NULL); args=[u'\u963f\u8fbe', u'\u963f\u8428\u5fb7', u'\u963f\u8428\u5fb7', None, u'72b491e02f4c821e3020679ddeaeff66', None]
+2017-10-18 10:54:04,283 [Thread-11:2508] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_env/ HTTP/1.1" 200 66
+2017-10-18 10:56:24,279 [Thread-12:9568] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:56:24,289 [Thread-12:9568] [django.db.backends:91] [utils:execute] [DEBUG]- (0.007) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('阿达asdasd', '阿萨德asdasdsd', '阿萨德', NULL, '72b491e02f4c821e3020679ddeaeff66', NULL); args=[u'\u963f\u8fbeasdasd', u'\u963f\u8428\u5fb7asdasdsd', u'\u963f\u8428\u5fb7', None, u'72b491e02f4c821e3020679ddeaeff66', None]
+2017-10-18 10:56:24,362 [Thread-12:9568] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_env/ HTTP/1.1" 200 66
+2017-10-18 10:56:29,956 [Thread-13:8528] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/?id=72b491e02f4c821e3020679ddeaeff66 HTTP/1.1" 200 42670
+2017-10-18 10:56:30,072 [Thread-15:9852] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/app.js HTTP/1.1" 200 9240
+2017-10-18 10:56:30,072 [Thread-14:9036] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/img/avatars/7.jpg HTTP/1.1" 200 42614
+2017-10-18 10:56:36,822 [Thread-16:5328] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:56:36,829 [Thread-16:5328] [django.db.backends:91] [utils:execute] [DEBUG]- (0.007) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('asdasd', 'asdas', 'dasdasd', NULL, '72b491e02f4c821e3020679ddeaeff66', NULL); args=[u'asdasd', u'asdas', u'dasdasd', None, u'72b491e02f4c821e3020679ddeaeff66', None]
+2017-10-18 10:56:36,914 [Thread-16:5328] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_env/ HTTP/1.1" 200 66
+2017-10-18 10:56:45,440 [Thread-17:9588] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:56:45,450 [Thread-17:9588] [django.db.backends:91] [utils:execute] [DEBUG]- (0.007) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('asdasd', 'asdasasdasdasd', 'dasdasdasdasd', NULL, '72b491e02f4c821e3020679ddeaeff66', NULL); args=[u'asdasd', u'asdasasdasdasd', u'dasdasdasdasd', None, u'72b491e02f4c821e3020679ddeaeff66', None]
+2017-10-18 10:56:45,539 [Thread-17:9588] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_env/ HTTP/1.1" 200 66
+2017-10-18 10:57:01,701 [Thread-18:9236] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 10:57:01,710 [Thread-18:9236] [django.db.backends:91] [utils:execute] [DEBUG]- (0.006) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('asdasdasdas', 'asdasasdasdasdasdas', 'dasdasdasdasdasdasd', NULL, '72b491e02f4c821e3020679ddeaeff66', NULL); args=[u'asdasdasdas', u'asdasasdasdasdasdas', u'dasdasdasdasdasdasd', None, u'72b491e02f4c821e3020679ddeaeff66', None]
+2017-10-18 10:57:01,799 [Thread-18:9236] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_env/ HTTP/1.1" 200 66
+2017-10-18 10:57:09,203 [Thread-19:8696] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/?id=72b491e02f4c821e3020679ddeaeff66 HTTP/1.1" 200 42670
+2017-10-18 10:57:09,311 [Thread-20:9792] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/app.js HTTP/1.1" 200 9240
+2017-10-18 10:57:09,338 [Thread-21:9076] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/img/avatars/7.jpg HTTP/1.1" 200 42614
+2017-10-18 10:57:09,667 [Thread-22:9692] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/?id=72b491e02f4c821e3020679ddeaeff66 HTTP/1.1" 200 42670
+2017-10-18 10:57:09,724 [Thread-23:10076] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/img/avatars/7.jpg HTTP/1.1" 200 42614
+2017-10-18 10:57:09,832 [Thread-24:9804] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/?id=72b491e02f4c821e3020679ddeaeff66 HTTP/1.1" 200 42670
+2017-10-18 10:57:09,931 [Thread-25:10072] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/img/avatars/7.jpg HTTP/1.1" 200 42614
+2017-10-18 10:57:14,345 [Thread-26:10068] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) BEGIN; args=None
+2017-10-18 10:57:14,352 [Thread-26:10068] [django.db.backends:91] [utils:execute] [DEBUG]- (0.007) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('asdas', 'asdasd', 'asdasd', NULL, '72b491e02f4c821e3020679ddeaeff66', NULL); args=[u'asdas', u'asdasd', u'asdasd', None, u'72b491e02f4c821e3020679ddeaeff66', None]
+2017-10-18 10:57:14,437 [Thread-26:10068] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_env/ HTTP/1.1" 200 66
+2017-10-18 11:03:08,226 [Thread-27:10228] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/?id=72b491e02f4c821e3020679ddeaeff66 HTTP/1.1" 200 42670
+2017-10-18 11:03:08,368 [Thread-28:4944] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/img/avatars/7.jpg HTTP/1.1" 200 42614
+2017-10-18 11:03:08,371 [Thread-29:9296] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/app.js HTTP/1.1" 200 9348
+2017-10-18 11:03:08,881 [Thread-30:6604] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/?id=72b491e02f4c821e3020679ddeaeff66 HTTP/1.1" 200 42670
+2017-10-18 11:03:08,937 [Thread-31:9284] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/img/avatars/7.jpg HTTP/1.1" 200 42614
+2017-10-18 11:03:15,056 [Thread-32:7708] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 11:03:15,065 [Thread-32:7708] [django.db.backends:91] [utils:execute] [DEBUG]- (0.007) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('啊撒大声地', '阿达', '阿萨德', NULL, '72b491e02f4c821e3020679ddeaeff66', NULL); args=[u'\u554a\u6492\u5927\u58f0\u5730', u'\u963f\u8fbe', u'\u963f\u8428\u5fb7', None, u'72b491e02f4c821e3020679ddeaeff66', None]
+2017-10-18 11:03:15,161 [Thread-32:7708] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_env/ HTTP/1.1" 200 66
+2017-10-18 11:05:14,461 [Thread-33:10008] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/?id=72b491e02f4c821e3020679ddeaeff66 HTTP/1.1" 200 42670
+2017-10-18 11:05:14,611 [Thread-35:9200] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/app.js HTTP/1.1" 200 9215
+2017-10-18 11:05:14,611 [Thread-34:7704] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/img/avatars/7.jpg HTTP/1.1" 200 42614
+2017-10-18 11:05:19,558 [Thread-36:8864] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 11:05:19,568 [Thread-36:8864] [django.db.backends:91] [utils:execute] [DEBUG]- (0.009) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('asdas', 'asda', 'asdasd', NULL, '72b491e02f4c821e3020679ddeaeff66', NULL); args=[u'asdas', u'asda', u'asdasd', None, u'72b491e02f4c821e3020679ddeaeff66', None]
+2017-10-18 11:05:19,664 [Thread-36:8864] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_env/ HTTP/1.1" 200 66
+2017-10-18 11:05:41,470 [Thread-37:9720] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/?id=72b491e02f4c821e3020679ddeaeff66 HTTP/1.1" 200 42670
+2017-10-18 11:05:41,592 [Thread-38:9728] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/img/avatars/7.jpg HTTP/1.1" 200 42614
+2017-10-18 11:05:41,665 [Thread-39:10204] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/app.js HTTP/1.1" 200 9238
+2017-10-18 11:05:46,378 [Thread-40:9900] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 11:05:46,384 [Thread-40:9900] [django.db.backends:91] [utils:execute] [DEBUG]- (0.004) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('asdas', 'asd', 'asdasd', NULL, '72b491e02f4c821e3020679ddeaeff66', NULL); args=[u'asdas', u'asd', u'asdasd', None, u'72b491e02f4c821e3020679ddeaeff66', None]
+2017-10-18 11:05:46,487 [Thread-40:9900] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_env/ HTTP/1.1" 200 66
+2017-10-18 11:05:58,513 [Thread-41:9884] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_env/ HTTP/1.1" 200 79
+2017-10-18 11:06:00,398 [Thread-42:10040] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_env/ HTTP/1.1" 200 79
+2017-10-18 11:06:04,085 [Thread-43:10092] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_env/ HTTP/1.1" 200 79
+2017-10-18 11:06:07,237 [Thread-44:9076] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_env/ HTTP/1.1" 200 79
+2017-10-18 11:06:08,809 [Thread-45:9016] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_env/ HTTP/1.1" 200 79
+2017-10-18 11:14:35,506 [Thread-46:9432] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/?id=72b491e02f4c821e3020679ddeaeff66 HTTP/1.1" 200 42680
+2017-10-18 11:14:35,594 [Thread-47:9224] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/img/avatars/7.jpg HTTP/1.1" 200 42624
+2017-10-18 11:14:35,605 [Thread-48:9796] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/app.js HTTP/1.1" 304 0
+2017-10-18 11:14:37,829 [Thread-49:9784] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_project_base/ HTTP/1.1" 200 79
+2017-10-18 12:01:51,134 [Dummy-1:11072] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 12:01:51,145 [Dummy-1:11072] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 14:30:32,220 [Thread-2:10832] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-10-18 14:30:32,247 [Thread-2:10832] [django.server:124] [basehttp:log_message] [WARNING]- "GET /commissonList/ HTTP/1.1" 404 3998
+2017-10-18 14:30:32,438 [Thread-3:7644] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-10-18 14:30:32,450 [Thread-3:7644] [django.server:124] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 3989
+2017-10-18 14:30:39,154 [Thread-4:12168] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-10-18 14:30:39,163 [Thread-4:12168] [django.server:124] [basehttp:log_message] [WARNING]- "GET /commissonList/ HTTP/1.1" 404 3998
+2017-10-18 14:35:23,872 [Thread-11:6364] [django.server:124] [basehttp:log_message] [INFO]- "GET /index/ HTTP/1.1" 200 32101
+2017-10-18 14:35:23,967 [Thread-12:4216] [django.server:124] [basehttp:log_message] [INFO]- "GET /index/img/avatars/7.jpg HTTP/1.1" 200 32101
+2017-10-18 14:35:23,967 [Thread-13:11580] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/app.js HTTP/1.1" 304 0
+2017-10-18 14:35:31,729 [Thread-14:11564] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/?id=b216c7ae6bfb2f358b6d000c243ebac0 HTTP/1.1" 200 42680
+2017-10-18 14:35:31,811 [Thread-15:11544] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/img/avatars/7.jpg HTTP/1.1" 200 42624
+2017-10-18 14:35:33,555 [Thread-16:7660] [django.server:124] [basehttp:log_message] [INFO]- "GET /projectList/ HTTP/1.1" 200 26496
+2017-10-18 14:35:33,667 [Thread-17:9828] [django.server:124] [basehttp:log_message] [INFO]- "GET /projectList/img/avatars/7.jpg HTTP/1.1" 200 26496
+2017-10-18 14:35:39,354 [Thread-18:2848] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-10-18 14:35:39,361 [Thread-18:2848] [django.server:124] [basehttp:log_message] [WARNING]- "GET /commissonList/ HTTP/1.1" 404 3998
+2017-10-18 14:35:44,696 [Thread-19:11188] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/?id=6fbfc99eb8ec0e97de8c9450685f1482 HTTP/1.1" 200 42680
+2017-10-18 14:35:44,779 [Thread-20:10116] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/img/avatars/7.jpg HTTP/1.1" 200 42624
+2017-10-18 14:37:45,595 [Thread-25:11828] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_project_base/ HTTP/1.1" 200 79
+2017-10-18 14:37:49,407 [Thread-26:11000] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_project_base/ HTTP/1.1" 200 79
+2017-10-18 14:38:09,272 [Thread-27:11356] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_project_base/ HTTP/1.1" 200 79
+2017-10-18 14:55:30,959 [Thread-28:11208] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/?id=16c2629225cdffe144c9fe6311763b6b HTTP/1.1" 200 42680
+2017-10-18 14:55:31,049 [Thread-29:9868] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/img/avatars/7.jpg HTTP/1.1" 200 42624
+2017-10-18 15:01:43,638 [Dummy-1:7488] [django.db.backends:91] [utils:execute] [DEBUG]- (0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 15:01:43,650 [Dummy-1:7488] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 15:02:03,538 [Dummy-1:10376] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 15:02:03,545 [Dummy-1:10376] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 15:02:28,778 [Dummy-1:10432] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 15:02:28,795 [Dummy-1:10432] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 15:04:22,811 [Dummy-1:10056] [django.db.backends:91] [utils:execute] [DEBUG]- (0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 15:04:22,828 [Dummy-1:10056] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 15:05:59,987 [Dummy-1:10620] [django.db.backends:91] [utils:execute] [DEBUG]- (0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 15:06:00,042 [Dummy-1:10620] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 15:06:17,256 [Dummy-1:10292] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 15:06:17,266 [Dummy-1:10292] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 15:08:33,763 [Thread-2:8868] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 15:08:33,773 [Thread-2:8868] [django.db.backends:91] [utils:execute] [DEBUG]- (0.005) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('asdas', 'asdas', 'asdsdasd', NULL, '16c2629225cdffe144c9fe6311763b6b', NULL); args=[u'asdas', u'asdas', u'asdsdasd', None, u'16c2629225cdffe144c9fe6311763b6b', None]
+2017-10-18 15:08:33,887 [Thread-2:8868] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_env/ HTTP/1.1" 200 66
+2017-10-18 15:18:21,407 [Dummy-1:10852] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 15:18:21,420 [Dummy-1:10852] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 15:22:47,355 [Dummy-1:11036] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 15:22:47,361 [Dummy-1:11036] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 15:23:02,930 [Dummy-1:10552] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 15:23:02,943 [Dummy-1:10552] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 15:23:31,757 [Dummy-1:10276] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 15:23:31,765 [Dummy-1:10276] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 15:23:44,908 [Dummy-1:11752] [django.db.backends:91] [utils:execute] [DEBUG]- (0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 15:23:44,917 [Dummy-1:11752] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 15:24:00,905 [Dummy-1:12284] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 15:24:00,917 [Dummy-1:12284] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 15:28:32,615 [Dummy-1:11864] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 15:28:32,625 [Dummy-1:11864] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 15:28:51,848 [Dummy-1:1164] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 15:28:51,855 [Dummy-1:1164] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 15:29:16,474 [Dummy-1:7812] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 15:29:16,482 [Dummy-1:7812] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 15:29:26,095 [Dummy-1:11308] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 15:29:26,102 [Dummy-1:11308] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 15:30:07,190 [Dummy-1:10540] [django.db.backends:91] [utils:execute] [DEBUG]- (0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 15:30:07,201 [Dummy-1:10540] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 15:32:59,384 [Dummy-1:11744] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 15:32:59,394 [Dummy-1:11744] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 15:33:19,494 [Dummy-1:9440] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 15:33:19,506 [Dummy-1:9440] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 15:34:08,676 [Dummy-1:12028] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 15:34:08,683 [Dummy-1:12028] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 15:37:00,141 [Dummy-1:12220] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 15:37:00,151 [Dummy-1:12220] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 15:37:10,308 [Dummy-1:10164] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 15:37:10,315 [Dummy-1:10164] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 15:37:27,410 [Dummy-1:11180] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 15:37:27,417 [Dummy-1:11180] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 15:39:28,709 [Dummy-1:2356] [django.db.backends:91] [utils:execute] [DEBUG]- (0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 15:39:28,721 [Dummy-1:2356] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 15:42:20,029 [Thread-2:13132] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) BEGIN; args=None
+2017-10-18 15:42:20,039 [Thread-2:13132] [django.db.backends:91] [utils:execute] [DEBUG]- (0.008) INSERT INTO "apitest_environment" ("name", "ip", "port", "checked", "project_id", "data_base_id") VALUES ('asdas', 'asdas', 'asdsdasd', NULL, '16c2629225cdffe144c9fe6311763b6b', NULL); args=[u'asdas', u'asdas', u'asdsdasd', None, u'16c2629225cdffe144c9fe6311763b6b', None]
+2017-10-18 15:42:20,155 [Thread-2:13132] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_env/ HTTP/1.1" 200 66
+2017-10-18 17:30:23,121 [Dummy-1:7288] [django.db.backends:91] [utils:execute] [DEBUG]- (0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:30:23,135 [Dummy-1:7288] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:30:26,460 [Thread-2:7300] [django.server:124] [basehttp:log_message] [INFO]- "GET /index/ HTTP/1.1" 200 32101
+2017-10-18 17:30:26,647 [Thread-4:7740] [django.server:124] [basehttp:log_message] [INFO]- "GET /index/img/avatars/7.jpg HTTP/1.1" 200 32101
+2017-10-18 17:30:26,743 [Thread-3:1620] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/app.js HTTP/1.1" 200 9909
+2017-10-18 17:30:28,852 [Thread-5:8836] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/?id=fd38ab8824ba5245da33b2e85047937a HTTP/1.1" 200 42946
+2017-10-18 17:30:28,917 [Thread-6:7888] [django.server:124] [basehttp:log_message] [INFO]- "GET /addProject/img/avatars/7.jpg HTTP/1.1" 200 42862
+2017-10-18 17:30:37,638 [Thread-7:9184] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 17:30:37,641 [Thread-7:9184] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) INSERT INTO "apitest_email" ("project_id", "switch", "username", "password", "sender", "receiver", "cc", "subject", "content") SELECT '', NULL, '啊是大苏打', 'asdasdasd', '啊是大苏打', 'asdasd', 'asd', 'asd', 'asdas'; args=(u'', None, u'\u554a\u662f\u5927\u82cf\u6253', u'asdasdasd', u'\u554a\u662f\u5927\u82cf\u6253', u'asdasd', u'asd', u'asd', u'asdas')
+2017-10-18 17:30:37,861 [Thread-7:9184] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "apitest_email"."project_id", "apitest_email"."switch", "apitest_email"."username", "apitest_email"."password", "apitest_email"."sender", "apitest_email"."receiver", "apitest_email"."cc", "apitest_email"."subject", "apitest_email"."content" FROM "apitest_email" LIMIT 21; args=()
+2017-10-18 17:30:37,868 [Thread-7:9184] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "apitest_email"."project_id", "apitest_email"."switch", "apitest_email"."username", "apitest_email"."password", "apitest_email"."sender", "apitest_email"."receiver", "apitest_email"."cc", "apitest_email"."subject", "apitest_email"."content" FROM "apitest_email" LIMIT 21; args=()
+2017-10-18 17:30:37,923 [Thread-7:9184] [django.server:124] [basehttp:log_message] [ERROR]- "POST /save_email/ HTTP/1.1" 500 18248
+2017-10-18 17:30:44,334 [Thread-8:7888] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 17:30:44,338 [Thread-8:7888] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) INSERT INTO "apitest_email" ("project_id", "switch", "username", "password", "sender", "receiver", "cc", "subject", "content") SELECT '', NULL, '啊是大苏打', 'asdasdasd', '啊是大苏打', 'asdasd', 'asd', 'asd', 'asdas'; args=(u'', None, u'\u554a\u662f\u5927\u82cf\u6253', u'asdasdasd', u'\u554a\u662f\u5927\u82cf\u6253', u'asdasd', u'asd', u'asd', u'asdas')
+2017-10-18 17:30:44,420 [Thread-8:7888] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "apitest_email"."project_id", "apitest_email"."switch", "apitest_email"."username", "apitest_email"."password", "apitest_email"."sender", "apitest_email"."receiver", "apitest_email"."cc", "apitest_email"."subject", "apitest_email"."content" FROM "apitest_email" LIMIT 21; args=()
+2017-10-18 17:30:44,431 [Thread-8:7888] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "apitest_email"."project_id", "apitest_email"."switch", "apitest_email"."username", "apitest_email"."password", "apitest_email"."sender", "apitest_email"."receiver", "apitest_email"."cc", "apitest_email"."subject", "apitest_email"."content" FROM "apitest_email" LIMIT 21; args=()
+2017-10-18 17:30:44,486 [Thread-8:7888] [django.server:124] [basehttp:log_message] [ERROR]- "POST /save_email/ HTTP/1.1" 500 18248
+2017-10-18 17:31:37,470 [Dummy-1:9076] [django.db.backends:91] [utils:execute] [DEBUG]- (0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:31:37,483 [Dummy-1:9076] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:31:51,572 [MainThread:9348] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:31:51,578 [MainThread:9348] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:32:02,073 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:32:02,082 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:32:02,085 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:32:02,089 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:32:02,187 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) PRAGMA foreign_keys; args=None
+2017-10-18 17:32:02,190 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) PRAGMA foreign_keys = 0; args=None
+2017-10-18 17:32:02,191 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 17:32:02,206 [MainThread:9388] [django.db.backends.schema:111] [schema:execute] [DEBUG]- ALTER TABLE "apitest_email" RENAME TO "apitest_email__old"; (params ())
+2017-10-18 17:32:02,210 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.003) ALTER TABLE "apitest_email" RENAME TO "apitest_email__old"; args=()
+2017-10-18 17:32:02,214 [MainThread:9388] [django.db.backends.schema:111] [schema:execute] [DEBUG]- CREATE TABLE "apitest_email" ("project_id" varchar(32) NOT NULL PRIMARY KEY, "switch" bool NOT NULL, "user_name" varchar(20) NULL, "password" varchar(40) NULL, "sender" varchar(20) NULL, "receiver" varchar(100) NULL, "cc" varchar(100) NULL, "subject" varchar(100) NULL, "content" varchar(1000) NULL); (params None)
+2017-10-18 17:32:02,217 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) CREATE TABLE "apitest_email" ("project_id" varchar(32) NOT NULL PRIMARY KEY, "switch" bool NOT NULL, "user_name" varchar(20) NULL, "password" varchar(40) NULL, "sender" varchar(20) NULL, "receiver" varchar(100) NULL, "cc" varchar(100) NULL, "subject" varchar(100) NULL, "content" varchar(1000) NULL); args=None
+2017-10-18 17:32:02,220 [MainThread:9388] [django.db.backends.schema:111] [schema:execute] [DEBUG]- INSERT INTO "apitest_email" ("project_id", "sender", "cc", "content", "switch", "receiver", "password", "user_name", "subject") SELECT "project_id", "sender", "cc", "context", "switch", "receiver", "password", "user_name", "subject" FROM "apitest_email__old"; (params ())
+2017-10-18 17:32:02,229 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.006) INSERT INTO "apitest_email" ("project_id", "sender", "cc", "content", "switch", "receiver", "password", "user_name", "subject") SELECT "project_id", "sender", "cc", "context", "switch", "receiver", "password", "user_name", "subject" FROM "apitest_email__old"; args=()
+2017-10-18 17:32:02,232 [MainThread:9388] [django.db.backends.schema:111] [schema:execute] [DEBUG]- DROP TABLE "apitest_email__old"; (params ())
+2017-10-18 17:32:02,236 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) DROP TABLE "apitest_email__old"; args=()
+2017-10-18 17:32:02,250 [MainThread:9388] [django.db.backends.schema:111] [schema:execute] [DEBUG]- ALTER TABLE "apitest_email" RENAME TO "apitest_email__old"; (params ())
+2017-10-18 17:32:02,255 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) ALTER TABLE "apitest_email" RENAME TO "apitest_email__old"; args=()
+2017-10-18 17:32:02,257 [MainThread:9388] [django.db.backends.schema:111] [schema:execute] [DEBUG]- CREATE TABLE "apitest_email" ("project_id" varchar(32) NOT NULL PRIMARY KEY, "switch" bool NOT NULL, "password" varchar(40) NULL, "sender" varchar(20) NULL, "receiver" varchar(100) NULL, "cc" varchar(100) NULL, "subject" varchar(100) NULL, "content" varchar(1000) NULL, "username" varchar(20) NULL); (params None)
+2017-10-18 17:32:02,260 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) CREATE TABLE "apitest_email" ("project_id" varchar(32) NOT NULL PRIMARY KEY, "switch" bool NOT NULL, "password" varchar(40) NULL, "sender" varchar(20) NULL, "receiver" varchar(100) NULL, "cc" varchar(100) NULL, "subject" varchar(100) NULL, "content" varchar(1000) NULL, "username" varchar(20) NULL); args=None
+2017-10-18 17:32:02,263 [MainThread:9388] [django.db.backends.schema:111] [schema:execute] [DEBUG]- INSERT INTO "apitest_email" ("username", "project_id", "sender", "cc", "content", "switch", "receiver", "password", "subject") SELECT "user_name", "project_id", "sender", "cc", "content", "switch", "receiver", "password", "subject" FROM "apitest_email__old"; (params ())
+2017-10-18 17:32:02,269 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) INSERT INTO "apitest_email" ("username", "project_id", "sender", "cc", "content", "switch", "receiver", "password", "subject") SELECT "user_name", "project_id", "sender", "cc", "content", "switch", "receiver", "password", "subject" FROM "apitest_email__old"; args=()
+2017-10-18 17:32:02,270 [MainThread:9388] [django.db.backends.schema:111] [schema:execute] [DEBUG]- DROP TABLE "apitest_email__old"; (params ())
+2017-10-18 17:32:02,276 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.003) DROP TABLE "apitest_email__old"; args=()
+2017-10-18 17:32:02,289 [MainThread:9388] [django.db.backends.schema:111] [schema:execute] [DEBUG]- ALTER TABLE "apitest_email" RENAME TO "apitest_email__old"; (params ())
+2017-10-18 17:32:02,293 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) ALTER TABLE "apitest_email" RENAME TO "apitest_email__old"; args=()
+2017-10-18 17:32:02,298 [MainThread:9388] [django.db.backends.schema:111] [schema:execute] [DEBUG]- CREATE TABLE "apitest_email" ("project_id" varchar(32) NOT NULL PRIMARY KEY, "username" varchar(20) NULL, "password" varchar(40) NULL, "sender" varchar(20) NULL, "receiver" varchar(100) NULL, "cc" varchar(100) NULL, "subject" varchar(100) NULL, "content" varchar(1000) NULL, "switch" varchar(10) NULL); (params None)
+2017-10-18 17:32:02,301 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) CREATE TABLE "apitest_email" ("project_id" varchar(32) NOT NULL PRIMARY KEY, "username" varchar(20) NULL, "password" varchar(40) NULL, "sender" varchar(20) NULL, "receiver" varchar(100) NULL, "cc" varchar(100) NULL, "subject" varchar(100) NULL, "content" varchar(1000) NULL, "switch" varchar(10) NULL); args=None
+2017-10-18 17:32:02,302 [MainThread:9388] [django.db.backends.schema:111] [schema:execute] [DEBUG]- INSERT INTO "apitest_email" ("username", "project_id", "sender", "cc", "content", "switch", "receiver", "password", "subject") SELECT "username", "project_id", "sender", "cc", "content", "switch", "receiver", "password", "subject" FROM "apitest_email__old"; (params ())
+2017-10-18 17:32:02,308 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) INSERT INTO "apitest_email" ("username", "project_id", "sender", "cc", "content", "switch", "receiver", "password", "subject") SELECT "username", "project_id", "sender", "cc", "content", "switch", "receiver", "password", "subject" FROM "apitest_email__old"; args=()
+2017-10-18 17:32:02,309 [MainThread:9388] [django.db.backends.schema:111] [schema:execute] [DEBUG]- DROP TABLE "apitest_email__old"; (params ())
+2017-10-18 17:32:02,315 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.003) DROP TABLE "apitest_email__old"; args=()
+2017-10-18 17:32:02,420 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) PRAGMA foreign_keys = 0; args=None
+2017-10-18 17:32:02,423 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:32:02,427 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 17:32:02,434 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.004) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('apitest', '0007_auto_20171018_1732', '2017-10-18 09:32:02.427000'); args=['apitest', u'0007_auto_20171018_1732', u'2017-10-18 09:32:02.427000']
+2017-10-18 17:32:02,509 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:32:02,513 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:32:02,595 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'logentry' AND "django_content_type"."app_label" = 'admin'); args=('logentry', 'admin')
+2017-10-18 17:32:02,609 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+2017-10-18 17:32:02,615 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+2017-10-18 17:32:02,621 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'group' AND "django_content_type"."app_label" = 'auth'); args=('group', 'auth')
+2017-10-18 17:32:02,627 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'permission' AND "django_content_type"."app_label" = 'auth'); args=('permission', 'auth')
+2017-10-18 17:32:02,631 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'user' AND "django_content_type"."app_label" = 'auth'); args=('user', 'auth')
+2017-10-18 17:32:02,640 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+2017-10-18 17:32:02,645 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+2017-10-18 17:32:02,651 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'contenttype' AND "django_content_type"."app_label" = 'contenttypes'); args=('contenttype', 'contenttypes')
+2017-10-18 17:32:02,658 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+2017-10-18 17:32:02,664 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+2017-10-18 17:32:02,670 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'session' AND "django_content_type"."app_label" = 'sessions'); args=('session', 'sessions')
+2017-10-18 17:32:02,677 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+2017-10-18 17:32:02,683 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+2017-10-18 17:32:02,688 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'environment' AND "django_content_type"."app_label" = 'apitest'); args=('environment', 'apitest')
+2017-10-18 17:32:02,694 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'database' AND "django_content_type"."app_label" = 'apitest'); args=('database', 'apitest')
+2017-10-18 17:32:02,700 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tcheckdb' AND "django_content_type"."app_label" = 'apitest'); args=('tcheckdb', 'apitest')
+2017-10-18 17:32:02,706 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'commission' AND "django_content_type"."app_label" = 'apitest'); args=('commission', 'apitest')
+2017-10-18 17:32:02,710 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'project' AND "django_content_type"."app_label" = 'apitest'); args=('project', 'apitest')
+2017-10-18 17:32:02,717 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'email' AND "django_content_type"."app_label" = 'apitest'); args=('email', 'apitest')
+2017-10-18 17:32:02,721 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tresponse' AND "django_content_type"."app_label" = 'apitest'); args=('tresponse', 'apitest')
+2017-10-18 17:32:02,727 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'interface' AND "django_content_type"."app_label" = 'apitest'); args=('interface', 'apitest')
+2017-10-18 17:32:02,733 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tdatavar' AND "django_content_type"."app_label" = 'apitest'); args=('tdatavar', 'apitest')
+2017-10-18 17:32:02,739 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'testcase' AND "django_content_type"."app_label" = 'apitest'); args=('testcase', 'apitest')
+2017-10-18 17:32:02,744 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tpreoperation' AND "django_content_type"."app_label" = 'apitest'); args=('tpreoperation', 'apitest')
+2017-10-18 17:32:02,750 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'trequest' AND "django_content_type"."app_label" = 'apitest'); args=('trequest', 'apitest')
+2017-10-18 17:32:02,759 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18)
+2017-10-18 17:32:02,766 [MainThread:9388] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'apitest'; args=('apitest',)
+2017-10-18 17:33:12,713 [Dummy-1:9964] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:33:12,720 [Dummy-1:9964] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:33:26,624 [MainThread:10108] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:33:26,631 [MainThread:10108] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:34:03,351 [Dummy-1:9232] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:34:03,361 [Dummy-1:9232] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:34:04,263 [MainThread:8332] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:34:04,266 [MainThread:8332] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:34:59,573 [MainThread:9944] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:34:59,581 [MainThread:9944] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:35:24,204 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:35:24,211 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:35:24,216 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:35:24,220 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:35:24,549 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:35:24,555 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:35:24,561 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'logentry' AND "django_content_type"."app_label" = 'admin'); args=('logentry', 'admin')
+2017-10-18 17:35:24,572 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+2017-10-18 17:35:24,576 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+2017-10-18 17:35:24,582 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'group' AND "django_content_type"."app_label" = 'auth'); args=('group', 'auth')
+2017-10-18 17:35:24,588 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'permission' AND "django_content_type"."app_label" = 'auth'); args=('permission', 'auth')
+2017-10-18 17:35:24,595 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'user' AND "django_content_type"."app_label" = 'auth'); args=('user', 'auth')
+2017-10-18 17:35:24,602 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+2017-10-18 17:35:24,608 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+2017-10-18 17:35:24,614 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'contenttype' AND "django_content_type"."app_label" = 'contenttypes'); args=('contenttype', 'contenttypes')
+2017-10-18 17:35:24,621 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+2017-10-18 17:35:24,628 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+2017-10-18 17:35:24,634 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'session' AND "django_content_type"."app_label" = 'sessions'); args=('session', 'sessions')
+2017-10-18 17:35:24,641 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+2017-10-18 17:35:24,645 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+2017-10-18 17:35:24,651 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'environment' AND "django_content_type"."app_label" = 'apitest'); args=('environment', 'apitest')
+2017-10-18 17:35:24,657 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'database' AND "django_content_type"."app_label" = 'apitest'); args=('database', 'apitest')
+2017-10-18 17:35:24,663 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tcheckdb' AND "django_content_type"."app_label" = 'apitest'); args=('tcheckdb', 'apitest')
+2017-10-18 17:35:24,667 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'commission' AND "django_content_type"."app_label" = 'apitest'); args=('commission', 'apitest')
+2017-10-18 17:35:24,674 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'project' AND "django_content_type"."app_label" = 'apitest'); args=('project', 'apitest')
+2017-10-18 17:35:24,680 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'email' AND "django_content_type"."app_label" = 'apitest'); args=('email', 'apitest')
+2017-10-18 17:35:24,684 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tresponse' AND "django_content_type"."app_label" = 'apitest'); args=('tresponse', 'apitest')
+2017-10-18 17:35:24,690 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tdatavar' AND "django_content_type"."app_label" = 'apitest'); args=('tdatavar', 'apitest')
+2017-10-18 17:35:24,694 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'testcase' AND "django_content_type"."app_label" = 'apitest'); args=('testcase', 'apitest')
+2017-10-18 17:35:24,700 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'interface' AND "django_content_type"."app_label" = 'apitest'); args=('interface', 'apitest')
+2017-10-18 17:35:24,707 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tpreoperation' AND "django_content_type"."app_label" = 'apitest'); args=('tpreoperation', 'apitest')
+2017-10-18 17:35:24,711 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'trequest' AND "django_content_type"."app_label" = 'apitest'); args=('trequest', 'apitest')
+2017-10-18 17:35:24,720 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18)
+2017-10-18 17:35:24,726 [MainThread:8876] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'apitest'; args=('apitest',)
+2017-10-18 17:36:04,020 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:36:04,026 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:36:17,730 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:36:17,736 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:36:17,740 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:36:17,743 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:36:18,030 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:36:18,036 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:36:18,040 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'logentry' AND "django_content_type"."app_label" = 'admin'); args=('logentry', 'admin')
+2017-10-18 17:36:18,049 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+2017-10-18 17:36:18,053 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+2017-10-18 17:36:18,059 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'group' AND "django_content_type"."app_label" = 'auth'); args=('group', 'auth')
+2017-10-18 17:36:18,062 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'permission' AND "django_content_type"."app_label" = 'auth'); args=('permission', 'auth')
+2017-10-18 17:36:18,068 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'user' AND "django_content_type"."app_label" = 'auth'); args=('user', 'auth')
+2017-10-18 17:36:18,073 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+2017-10-18 17:36:18,078 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+2017-10-18 17:36:18,082 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'contenttype' AND "django_content_type"."app_label" = 'contenttypes'); args=('contenttype', 'contenttypes')
+2017-10-18 17:36:18,088 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+2017-10-18 17:36:18,092 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+2017-10-18 17:36:18,096 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'session' AND "django_content_type"."app_label" = 'sessions'); args=('session', 'sessions')
+2017-10-18 17:36:18,102 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+2017-10-18 17:36:18,107 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+2017-10-18 17:36:18,111 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'environment' AND "django_content_type"."app_label" = 'apitest'); args=('environment', 'apitest')
+2017-10-18 17:36:18,115 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'database' AND "django_content_type"."app_label" = 'apitest'); args=('database', 'apitest')
+2017-10-18 17:36:18,118 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tcheckdb' AND "django_content_type"."app_label" = 'apitest'); args=('tcheckdb', 'apitest')
+2017-10-18 17:36:18,124 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'commission' AND "django_content_type"."app_label" = 'apitest'); args=('commission', 'apitest')
+2017-10-18 17:36:18,128 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'project' AND "django_content_type"."app_label" = 'apitest'); args=('project', 'apitest')
+2017-10-18 17:36:18,131 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'email' AND "django_content_type"."app_label" = 'apitest'); args=('email', 'apitest')
+2017-10-18 17:36:18,135 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tresponse' AND "django_content_type"."app_label" = 'apitest'); args=('tresponse', 'apitest')
+2017-10-18 17:36:18,141 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tdatavar' AND "django_content_type"."app_label" = 'apitest'); args=('tdatavar', 'apitest')
+2017-10-18 17:36:18,144 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'testcase' AND "django_content_type"."app_label" = 'apitest'); args=('testcase', 'apitest')
+2017-10-18 17:36:18,148 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'interface' AND "django_content_type"."app_label" = 'apitest'); args=('interface', 'apitest')
+2017-10-18 17:36:18,154 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tpreoperation' AND "django_content_type"."app_label" = 'apitest'); args=('tpreoperation', 'apitest')
+2017-10-18 17:36:18,157 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'trequest' AND "django_content_type"."app_label" = 'apitest'); args=('trequest', 'apitest')
+2017-10-18 17:36:18,167 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18)
+2017-10-18 17:36:18,171 [MainThread:9968] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'apitest'; args=('apitest',)
+2017-10-18 17:36:52,494 [MainThread:9648] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:36:52,502 [MainThread:9648] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:37:28,211 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:37:28,220 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:37:28,226 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:37:28,230 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:37:28,584 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:37:28,586 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:37:28,592 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'logentry' AND "django_content_type"."app_label" = 'admin'); args=('logentry', 'admin')
+2017-10-18 17:37:28,601 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+2017-10-18 17:37:28,605 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+2017-10-18 17:37:28,609 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'group' AND "django_content_type"."app_label" = 'auth'); args=('group', 'auth')
+2017-10-18 17:37:28,615 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'permission' AND "django_content_type"."app_label" = 'auth'); args=('permission', 'auth')
+2017-10-18 17:37:28,619 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'user' AND "django_content_type"."app_label" = 'auth'); args=('user', 'auth')
+2017-10-18 17:37:28,625 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+2017-10-18 17:37:28,630 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+2017-10-18 17:37:28,634 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'contenttype' AND "django_content_type"."app_label" = 'contenttypes'); args=('contenttype', 'contenttypes')
+2017-10-18 17:37:28,641 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+2017-10-18 17:37:28,645 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+2017-10-18 17:37:28,651 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'session' AND "django_content_type"."app_label" = 'sessions'); args=('session', 'sessions')
+2017-10-18 17:37:28,657 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+2017-10-18 17:37:28,661 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+2017-10-18 17:37:28,665 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'environment' AND "django_content_type"."app_label" = 'apitest'); args=('environment', 'apitest')
+2017-10-18 17:37:28,670 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'database' AND "django_content_type"."app_label" = 'apitest'); args=('database', 'apitest')
+2017-10-18 17:37:28,674 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tcheckdb' AND "django_content_type"."app_label" = 'apitest'); args=('tcheckdb', 'apitest')
+2017-10-18 17:37:28,680 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'commission' AND "django_content_type"."app_label" = 'apitest'); args=('commission', 'apitest')
+2017-10-18 17:37:28,684 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'project' AND "django_content_type"."app_label" = 'apitest'); args=('project', 'apitest')
+2017-10-18 17:37:28,688 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'email' AND "django_content_type"."app_label" = 'apitest'); args=('email', 'apitest')
+2017-10-18 17:37:28,693 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tresponse' AND "django_content_type"."app_label" = 'apitest'); args=('tresponse', 'apitest')
+2017-10-18 17:37:28,697 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tdatavar' AND "django_content_type"."app_label" = 'apitest'); args=('tdatavar', 'apitest')
+2017-10-18 17:37:28,701 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'testcase' AND "django_content_type"."app_label" = 'apitest'); args=('testcase', 'apitest')
+2017-10-18 17:37:28,707 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'interface' AND "django_content_type"."app_label" = 'apitest'); args=('interface', 'apitest')
+2017-10-18 17:37:28,710 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tpreoperation' AND "django_content_type"."app_label" = 'apitest'); args=('tpreoperation', 'apitest')
+2017-10-18 17:37:28,716 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'trequest' AND "django_content_type"."app_label" = 'apitest'); args=('trequest', 'apitest')
+2017-10-18 17:37:28,723 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18)
+2017-10-18 17:37:28,727 [MainThread:9532] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'apitest'; args=('apitest',)
+2017-10-18 17:38:07,105 [MainThread:9408] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:38:07,114 [MainThread:9408] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:38:51,737 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:38:51,746 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:38:51,750 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:38:51,753 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:38:52,107 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:38:52,111 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:38:52,118 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'logentry' AND "django_content_type"."app_label" = 'admin'); args=('logentry', 'admin')
+2017-10-18 17:38:52,127 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+2017-10-18 17:38:52,131 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+2017-10-18 17:38:52,137 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'group' AND "django_content_type"."app_label" = 'auth'); args=('group', 'auth')
+2017-10-18 17:38:52,141 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'permission' AND "django_content_type"."app_label" = 'auth'); args=('permission', 'auth')
+2017-10-18 17:38:52,147 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'user' AND "django_content_type"."app_label" = 'auth'); args=('user', 'auth')
+2017-10-18 17:38:52,154 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+2017-10-18 17:38:52,158 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+2017-10-18 17:38:52,164 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'contenttype' AND "django_content_type"."app_label" = 'contenttypes'); args=('contenttype', 'contenttypes')
+2017-10-18 17:38:52,171 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+2017-10-18 17:38:52,176 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+2017-10-18 17:38:52,180 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'session' AND "django_content_type"."app_label" = 'sessions'); args=('session', 'sessions')
+2017-10-18 17:38:52,187 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+2017-10-18 17:38:52,191 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+2017-10-18 17:38:52,197 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'environment' AND "django_content_type"."app_label" = 'apitest'); args=('environment', 'apitest')
+2017-10-18 17:38:52,201 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'database' AND "django_content_type"."app_label" = 'apitest'); args=('database', 'apitest')
+2017-10-18 17:38:52,206 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tcheckdb' AND "django_content_type"."app_label" = 'apitest'); args=('tcheckdb', 'apitest')
+2017-10-18 17:38:52,211 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'commission' AND "django_content_type"."app_label" = 'apitest'); args=('commission', 'apitest')
+2017-10-18 17:38:52,216 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'project' AND "django_content_type"."app_label" = 'apitest'); args=('project', 'apitest')
+2017-10-18 17:38:52,220 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'email' AND "django_content_type"."app_label" = 'apitest'); args=('email', 'apitest')
+2017-10-18 17:38:52,226 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tresponse' AND "django_content_type"."app_label" = 'apitest'); args=('tresponse', 'apitest')
+2017-10-18 17:38:52,232 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tdatavar' AND "django_content_type"."app_label" = 'apitest'); args=('tdatavar', 'apitest')
+2017-10-18 17:38:52,236 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'testcase' AND "django_content_type"."app_label" = 'apitest'); args=('testcase', 'apitest')
+2017-10-18 17:38:52,242 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'interface' AND "django_content_type"."app_label" = 'apitest'); args=('interface', 'apitest')
+2017-10-18 17:38:52,246 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tpreoperation' AND "django_content_type"."app_label" = 'apitest'); args=('tpreoperation', 'apitest')
+2017-10-18 17:38:52,250 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'trequest' AND "django_content_type"."app_label" = 'apitest'); args=('trequest', 'apitest')
+2017-10-18 17:38:52,259 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18)
+2017-10-18 17:38:52,263 [MainThread:8780] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'apitest'; args=('apitest',)
+2017-10-18 17:49:25,095 [MainThread:7932] [django.db.backends:91] [utils:execute] [DEBUG]- (0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:49:25,104 [MainThread:7932] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:52:58,558 [MainThread:10156] [django.db.backends:91] [utils:execute] [DEBUG]- (0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:52:58,566 [MainThread:10156] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:53:00,417 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:53:00,427 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:53:00,431 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:53:00,434 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:53:00,782 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:53:00,785 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:53:00,789 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'logentry' AND "django_content_type"."app_label" = 'admin'); args=('logentry', 'admin')
+2017-10-18 17:53:00,799 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+2017-10-18 17:53:00,802 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+2017-10-18 17:53:00,808 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'group' AND "django_content_type"."app_label" = 'auth'); args=('group', 'auth')
+2017-10-18 17:53:00,812 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'permission' AND "django_content_type"."app_label" = 'auth'); args=('permission', 'auth')
+2017-10-18 17:53:00,815 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'user' AND "django_content_type"."app_label" = 'auth'); args=('user', 'auth')
+2017-10-18 17:53:00,822 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+2017-10-18 17:53:00,826 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+2017-10-18 17:53:00,831 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'contenttype' AND "django_content_type"."app_label" = 'contenttypes'); args=('contenttype', 'contenttypes')
+2017-10-18 17:53:00,836 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+2017-10-18 17:53:00,841 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+2017-10-18 17:53:00,845 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'session' AND "django_content_type"."app_label" = 'sessions'); args=('session', 'sessions')
+2017-10-18 17:53:00,851 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+2017-10-18 17:53:00,855 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+2017-10-18 17:53:00,858 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'environment' AND "django_content_type"."app_label" = 'apitest'); args=('environment', 'apitest')
+2017-10-18 17:53:00,862 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'database' AND "django_content_type"."app_label" = 'apitest'); args=('database', 'apitest')
+2017-10-18 17:53:00,867 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tcheckdb' AND "django_content_type"."app_label" = 'apitest'); args=('tcheckdb', 'apitest')
+2017-10-18 17:53:00,869 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'commission' AND "django_content_type"."app_label" = 'apitest'); args=('commission', 'apitest')
+2017-10-18 17:53:00,874 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'project' AND "django_content_type"."app_label" = 'apitest'); args=('project', 'apitest')
+2017-10-18 17:53:00,878 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'email' AND "django_content_type"."app_label" = 'apitest'); args=('email', 'apitest')
+2017-10-18 17:53:00,881 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tresponse' AND "django_content_type"."app_label" = 'apitest'); args=('tresponse', 'apitest')
+2017-10-18 17:53:00,884 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tdatavar' AND "django_content_type"."app_label" = 'apitest'); args=('tdatavar', 'apitest')
+2017-10-18 17:53:00,888 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'testcase' AND "django_content_type"."app_label" = 'apitest'); args=('testcase', 'apitest')
+2017-10-18 17:53:00,892 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'interface' AND "django_content_type"."app_label" = 'apitest'); args=('interface', 'apitest')
+2017-10-18 17:53:00,895 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tpreoperation' AND "django_content_type"."app_label" = 'apitest'); args=('tpreoperation', 'apitest')
+2017-10-18 17:53:00,900 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'trequest' AND "django_content_type"."app_label" = 'apitest'); args=('trequest', 'apitest')
+2017-10-18 17:53:00,905 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18)
+2017-10-18 17:53:00,911 [MainThread:9764] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'apitest'; args=('apitest',)
+2017-10-18 17:54:43,081 [Dummy-1:8900] [django.db.backends:91] [utils:execute] [DEBUG]- (0.005) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:54:43,089 [Dummy-1:8900] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:55:01,638 [Thread-2:9596] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 17:55:01,644 [Thread-2:9596] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) INSERT INTO "apitest_email" ("project_id", "switch", "username", "password", "sender", "receiver", "cc", "subject", "content") VALUES ('', NULL, '啊是大苏打', 'asdasdasd', '啊是大苏打', 'asdasd', 'asd', 'asd', 'asdas'); args=[u'', None, u'\u554a\u662f\u5927\u82cf\u6253', u'asdasdasd', u'\u554a\u662f\u5927\u82cf\u6253', u'asdasd', u'asd', u'asd', u'asdas']
+2017-10-18 17:55:01,726 [Thread-2:9596] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "apitest_email"."id", "apitest_email"."project_id", "apitest_email"."switch", "apitest_email"."username", "apitest_email"."password", "apitest_email"."sender", "apitest_email"."receiver", "apitest_email"."cc", "apitest_email"."subject", "apitest_email"."content" FROM "apitest_email" LIMIT 21; args=()
+2017-10-18 17:55:01,736 [Thread-2:9596] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "apitest_email"."id", "apitest_email"."project_id", "apitest_email"."switch", "apitest_email"."username", "apitest_email"."password", "apitest_email"."sender", "apitest_email"."receiver", "apitest_email"."cc", "apitest_email"."subject", "apitest_email"."content" FROM "apitest_email" LIMIT 21; args=()
+2017-10-18 17:55:01,793 [Thread-2:9596] [django.server:124] [basehttp:log_message] [ERROR]- "POST /save_email/ HTTP/1.1" 500 18208
+2017-10-18 17:55:50,772 [Dummy-1:9076] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:55:50,776 [Dummy-1:9076] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 17:57:45,174 [Dummy-1:9104] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 17:57:45,183 [Dummy-1:9104] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 18:01:59,930 [Dummy-1:5836] [django.db.backends:91] [utils:execute] [DEBUG]- (0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 18:01:59,938 [Dummy-1:5836] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 18:06:46,069 [Thread-2:8852] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 18:06:46,082 [Thread-2:8852] [django.db.backends:91] [utils:execute] [DEBUG]- (0.006) INSERT INTO "apitest_email" ("project_id", "switch", "username", "password", "sender", "receiver", "cc", "subject", "content") VALUES ('', NULL, '啊是大苏打', 'asdasdasd', '啊是大苏打', 'asdasd', 'asd', 'asd', 'asdas'); args=[u'', None, u'\u554a\u662f\u5927\u82cf\u6253', u'asdasdasd', u'\u554a\u662f\u5927\u82cf\u6253', u'asdasd', u'asd', u'asd', u'asdas']
+2017-10-18 18:06:46,183 [Thread-2:8852] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_email/ HTTP/1.1" 200 66
+2017-10-18 18:06:51,282 [Thread-3:9640] [django.server:124] [basehttp:log_message] [INFO]- "GET /save_email/ HTTP/1.1" 200 79
+2017-10-18 18:06:51,573 [Thread-4:9924] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-10-18 18:06:51,594 [Thread-4:9924] [django.server:124] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 3983
+2017-10-18 18:11:38,426 [Dummy-1:10068] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 18:11:38,436 [Dummy-1:10068] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 18:12:09,923 [Dummy-1:9324] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 18:12:09,934 [Dummy-1:9324] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 18:12:24,000 [Thread-2:9192] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 18:12:24,010 [Thread-2:9192] [django.db.backends:91] [utils:execute] [DEBUG]- (0.007) INSERT INTO "apitest_email" ("project_id", "switch", "username", "password", "sender", "receiver", "cc", "subject", "content") VALUES ('', 'on', '啊是大苏打', 'asdasdasd', '啊是大苏打', '123', '123', '123123', 'sa奥斯卡觉得奥斯卡觉得和奥斯卡觉得和'); args=[u'', u'on', u'\u554a\u662f\u5927\u82cf\u6253', u'asdasdasd', u'\u554a\u662f\u5927\u82cf\u6253', u'123', u'123', u'123123', u'sa\u5965\u65af\u5361\u89c9\u5f97\u5965\u65af\u5361\u89c9\u5f97\u548c\u5965\u65af\u5361\u89c9\u5f97\u548c']
+2017-10-18 18:12:24,095 [Thread-2:9192] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_email/ HTTP/1.1" 200 66
+2017-10-18 18:13:05,348 [Dummy-1:9720] [django.db.backends:91] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-10-18 18:13:05,357 [Dummy-1:9720] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-10-18 18:13:10,052 [Thread-2:9408] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-10-18 18:13:10,061 [Thread-2:9408] [django.db.backends:91] [utils:execute] [DEBUG]- (0.006) INSERT INTO "apitest_email" ("project_id", "switch", "username", "password", "sender", "receiver", "cc", "subject", "content") VALUES ('fd38ab8824ba5245da33b2e85047937a', 'on', '啊是大苏打', 'asdasdasd', '啊是大苏打', '123', '123', '123123', 'sa奥斯卡觉得奥斯卡觉得和奥斯卡觉得和啊实打实阿萨德阿萨德阿萨德'); args=[u'fd38ab8824ba5245da33b2e85047937a', u'on', u'\u554a\u662f\u5927\u82cf\u6253', u'asdasdasd', u'\u554a\u662f\u5927\u82cf\u6253', u'123', u'123', u'123123', u'sa\u5965\u65af\u5361\u89c9\u5f97\u5965\u65af\u5361\u89c9\u5f97\u548c\u5965\u65af\u5361\u89c9\u5f97\u548c\u554a\u5b9e\u6253\u5b9e\u963f\u8428\u5fb7\u963f\u8428\u5fb7\u963f\u8428\u5fb7']
+2017-10-18 18:13:10,155 [Thread-2:9408] [django.server:124] [basehttp:log_message] [INFO]- "POST /save_email/ HTTP/1.1" 200 66

@@ -56,9 +56,9 @@ def save_project_base(request):
         p_type = request.POST.get('interface-type', "")
         p_desc = request.POST.get('project-desc', "")
         if p_name == '' or p_type == '':
-            return JsonResponse({'status': 40001, 'message': '必要参数输入为空'})
+            return JsonResponse({'status': 40001, 'result': '必要参数输入为空'})
         elif len(p_name) >= 20 or len(p_desc) >= 200:
-            return JsonResponse({'status': 40002, 'message': '参数输入长度超过最大值'})
+            return JsonResponse({'status': 40002, 'result': '参数输入长度超过最大值'})
         else:
             jsons_data = {}
             jsons_data['name'] = p_name
@@ -66,11 +66,11 @@ def save_project_base(request):
             jsons_data["desc"] = p_desc
             if query_json("Project", {"id": p_id}):
                 update("Project", {"id": p_id}, jsons_data)
-                return JsonResponse({"status": "ok", "message": "更新数据成功"})
+                return JsonResponse({"status": "ok", "result": "更新数据成功"})
             else:
                 jsons_data["id"] = p_id
                 store_json("Project", jsons_data)
-                return JsonResponse({"status": "ok", "message": "新增数据成功"})
+                return JsonResponse({"status": "ok", "result": "新增数据成功"})
 
 # 获取项目环境信息接口
 def get_envs(request):
@@ -95,28 +95,24 @@ def get_envs(request):
         return JsonResponse({"status": "10001", "result": "参数错误"})
 
 
-
+# 保存项目环境
 def save_env(request):
     p_id = request.POST.get('project-id', "")
     env_name = request.POST.get('env-name', "")
     env_ip = request.POST.get('env-ip', "")
     env_port = request.POST.get('env-port', "")
     if env_name == '' or env_ip == '' or env_port == '':
-        return JsonResponse({'status': 40001, 'message': '必要参数输入为空'})
-    elif len(env_name) >= 20 or len(env_ip) >= 20 or len(env_port) >=20:
-        return JsonResponse({'status': 40002, 'message': '参数输入长度超过最大值'})
+        return JsonResponse({'status': 40001, 'result': '必要参数输入为空'})
+    elif len(env_name) >= 20 or len(env_ip) >= 20 or len(env_port) >= 20:
+        return JsonResponse({'status': 40002, 'result': '参数输入长度超过最大值'})
     else:
-        jsons_data = {}
-        jsons_data['name'] = env_name
-        jsons_data["ip"] = env_ip
-        jsons_data["port"] = env_port
-        if query_json("Project", {"id": p_id}):
-            update("Project", {"id": p_id}, jsons_data)
-            return JsonResponse({"status": "ok", "message": "更新数据成功"})
-        else:
-            jsons_data["id"] = p_id
-            store_json("Project", jsons_data)
-            return JsonResponse({"status": "ok", "message": "新增数据成功"})
+        jsons_data = dict(name=env_name, ip=env_ip, port=env_port, project_id=p_id)
+        store_json("Environment", jsons_data)
+        return JsonResponse({"status": "ok", "result": "新增数据成功"})
+
+
+
+
 # 获取项目信息
 def get_project(request):
     if request.method == 'GET':
@@ -133,20 +129,25 @@ def get_project(request):
         return JsonResponse({"status": "ok", "result": result})
 
 
-# 保存项目环境信息
-def save_project_env(request):
-    if request.method == 'POST':
-        p_id = request.POST.get('project-id', "")
-
-
 # 保存邮箱设置
 def save_email(request):
-    return
-
-
-# 保存测试环境
-def save_ev(request):
-    return
+    project_id = request.POST.get('project-id', "")
+    switch = request.POST.get('email-switch', "")
+    username = request.POST.get('email-username', "")
+    password = request.POST.get('email-password', "")
+    receiver = request.POST.get('email-receiver', "")
+    cc = request.POST.get('email-cc', "")
+    subject = request.POST.get('email-subject', "")
+    content = request.POST.get('email-content', "")
+    if username == '' or password == '' or receiver == '' or switch == ''or subject == '' or content == '':
+        return JsonResponse({'status': 40001, 'result': '必要参数输入为空'})
+    elif len(username) >= 20 or len(password) >= 20 or len(receiver) >= 100:
+        return JsonResponse({'status': 40002, 'result': '参数输入长度超过最大值'})
+    else:
+        jsons_data = dict(username=username, password=password, sender=username, receiver=receiver,
+                          cc=cc, subject=subject, content=content, project_id=project_id, switch=switch)
+        store_json("Email", jsons_data)
+        return JsonResponse({"status": "ok", "result": "新增数据成功"})
 
 
 # 保存数据库设置
