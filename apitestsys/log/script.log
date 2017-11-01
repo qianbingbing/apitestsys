@@ -785,3 +785,74 @@ Traceback (most recent call last):
     return Database.Cursor.execute(self, query, params)
 OperationalError: no such table: apitest_email
 2017-10-18 18:06:51,592 [Thread-4:9924] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-10-19 09:35:23,240 [Thread-8:7272] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /save_email/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\apitestsys\apitest\views.py", line 136, in save_email
+    req = json.loads(request.body)
+  File "C:\Python27\lib\json\__init__.py", line 310, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\lib\json\decoder.py", line 346, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\lib\json\decoder.py", line 364, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+2017-10-19 09:35:30,752 [Thread-9:7344] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /save_email/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\apitestsys\apitest\views.py", line 136, in save_email
+    req = json.loads(request.body)
+  File "C:\Python27\lib\json\__init__.py", line 310, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\lib\json\decoder.py", line 346, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\lib\json\decoder.py", line 364, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+2017-10-19 09:37:38,727 [Thread-2:2756] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /save_email/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\apitestsys\apitest\views.py", line 135, in save_email
+    req = json.loads(request.body)
+  File "C:\Python27\lib\json\__init__.py", line 310, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\lib\json\decoder.py", line 346, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\lib\json\decoder.py", line 364, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+2017-10-19 09:59:39,002 [Thread-2:4284] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /save_email/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\apitestsys\apitest\views.py", line 136, in save_email
+    json = request.POST['data']
+  File "C:\Python27\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "u'data'"
+2017-10-19 13:01:34,931 [Thread-58:11132] [django.request:152] [base:get_response] [WARNING]- Not Found: /get_db/
+2017-10-27 11:01:30,380 [Thread-32:1336] [django.request:152] [base:get_response] [WARNING]- Not Found: /commissonList/
+2017-10-27 11:01:30,543 [Thread-33:3960] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-10-27 11:17:51,566 [Thread-44:3256] [django.request:152] [base:get_response] [WARNING]- Not Found: /commissonList/
+2017-10-27 16:07:17,575 [Thread-71:9756] [django.request:152] [base:get_response] [WARNING]- Not Found: /commissonList/
+2017-10-27 16:08:28,325 [Thread-82:9960] [django.request:152] [base:get_response] [WARNING]- Not Found: /get_db/
+2017-10-27 16:08:32,732 [Thread-83:9968] [django.request:152] [base:get_response] [WARNING]- Not Found: /get_db/

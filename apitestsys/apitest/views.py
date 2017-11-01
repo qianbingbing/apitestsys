@@ -4,6 +4,7 @@ from django.http import HttpResponse,HttpResponseRedirect,JsonResponse
 import logging
 from django.shortcuts import render
 import models
+import json
 from django.core import serializers
 # Create your views here.
 logger = logging.getLogger('django')
@@ -74,18 +75,13 @@ def save_project_base(request):
 
 # 获取项目环境信息接口
 def get_envs(request):
-    project_id = request.GET.get("project_id")
+    project_id = request.POST.get("project_id")
+    print project_id
     if project_id:
         results = []
         envs = query_json("Environment", {"project_id": project_id})
         for i in envs:
-            result = {}
-            result["id"] = i.id
-            result["project_id"] = i.project_id
-            result["name"] = i.name
-            result["ip"] = i.ip
-            result["port"] = i.port
-            result["database"] = ""
+            result = dict(id=i.id, project_id=i.project_id, name=i.name, ip=i.ip, port=i.port, database_ip="")
             database = query_json("Database", {"project_env_id": i.id})
             for j in database:
                 result["database"] = j.ip
@@ -131,27 +127,29 @@ def get_project(request):
 
 # 保存邮箱设置
 def save_email(request):
-    project_id = request.POST.get('project-id', "")
-    switch = request.POST.get('email-switch', "")
-    username = request.POST.get('email-username', "")
-    password = request.POST.get('email-password', "")
-    receiver = request.POST.get('email-receiver', "")
-    cc = request.POST.get('email-cc', "")
-    subject = request.POST.get('email-subject', "")
-    content = request.POST.get('email-content', "")
-    if username == '' or password == '' or receiver == '' or switch == ''or subject == '' or content == '':
-        return JsonResponse({'status': 40001, 'result': '必要参数输入为空'})
-    elif len(username) >= 20 or len(password) >= 20 or len(receiver) >= 100:
-        return JsonResponse({'status': 40002, 'result': '参数输入长度超过最大值'})
-    else:
-        jsons_data = dict(username=username, password=password, sender=username, receiver=receiver,
-                          cc=cc, subject=subject, content=content, project_id=project_id, switch=switch)
-        store_json("Email", jsons_data)
-        return JsonResponse({"status": "ok", "result": "新增数据成功"})
-
+    if request.method == "POST":
+        print request.POST
+        project_id = request.POST.get('project-id', "")
+        switch = request.POST.get('email-switch', "")
+        username = request.POST.get('email-username', "")
+        password = request.POST.get('email-password', "")
+        receiver = request.POST.get('email-receiver', "")
+        cc = request.POST.get('email-cc', "")
+        subject = request.POST.get('email-subject', "")
+        content = request.POST.get('email-content', "")
+        if username == '' or password == '' or receiver == '' or switch == ''or subject == '' or content == '':
+            return JsonResponse({'status': 40001, 'result': '必要参数输入为空'})
+        elif len(username) >= 20 or len(password) >= 20 or len(receiver) >= 100:
+            return JsonResponse({'status': 40002, 'result': '参数输入长度超过最大值'})
+        else:
+            jsons_data = dict(username=username, password=password, sender=username, receiver=receiver,
+                              cc=cc, subject=subject, content=content, project_id=project_id, switch=switch)
+            store_json("Email", jsons_data)
+            return JsonResponse({"status": "ok", "result": "新增数据成功"})
 
 # 保存数据库设置
 def save_db_setting():
+
     return
 
 
