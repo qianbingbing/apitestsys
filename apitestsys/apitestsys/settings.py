@@ -121,7 +121,7 @@ STATICFILES_DIRS = (
     ('fonts', os.path.join(STATIC_ROOT, 'fonts').replace('\\', '/')),
 )
 
-
+'''
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': True,
@@ -204,3 +204,4 @@ LOGGING = {
         }
     }
 }
+'''

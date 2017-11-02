@@ -7,8 +7,6 @@ import models
 import json
 from django.core import serializers
 # Create your views here.
-logger = logging.getLogger('django')
-
 
 # 注册页面
 def register(request):
@@ -25,8 +23,6 @@ def login_action(request):
     if request.method == 'POST':
         username = request.POST.get('username', '')
         password = request.POST.get('password', '')
-        logger.info(username)
-        logger.info(password)
         '''
         user = authenticate(username=username, password=password)
         if user is not None:
@@ -76,7 +72,6 @@ def save_project_base(request):
 # 获取项目环境信息接口
 def get_envs(request):
     project_id = request.POST.get("project_id")
-    print project_id
     if project_id:
         results = []
         envs = query_json("Environment", {"project_id": project_id})
@@ -107,28 +102,26 @@ def save_env(request):
         return JsonResponse({"status": "ok", "result": "新增数据成功"})
 
 
-
-
 # 获取项目信息
-def get_project(request):
-    if request.method == 'GET':
-        result = {}
+def get_project_base(request):
+    if request.method == 'POST':
         # 获取项目id
-        id = request.GET.get("project_id")
-        # 获取项目基础信息
-        project_base = query_json("Project", {"id": id})
-        result['base'] = project_base
-        project_envs = query_json("Environment", {"project_id": id})
-        result['envs'] = project_envs
-        project_email = query_json("Email", {"project_id": id})
-        result['eamil'] = project_email
-        return JsonResponse({"status": "ok", "result": result})
+        id = request.POST.get("project_id")
+        if id:
+            # 获取项目基础信息
+            project_base = query_json("Project", {"id": id})
+            results = []
+            for i in project_base:
+                result = dict(project_name=i.name, interface_type=i.interface_type, project_desc=i.desc)
+                results.append(result)
+            return JsonResponse({"status": "ok", "result": results})
+        else:
+            return JsonResponse({"status": "10001", "result": "参数传递错误"})
 
 
 # 保存邮箱设置
 def save_email(request):
     if request.method == "POST":
-        print request.POST
         project_id = request.POST.get('project-id', "")
         switch = request.POST.get('email-switch', "")
         username = request.POST.get('email-username', "")
@@ -137,15 +130,39 @@ def save_email(request):
         cc = request.POST.get('email-cc', "")
         subject = request.POST.get('email-subject', "")
         content = request.POST.get('email-content', "")
-        if username == '' or password == '' or receiver == '' or switch == ''or subject == '' or content == '':
+        if username == '' or password == '' or receiver == '' or subject == '' or content == '':
             return JsonResponse({'status': 40001, 'result': '必要参数输入为空'})
         elif len(username) >= 20 or len(password) >= 20 or len(receiver) >= 100:
             return JsonResponse({'status': 40002, 'result': '参数输入长度超过最大值'})
         else:
             jsons_data = dict(username=username, password=password, sender=username, receiver=receiver,
                               cc=cc, subject=subject, content=content, project_id=project_id, switch=switch)
-            store_json("Email", jsons_data)
-            return JsonResponse({"status": "ok", "result": "新增数据成功"})
+            if query_json("Email", {"project_id": project_id}):
+                print "更新email数据"
+                update("Email", {"project_id": project_id}, jsons_data)
+                return JsonResponse({"status": "ok", "result": "更新数据成功"})
+            else:
+                print "插入email数据"
+                store_json("Email", jsons_data)
+                return JsonResponse({"status": "ok", "result": "新增数据成功"})
+
+#获取emial信息
+def get_email(request):
+    if request.method == 'POST':
+        # 获取项目id
+        project_id = request.POST.get("project_id")
+        if project_id:
+            # 获取项目基础信息
+            emails = query_json("Email", {"project_id": project_id})
+            results = []
+            for i in emails:
+                result = dict(switch=i.switch, username=i.username, password=i.password, receiver=i.receiver, cc=i.cc,
+                              subject=i.subject, content=i.content)
+                results.append(result)
+            return JsonResponse({"status": "ok", "result": results})
+        else:
+            return JsonResponse({"status": "10001", "result": "参数传递错误"})
+
 
 # 保存数据库设置
 def save_db_setting():
@@ -233,7 +250,6 @@ def query_json(tablename,filter):
     """
     table = getattr(models, tablename)
     querySet = table.objects.filter(**filter)
-    print querySet
     return querySet
 
 def update(tablename, filter, context):

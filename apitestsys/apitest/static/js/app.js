@@ -194,9 +194,55 @@ function getUrlParam(name) {
 
 
 /*==============================================================*/
+/*------ ajax保存项目基本详情 ---------------*/
+function save_project_base() {
+    $.ajax({
+            //几个参数需要注意一下
+                type: "POST",//方法类型
+                dataType: "json",//预期服务器返回的数据类型
+                url: "/save_project_base/" ,//url
+                data: $("#form1").serialize(),
+                success: function (result) {
+                    if ( result.status == "ok" ) {
+                        targeTo(1)
+                        getEnvs()
+                    }
+                    else{
+                        alert(result.result);
+                    }
+                },
+                error : function() {
+                    alert("服务器异常");
+                }
+            });
+}
+/*------ ajax获取项目基本详情 ---------------*/
+function get_project_base(){
+    var project_id = getUrlParam("id")
+    $.ajax({
+            //几个参数需要注意一下
+                type: "POST",//方法类型
+                dataType: "json",//预期服务器返回的数据类型
+                url: "/get_project/", //url
+                data:{"project_id":project_id},
+                success: function (result) {
+                    if ( result.status == "ok" ) {
+                        var data = result.result
+                        $("#project-name").val(data[0].project_name)
+                        $("#project-desc").val(data[0].project_desc)
+                        $("#interface-type").val(data[0].interface_type)
+                    }
+                    else{
+                      alert(result.result);
+                    }
+                },
+                error : function() {
+                    alert("服务器异常");
+                }
+            });
+}
 /*------------ ajax获取项目环境列表-----------*/
 function getEnvs() {
-
     var project_id = getUrlParam("id")
     $.ajax({
                 type: "POST",//方法类型
@@ -225,7 +271,7 @@ function getEnvs() {
                             "<td>\n" +
                                 " <div class=\"cell\">\n" +
                                 "<button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#primaryModal\"\n" +
-                                "onclick=\"getDB()\">\n" +
+                                "onclick=getDB("+data[i].id+")>\n" +
                                 " 关联数据库\n" +
                                 "</button>\n" +
                                 "<button type=\"button\" class=\"btn btn-outline-warning\" onclick=deleteEnv("+ data[i].id + ")>\n" +
@@ -239,26 +285,6 @@ function getEnvs() {
                         console.log(row)
                         $("#tb-env-list").html(row);
                         console.log("#=-------渲染结束---------")
-                    }
-                    else{
-                      alert(result.result);
-                    }
-                },
-                error : function() {
-                    alert("服务器异常");
-                }
-            });
-}
-/*------ ajax获得项目详情 ---------------*/
-function get_project() {
-    $.ajax({
-            //几个参数需要注意一下
-                type: "get",//方法类型
-                dataType: "json",//预期服务器返回的数据类型
-                url: "/get_project/?project_id=944bd14f7ce1143bb61225802fb45d28" ,//url
-                success: function (result) {
-                    if ( result.status == "ok" ) {
-
                     }
                     else{
                       alert(result.result);
@@ -353,7 +379,39 @@ function saveEmailsetting(){
             });
 
 }
+/*------------ajax获取邮箱设置 -----------------*/
+function getEmailsetting(){
+    var project_id = getUrlParam("id")
+     $.ajax({
+            //几个参数需要注意一下
+                type: "POST",//方法类型
+                dataType: "json",//预期服务器返回的数据类型
+                url: "/get_email/" ,//url
+                data: {"project_id":project_id},
+                success: function (result) {
+                    if ( result.status == "ok" ) {
+                        var data = result.result
+                        $("#email-switch").val(data[0].switch)
+                        $("#email-username").val(data[0].username)
+                        $("#email-password").val(data[0].password)
+                        $("#email-receiver").val(data[0].receiver)
+                        $("#email-cc").val(data[0].cc)
+                        $("#email-subject").val(data[0].subject)
+                        $("#email-content").val(data[0].content)
+                    }
+                    else{
+                        alert(result.result);
+                    }
+                },
+                error : function() {
+                    alert("服务器异常");
+                }
+            });
+
+}
+/*------------ajax获取数据库信息 -----------------*/
 function getDB(env_id) {
+    console.log(env_id)
     $.ajax({
                 type: "get",//方法类型
                 dataType: "json",//预期服务器返回的数据类型

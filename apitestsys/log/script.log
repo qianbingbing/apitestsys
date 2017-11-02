@@ -856,3 +856,71 @@ MultiValueDictKeyError: "u'data'"
 2017-10-27 16:07:17,575 [Thread-71:9756] [django.request:152] [base:get_response] [WARNING]- Not Found: /commissonList/
 2017-10-27 16:08:28,325 [Thread-82:9960] [django.request:152] [base:get_response] [WARNING]- Not Found: /get_db/
 2017-10-27 16:08:32,732 [Thread-83:9968] [django.request:152] [base:get_response] [WARNING]- Not Found: /get_db/
+2017-11-02 10:20:57,457 [Thread-29:2268] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /get_project/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\apitestsys\apitest\views.py", line 122, in get_project_base
+    return JsonResponse({"status": "ok", "result": result})
+  File "C:\Python27\lib\site-packages\django\http\response.py", line 530, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "C:\Python27\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Python27\lib\json\encoder.py", line 201, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python27\lib\json\encoder.py", line 264, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Python27\lib\site-packages\django\core\serializers\json.py", line 124, in default
+    return super(DjangoJSONEncoder, self).default(o)
+  File "C:\Python27\lib\json\encoder.py", line 178, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <QuerySet [<Project: Project object>]> is not JSON serializable
+2017-11-02 10:21:48,497 [Thread-56:3856] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /get_project/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\apitestsys\apitest\views.py", line 122, in get_project_base
+    return JsonResponse({"status": "ok", "result": result})
+  File "C:\Python27\lib\site-packages\django\http\response.py", line 530, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "C:\Python27\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Python27\lib\json\encoder.py", line 201, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python27\lib\json\encoder.py", line 264, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Python27\lib\site-packages\django\core\serializers\json.py", line 124, in default
+    return super(DjangoJSONEncoder, self).default(o)
+  File "C:\Python27\lib\json\encoder.py", line 178, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <QuerySet [<Project: Project object>]> is not JSON serializable
+2017-11-02 10:33:58,739 [Thread-28:10236] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /get_project/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\apitestsys\apitest\views.py", line 122, in get_project_base
+    result = dict(project_name=i.name, interface_type=i.type, project_desc=i.desc)
+AttributeError: 'Project' object has no attribute 'type'
+2017-11-02 10:34:26,851 [Thread-54:2160] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /get_project/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\apitestsys\apitest\views.py", line 122, in get_project_base
+    result = dict(project_name=i.name, interface_type=i.type, project_desc=i.desc)
+AttributeError: 'Project' object has no attribute 'type'
