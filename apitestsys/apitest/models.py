@@ -13,6 +13,7 @@ class Environment(models.Model):
     project_id = models.CharField(max_length=100, null=True)
     data_base_id = models.CharField(max_length=200, null=True)
 
+
 # 项目设置-数据库
 class Database(models.Model):
     project_env_id = models.IntegerField(null=True)
@@ -61,7 +62,7 @@ class Email(models.Model):
 # 接口
 class Interface(models.Model):
     # 项目id
-    project_id = models.IntegerField()
+    project_id = models.CharField(max_length=32)
     # 接口名称
     name = models.CharField(max_length=20)
     # 请求路径

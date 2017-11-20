@@ -127,7 +127,7 @@ $(document).on('click', '.card-actions a', function(e){
   }
 
 });
-var num = 0;
+
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
@@ -148,29 +148,9 @@ $(".card-header").each(function () {
 $("#db_dialog").click(function () {
           $("#myModal").show();
     })
-function save_project_base() {
-    $.ajax({
-            //几个参数需要注意一下
-                type: "POST",//方法类型
-                dataType: "json",//预期服务器返回的数据类型
-                url: "/save_project_base/" ,//url
-                data: $("#form1").serialize(),
-                success: function (result) {
-                    if ( result.status == "ok" ) {
-                        targeTo(1)
-                        getEnvs()
-                    }
-                    else{
-                        alert(result.result);
-                    }
-                },
-                error : function() {
-                    alert("服务器异常");
-                }
-            });
-}
 
-/*---------产生uuid -------------*/
+
+/*---------随机生成uuid -------------*/
 function guid() {
     function S4() {
         return (((1+Math.random())*0x10000)|0).toString(16).substring(1);
@@ -216,6 +196,7 @@ function save_project_base() {
                 }
             });
 }
+
 /*------ ajax获取项目基本详情 ---------------*/
 function get_project_base(){
     var project_id = getUrlParam("id")
@@ -263,7 +244,7 @@ function getEnvs() {
                             else{
                                 database = data[i].database_ip
                             }
-                            row += "<tr>" +
+                            row += "<tr class=\"env_tr_"+data[i].id+"\">" +
                             "<td>" + data[i].name + "</td>" +
                             "<td>" + data[i].ip + "</td>" +
                             "<td>" + data[i].port + "</td>" +
@@ -295,7 +276,7 @@ function getEnvs() {
                 }
             });
 }
-/*------------ajax保存项目环境 ---------------*/
+/*------------ajax保存项目环境信息 ---------------*/
 function saveEnv() {
     var len = $("#env_table").find("tbody").find("tr").length;
     if(len<5){
@@ -304,10 +285,10 @@ function saveEnv() {
                 type: "POST",//方法类型
                 dataType: "json",//预期服务器返回的数据类型
                 url: "/save_env/" ,//url
-                data: $("#env_from").serialize(),
+                data: $("#env_form").serialize(),
                 success: function (result) {
                     if ( result.status == "ok" ) {
-                        $('#primaryModal2').modal("hide")
+                        $('#primaryModal2').modal("hide");
                         getEnvs()
                     }
                     else{
@@ -334,8 +315,7 @@ function deleteEnv(env_id) {
          return false;
          }
      else{
-         $(this).parent().parent().parent().remove();
-         num = num - 1
+         $("#env_table .env_tr_"+env_id).hide();
           $.ajax({
             //几个参数需要注意一下
                 type: "POST",//方法类型
@@ -344,7 +324,7 @@ function deleteEnv(env_id) {
                 data: {"env_id":env_id},
                 success: function (result) {
                     if ( result.status == "ok" ) {
-
+                        alert(result.result);
                     }
                     else{
                         alert(result.result);
@@ -409,13 +389,71 @@ function getEmailsetting(){
             });
 
 }
+var project_env_id = "";
 /*------------ajax获取数据库信息 -----------------*/
 function getDB(env_id) {
-    console.log(env_id)
+    console.log(env_id);
+    project_env_id = env_id ;
+    $.ajax({
+                type: "POST",//方法类型
+                dataType: "json",//预期服务器返回的数据类型
+                url: "/get_db/",//url
+                data:{"env_id":env_id,},
+                success: function (result) {
+                    if ( result.status == "ok" ) {
+                        var data = result.result
+                        $("#db-type").val(data[0].type)
+                        $("#db-ip").val(data[0].ip)
+                        $("#db-port").val(data[0].port)
+                        $("#db-username").val(data[0].username)
+                        $("#db-password").val(data[0].password)
+                        $("#db-name").val(data[0].name)
+                    }
+                    else{
+                      alert(result.result);
+                    }
+                },
+                error : function() {
+                    alert("服务器异常");
+                }
+            });
+}
+
+/*------------ajax获取数据库信息 -----------------*/
+function saveDB() {
+    var data = $("#db_form").serialize();
+    data = data+"&env-id="+project_env_id;
+    $.ajax({
+                type: "POST",//方法类型
+                dataType: "json",//预期服务器返回的数据类型
+                url: "/save_db/",//url
+                data:data,
+                success: function (result) {
+                    if ( result.status == "ok" ) {
+                        console.log("result==============="+ result.result);
+                        //删除成功，关闭弹窗并重新获取数据
+                        $('#primaryModal').modal("hide");
+                        getEnvs()
+                    }
+                    else{
+                      alert(result.result);
+                    }
+                },
+                error : function() {
+                    alert("服务器异常");
+                }
+            });
+}
+
+/*------------ajax获取项目列表 -----------------*/
+function get_project_list(page,pagesize) {
+    console.log(page);
+    console.log(pagesize);
     $.ajax({
                 type: "get",//方法类型
                 dataType: "json",//预期服务器返回的数据类型
-                url: "/get_db/?env_id="%env_id ,//url
+                url: "/get_project_list/" ,
+                data: {"page":page,"pagesize":pagesize},
                 success: function (result) {
                     if ( result.status == "ok" ) {
                         console.log(result.result)

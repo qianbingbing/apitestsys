@@ -123,7 +123,7 @@
                                        </div>
                                    </div>
                                    <div class="form-group row">
-                                       <label class="col-md-1 form-control-label" for="textarea-input">主送人</label>
+                                       <label class="col-md-1 form-control-label" for="email-input">主送人</label>
                                             <div class="col-md-10">
                                                 <textarea id="email-receiver" name="email-receiver" rows="2" class="form-control" placeholder="可填写多个主送人"></textarea>
                                             </div>
@@ -159,7 +159,7 @@
                </div>
            </div>
            <!--关联数据库弹窗-->
-           <div class="modal fade" id="primaryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="" aria-hidden="true">
+           <div class="modal fade" id="primaryModalprimaryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="" aria-hidden="true">
                     <div class="modal-lg modal-primary" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -169,11 +169,11 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <form action="" method="post" enctype="multipart/form-data" class="form-horizontal ">
+                                <form id ="db_form" action="" method="post" enctype="multipart/form-data" class="form-horizontal ">
                                         <div class="form-group row">
                                             <label class="col-md-3 form-control-label" for="text-input">数据库类型</label>
                                             <div class="col-md-9">
-                                                <select id="db_type" name="db_type" class="form-control">
+                                                <select id="db-type" name="db-type" class="form-control">
                                                     <option value="1" >MySQL</option>
                                                     <option value="2">Mongo</option>
                                                     <option value="3">Oracle</option>
@@ -181,21 +181,21 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-md-3 form-control-label" for="email-input">IP地址</label>
+                                            <label class="col-md-3 form-control-label" for="text-input">IP地址</label>
                                             <div class="col-md-9">
-                                                <input type="email" id="db-ip" name="db-ip" class="form-control" placeholder="请输入IP地址">
+                                                <input type="text" id="db-ip" name="db-ip" class="form-control" placeholder="请输入IP地址">
                                                 <span class="help-block"></span>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-md-3 form-control-label" for="password-input">端口</label>
+                                            <label class="col-md-3 form-control-label" for="text-input">端口</label>
                                             <div class="col-md-9">
                                                 <input type="text" id="db-port" name="db-port" class="form-control" placeholder="请输入端口">
                                                 <span class="help-block"></span>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-md-3 form-control-label" for="password-input">用户名</label>
+                                            <label class="col-md-3 form-control-label" for="text-input">用户名</label>
                                             <div class="col-md-9">
                                                 <input type="text" id="db-username" name="db-username" class="form-control" placeholder="请输入用户名">
                                                 <span class="help-block"></span>
@@ -209,7 +209,7 @@
                                             </div>
                                         </div>
                                        <div class="form-group row">
-                                            <label class="col-md-3 form-control-label" for="password-input">数据库名</label>
+                                            <label class="col-md-3 form-control-label" for="text-input">数据库名</label>
                                             <div class="col-md-9">
                                                 <input type="text" id="db-name" name="db-name" class="form-control" placeholder="请输入数据库名称">
                                                 <span class="help-block"></span>
@@ -219,7 +219,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
-                                <button type="button" class="btn btn-primary">保存</button>
+                                <button type="button" class="btn btn-primary" onclick="saveDB()">保存</button>
                             </div>
                         </div>
                         <!-- /.modal-content -->
@@ -237,7 +237,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <form id ="env_from" method="POST" enctype="multipart/form-data" class="form-horizontal ">
+                                <form id ="env_form" method="POST" enctype="multipart/form-data" class="form-horizontal ">
                                     <input type="text" id="project-id" name="project-id" class="form-control" placeholder="项目id" value="{{ id }}" style="display: none">
                                         <div class="form-group row">
                                             <label class="col-md-3 form-control-label" for="email-input">名称</label>

@@ -16,7 +16,9 @@ Including another URL conf
 from django.conf.urls import url
 from django.contrib import admin
 from apitest import views
+from apitest import interface
 urlpatterns = [
+    # page url list
     url(r'^admin/', admin.site.urls),
     url(r'^register/', views.register),
     url(r'^login/', views.login),
@@ -31,10 +33,15 @@ urlpatterns = [
     url(r'^commissionList/', views.commission_list),
     url(r'^reportList/', views.report_list),
     url(r'^reportDetail/', views.report_detail),
-    url(r'^save_project_base/', views.save_project_base),
-    url(r'^get_project/', views.get_project_base),
-    url(r'^get_envs/', views.get_envs),
-    url(r'^save_env/', views.save_env),
-    url(r'^save_email/', views.save_email),
-    url(r'^get_email/', views.get_email),
+    #  interface url list
+    url(r'^save_project_base/', interface.save_project_base),
+    url(r'^get_project/', interface.get_project_base),
+    url(r'^get_envs/', interface.get_envs),
+    url(r'^save_env/', interface.save_env),
+    url(r'^save_email/', interface.save_email),
+    url(r'^get_email/', interface.get_email),
+    url(r'^get_project_list/', interface.get_project_list),
+    url(r'^get_db/', interface.get_db),
+    url(r'^save_db/', interface.save_db),
+    url(r'^delete_env/', interface.delete_env),
 ]
