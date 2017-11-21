@@ -208,10 +208,13 @@ function get_project_base(){
                 data:{"project_id":project_id},
                 success: function (result) {
                     if ( result.status == "ok" ) {
-                        var data = result.result
-                        $("#project-name").val(data[0].project_name)
-                        $("#project-desc").val(data[0].project_desc)
-                        $("#interface-type").val(data[0].interface_type)
+                        var data = result.result;
+                        if (data.length !=0){
+                            $("#project-name").val(data[0].project_name)
+                            $("#project-desc").val(data[0].project_desc)
+                            $("#interface-type").val(data[0].interface_type)
+                        }
+
                     }
                     else{
                       alert(result.result);
@@ -234,38 +237,39 @@ function getEnvs() {
                     if ( result.status === "ok" ) {
                         var row = "";
                         var data = result.result;
-                        console.log("#=---------开始渲染-------")
-                        for( i in data){
-                            console.log(data[i]);
-                            var database = "";
-                            if (data[i].database_ip == ""){
-                                database = "请先设置数据库"
+                        if (data.length !=0){
+                            console.log("#=---------开始渲染-------");
+                            for( i in data){
+                                console.log(data[i]);
+                                var database = "";
+                                if (data[i].database_ip == ""){
+                                    database = "请先设置数据库"
+                                }
+                                else{
+                                    database = data[i].database_ip
+                                }
+                                row += "<tr class=\"env_tr_"+data[i].id+"\">" +
+                                "<td>" + data[i].name + "</td>" +
+                                "<td>" + data[i].ip + "</td>" +
+                                "<td>" + data[i].port + "</td>" +
+                                "<td>" + database + "</td>" +
+                                "<td>\n" +
+                                    " <div class=\"cell\">\n" +
+                                    "<button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#primaryModal\"\n" +
+                                    "onclick=getDB("+data[i].id+")>\n" +
+                                    " 关联数据库\n" +
+                                    "</button>\n" +
+                                    "<button type=\"button\" class=\"btn btn-outline-warning\" onclick=deleteEnv("+ data[i].id + ")>\n" +
+                                    "<span><i class=\"el-icon-delete\" ></i> 删除</span>\n" +
+                                    "</button>\n" +
+                                    "</div>\n" +
+                                    "<div id=\"show\"></div>\n" +
+                                    "</td>\n" +
+                                "</tr>"
                             }
-                            else{
-                                database = data[i].database_ip
+                            $("#tb-env-list").html(row);
+                            console.log("#=-------渲染结束---------")
                             }
-                            row += "<tr class=\"env_tr_"+data[i].id+"\">" +
-                            "<td>" + data[i].name + "</td>" +
-                            "<td>" + data[i].ip + "</td>" +
-                            "<td>" + data[i].port + "</td>" +
-                            "<td>" + database + "</td>" +
-                            "<td>\n" +
-                                " <div class=\"cell\">\n" +
-                                "<button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#primaryModal\"\n" +
-                                "onclick=getDB("+data[i].id+")>\n" +
-                                " 关联数据库\n" +
-                                "</button>\n" +
-                                "<button type=\"button\" class=\"btn btn-outline-warning\" onclick=deleteEnv("+ data[i].id + ")>\n" +
-                                "<span><i class=\"el-icon-delete\" ></i> 删除</span>\n" +
-                                "</button>\n" +
-                                "</div>\n" +
-                                "<div id=\"show\"></div>\n" +
-                                "</td>\n" +
-                            "</tr>"
-                        }
-                        console.log(row)
-                        $("#tb-env-list").html(row);
-                        console.log("#=-------渲染结束---------")
                     }
                     else{
                       alert(result.result);
@@ -370,14 +374,17 @@ function getEmailsetting(){
                 data: {"project_id":project_id},
                 success: function (result) {
                     if ( result.status == "ok" ) {
-                        var data = result.result
-                        $("#email-switch").val(data[0].switch)
-                        $("#email-username").val(data[0].username)
-                        $("#email-password").val(data[0].password)
-                        $("#email-receiver").val(data[0].receiver)
-                        $("#email-cc").val(data[0].cc)
-                        $("#email-subject").val(data[0].subject)
-                        $("#email-content").val(data[0].content)
+                        var data = result.result;
+                        if (data.length !=0){
+                            $("#email-switch").val(data[0].switch)
+                            $("#email-username").val(data[0].username)
+                            $("#email-password").val(data[0].password)
+                            $("#email-receiver").val(data[0].receiver)
+                            $("#email-cc").val(data[0].cc)
+                            $("#email-subject").val(data[0].subject)
+                            $("#email-content").val(data[0].content)
+                        }
+
                     }
                     else{
                         alert(result.result);
@@ -401,13 +408,16 @@ function getDB(env_id) {
                 data:{"env_id":env_id,},
                 success: function (result) {
                     if ( result.status == "ok" ) {
-                        var data = result.result
-                        $("#db-type").val(data[0].type)
-                        $("#db-ip").val(data[0].ip)
-                        $("#db-port").val(data[0].port)
-                        $("#db-username").val(data[0].username)
-                        $("#db-password").val(data[0].password)
-                        $("#db-name").val(data[0].name)
+                        var data = result.result;
+                        console.log(data)
+                        if (data.length!=0){
+                            $("#db-type").val(data[0].type);
+                            $("#db-ip").val(data[0].ip);
+                            $("#db-port").val(data[0].port);
+                            $("#db-username").val(data[0].username);
+                            $("#db-password").val(data[0].password);
+                            $("#db-name").val(data[0].name)
+                        }
                     }
                     else{
                       alert(result.result);
@@ -446,17 +456,42 @@ function saveDB() {
 }
 
 /*------------ajax获取项目列表 -----------------*/
-function get_project_list(page,pagesize) {
-    console.log(page);
-    console.log(pagesize);
+function get_project_list() {
     $.ajax({
-                type: "get",//方法类型
+                type: "POST",//方法类型
                 dataType: "json",//预期服务器返回的数据类型
-                url: "/get_project_list/" ,
-                data: {"page":page,"pagesize":pagesize},
+                url: "/get_project_list/",//url
                 success: function (result) {
                     if ( result.status == "ok" ) {
-                        console.log(result.result)
+                        var row = "";
+                        console.log(result.result);
+                        var data = result.result;
+                        console.log("#=---------开始渲染-------");
+                        for( i in data){
+                            console.log(data[i]);
+                            row += "  <tr class=\"text-center\" onclick=\"window.location='/interfaceList/'\" >\n" +
+                                    "<td>"+data[i].project_name+"</td>\n" +
+                                    "<td>"+data[i].env_ip+"</td>\n" +
+                                    "<td>"+data[i].db_ip+"</td>\n" +
+                                    "<td>\n" +
+                                    "<span class=\"badge badge-success\" style=\"margin-right: auto\">Active</span>\n" +
+                                    "</td>\n" +
+                                    "<td>\n" +
+                                    "<button type=\"button\" class=\"btn btn-success\" onclick=\"window.location='/addProject/?id="+data[i].project_id+"'\">\n" +
+                                    "编辑\n" +
+                                    "</button>\n" +
+                                    "<button type=\"button\" class=\"btn btn-danger\" onclick=''>\n" +
+                                    "删除\n" +
+                                    "</button>\n" +
+                                    "<button style=\"display: none\" type=\"button\" class=\"btn btn-warning\" >\n" +
+                                    "接口列表\n" +
+                                    "</button >\n" +
+                                    "</td>\n" +
+                                    "</tr>"
+                            }
+                        console.log(row)
+                        $("#tb-project-list").html(row);
+                        console.log("#=--------渲染结束---------");
                     }
                     else{
                       alert(result.result);

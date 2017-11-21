@@ -76,31 +76,23 @@ def save_env(request):
 
 # 获取项目列表接口
 def get_project_list(request):
-    page = request.POST.get('page', "")
-    print page
-    pagesize = request.POST.get('pagesize', "")
-    print pagesize
-    if page == '' or pagesize == '':
-        project = Crud.query_json("Project")
-        results = []
-        for i in project:
-            # 初始化字典将所有值默认为空
-            result = dict.fromkeys(['project_name', 'env_ip', 'db_ip', 'interface_number', 'case_number',
-                                    'email_switch'], "")
-            result['project_name'] = i.name
-            envs = Crud.query_json("Environment", {"project_id": i.id, "checked": "1"})
-            interfaces = Crud.query_json("Interface", {"project_id": i.id})
-
-            if interfaces:
-                result['interface_number'] = len(interfaces)
-            else:
-                result['interface_number'] = 0
-            if envs:
-                result['env_ip'] = envs.ip[0]
-
-            results.append(result)
-
-        return JsonResponse({"status": "ok", "results": results})
+    projects = Crud.query_json("Project")
+    results = []
+    for i in projects:
+        # 初始化字典将所有值默认为空
+        result = dict.fromkeys(['project_id', 'project_name', 'env_ip', 'db_ip',
+                                'email_switch'], "")
+        result['project_id'] = i.id
+        result['project_name'] = i.name
+        envs = Crud.query_json("Environment", {"project_id": i.id, "checked": "1"})
+        emails = Crud.query_json("Email", {"project_id": i.id})
+        for i in emails:
+            result['email_switch'] = i.switch
+        for i in envs:
+            result['env_ip'] = i.ip
+        results.append(result)
+    print results
+    return JsonResponse({"status": "ok", "result": results})
 
 
 # 获取项目环境信息接口
@@ -150,6 +142,7 @@ def get_db(request):
                 for i in databases:
                     result = dict(type=i.type, ip=i.ip, port=i.port, username=i.username, password=i.password, name=i.name)
                     results.append(result)
+
                 return JsonResponse({"status": "ok", "result": results})
             else:
                 return JsonResponse({"status": "ok", "result": results})
@@ -189,7 +182,6 @@ def delete_env(request):
                 return JsonResponse({"status": "ok", "result": "删除成功"})
             except:
                 return JsonResponse({"status": "10001", "result": "删除失败"})
-
         else:
             return JsonResponse({"status": "10002", "result": "参数错误"})
 
@@ -197,7 +189,6 @@ def delete_env(request):
 # 获取Email信息
 def get_email(request):
     if request.method == 'POST':
-        # 获取项目id
         # 获取项目id
         project_id = request.POST.get("project_id")
         if project_id:
