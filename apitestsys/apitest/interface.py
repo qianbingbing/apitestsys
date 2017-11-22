@@ -76,6 +76,9 @@ def save_env(request):
 
 # 获取项目列表接口
 def get_project_list(request):
+    limit = request.GET.get("limit", "")
+    current_page =  request.GET.get("offset", "")
+    print limit, current_page
     projects = Crud.query_json("Project")
     results = []
     for i in projects:
@@ -91,10 +94,9 @@ def get_project_list(request):
         for i in envs:
             result['env_ip'] = i.ip
         results.append(result)
-    print results
-    return JsonResponse({"status": "ok", "result": results})
-
-
+    total = len(projects)
+    rows = results
+    return JsonResponse({"status": "ok", "total": total, "rows": rows})
 # 获取项目环境信息接口
 def get_envs(request):
     project_id = request.POST.get("project_id")

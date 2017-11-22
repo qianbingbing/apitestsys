@@ -1,20 +1,20 @@
 {% extends 'base.html' %}
 {% block main_content %}
     <main class="main">
-    <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/index/">首页</a></li>
-                <li class="breadcrumb-item"><a href="/projectList/">项目列表</a></li>
-                <li class="breadcrumb-item active">接口列表</li>
-            </ol>
     <div class="row">
         <div class="col-lg-12">
+            <div class="card-block">
+                <button type="button" class="btn btn-primary" onclick="window.location='/addInterface/'">新增接口</button>
+            </div>
             <div class="card">
                 <div class="card-header">
-                    <i class="fa fa-align-justify"></i> 用例列表
+                    <i class="fa fa-align-justify"></i> 接口列表
                 </div>
+
                 <div class="card-block ">
                     <table class="table table-condensed">
                         <thead>
+
                         <tr >
                             <th class="text-center">接口名称</th>
                             <th class="text-center">请求路径</th>
@@ -40,7 +40,7 @@
                                 <button type="button" class="btn btn-danger">
                                     删除
                                 </button>
-                                <button type="button" class="btn btn-warning" onclick="window.location='/testcaseList/'">
+                                <button type="button" class="btn btn-warning" onclick="window.location='/caseList/'">
                                     用例列表
                                 </button>
                             </td>

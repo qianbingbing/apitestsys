@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 {% block head %}
@@ -17,6 +16,8 @@
     <link href="../static/css/simple-line-icons.css" rel="stylesheet">
     <!-- Main styles for this application -->
     <link href="../static/css/style.css" rel="stylesheet">
+    <!-- Bootstrap table styles -->
+    <link href="../static/css/bootstrap-table.css" rel="stylesheet" />
 
 </head>
 {% endblock %}
@@ -35,7 +36,7 @@
                 <a class="nav-link" href="/projectList/">项目列表</a>
             </li>
             <li class="nav-item px-1">
-                <a class="nav-link" href="/commissonList/">测试任务</a>
+                <a class="nav-link" href="/commissionList/">测试任务</a>
             </li>
             <li class="nav-item px-1">
                 <a class="nav-link" href="#">使用帮助</a>
@@ -58,7 +59,6 @@
             <li class="nav-item hidden-md-down">
                 <a class="nav-link navbar-toggler aside-menu-toggler" href="#">☰</a>
             </li>
-
         </ul>
     </header>
     {% endblock %}
@@ -104,9 +104,8 @@
                         <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-anchor"></i> 测试任务</a>
                         <ul class="nav-dropdown-items">
                             <li class="nav-item">
-                                <a class="nav-link" href="/commissonList/" target="_top"><i class="icon-arrow-right"></i> 任务列表</a>
+                                <a class="nav-link" href="/commissionList/" target="_top"><i class="icon-arrow-right"></i> 任务列表</a>
                             </li>
-
                         </ul>
                     </li>
                     <li class="nav-item nav-dropdown">
@@ -580,6 +579,9 @@
 	<!-- Plugins and scripts required by this views -->
 	<!-- Custom scripts required by this view -->
 	<script src="../static/js/views/main.js"></script>
+    <!--Bootstrap table scripts -->
+    <script src="../static/assets/js/libs/bootstrap-table.js"></script>
+    <script src="../static/assets/js/libs/bootstrap-table-zh-CN.js"></script>
 
 </body>
 {% endblock %}

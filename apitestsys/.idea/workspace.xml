@@ -35,48 +35,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Crud.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apitest/Crud.py">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apitestsys/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+            <state relative-caret-position="182">
+              <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apitest/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="interface.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="interface.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apitest/interface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+            <state relative-caret-position="225">
+              <caret line="85" column="62" lean-forward="false" selection-start-line="85" selection-start-column="62" selection-end-line="85" selection-end-column="62" />
               <folding>
-                <element signature="e#24#63#0" expanded="true" />
                 <element signature="e#1295#3032#0" expanded="false" />
                 <element signature="e#3068#3735#0" expanded="false" />
-                <element signature="e#5193#5749#0" expanded="false" />
+                <element signature="e#5350#5906#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="report_list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apitest/templates/report_list.html">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apitest/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="41" column="29" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="41" selection-end-column="29" />
+            <state relative-caret-position="217">
+              <caret line="62" column="36" lean-forward="true" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
               <folding>
-                <element signature="e#1155#1889#0#HTML" expanded="false" />
+                <element signature="e#460#1064#0" expanded="false" />
+                <element signature="e#1300#1306#0" expanded="false" />
+                <element signature="e#1437#1480#0" expanded="false" />
+                <element signature="e#1607#1652#0" expanded="false" />
+                <element signature="e#1692#1736#0" expanded="false" />
+                <element signature="e#1782#1827#0" expanded="false" />
+                <element signature="e#1955#1999#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -85,8 +80,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apitest/static/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="475" column="46" lean-forward="true" selection-start-line="475" selection-start-column="46" selection-end-line="475" selection-end-column="46" />
+            <state relative-caret-position="302">
+              <caret line="465" column="37" lean-forward="true" selection-start-line="465" selection-start-column="37" selection-end-line="465" selection-end-column="37" />
               <folding>
                 <element signature="n#!!block;n#capitalizeFirstLetter#0" expanded="false" />
                 <element signature="n#!!block;n#init#0" expanded="false" />
@@ -107,12 +102,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apitestsys/urls.py">
+      <file leaf-file-name="add_interface.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apitest/templates/add_interface.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="42" column="47" lean-forward="true" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+            <state relative-caret-position="450">
+              <caret line="48" column="41" lean-forward="true" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commisson_list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apitest/templates/commisson_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+              <folding>
+                <element signature="e#503#1951#0#HTML" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,21 +127,29 @@
       <file leaf-file-name="add_project.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apitest/templates/add_project.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="181" column="46" lean-forward="true" selection-start-line="181" selection-start-column="46" selection-end-line="181" selection-end-column="46" />
+            <state relative-caret-position="-775">
+              <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="project_list.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apitest/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="581" column="0" lean-forward="false" selection-start-line="581" selection-start-column="0" selection-end-line="583" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="project_list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apitest/templates/project_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding>
-                <element signature="e#567#982#0#HTML" expanded="false" />
-              </folding>
+            <state relative-caret-position="13">
+              <caret line="47" column="77" lean-forward="true" selection-start-line="47" selection-start-column="77" selection-end-line="47" selection-end-column="77" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -152,17 +167,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Interface</find>
-      <find>Email</find>
-      <find>Testcase</find>
-      <find>Project</find>
-      <find>all_athletes</find>
-      <find>a_time</find>
-      <find>extendextend</find>
-      <find>AthleteList</find>
-      <find>get_from_store</find>
-      <find>sanitizesanitize</find>
-      <find>put_to_store</find>
       <find>print</find>
       <find>store</find>
       <find>env_from</find>
@@ -179,9 +183,20 @@
       <find>getDB</find>
       <find>project_base</find>
       <find>get_db</find>
-      <find>project_list</find>
       <find>primaryModal</find>
       <find>get_project_list</find>
+      <find>add_interface</find>
+      <find>case</find>
+      <find>addCase</find>
+      <find>add</find>
+      <find>测试任务</find>
+      <find>offset</find>
+      <find>txt_search_departmentname</find>
+      <find>data</find>
+      <find>table</find>
+      <find>commis</find>
+      <find>project_list</find>
+      <find>报告</find>
     </findStrings>
     <replaceStrings>
       <replace>src=&quot;../static/</replace>
@@ -209,14 +224,10 @@
         <option value="$PROJECT_DIR$/apitest/admin.py" />
         <option value="C:/Python27/Lib/functools.py" />
         <option value="$PROJECT_DIR$/apitest/static/css/style.css" />
-        <option value="$PROJECT_DIR$/apitest/templates/interface_list.html" />
         <option value="$PROJECT_DIR$/apitest/templates/reportDetail.html" />
-        <option value="$PROJECT_DIR$/apitest/templates/commisson_list.html" />
         <option value="$PROJECT_DIR$/apitest/templates/index.html" />
         <option value="$PROJECT_DIR$/apitest/templates/project.html" />
         <option value="$PROJECT_DIR$/apitest/util/runcase.py" />
-        <option value="$PROJECT_DIR$/apitest/templates/testcase_list.html" />
-        <option value="$PROJECT_DIR$/apitest/templates/add_testcase.html" />
         <option value="$PROJECT_DIR$/apitest/templates/report_list.html" />
         <option value="$PROJECT_DIR$/apitest/templates/report_detail.html" />
         <option value="$PROJECT_DIR$/apitest/util/configHttp.py" />
@@ -225,14 +236,12 @@
         <option value="$PROJECT_DIR$/apitest/util/__init__.py" />
         <option value="$PROJECT_DIR$/apitest/util/configEmail.py" />
         <option value="$PROJECT_DIR$/apitest/util/runAll.py" />
-        <option value="$PROJECT_DIR$/apitest/templates/add_interface.html" />
         <option value="$PROJECT_DIR$/log/all.log" />
         <option value="$PROJECT_DIR$/apitestsys/settings.py" />
         <option value="$PROJECT_DIR$/apitest/util/interface.py" />
         <option value="$PROJECT_DIR$/apitest/util/Crud.py" />
         <option value="$PROJECT_DIR$/apitest/apps.py" />
         <option value="$PROJECT_DIR$/apitest/views.py" />
-        <option value="$PROJECT_DIR$/apitest/templates/base.html" />
         <option value="$PROJECT_DIR$/apitest/ProjectService.py" />
         <option value="$PROJECT_DIR$/apitest/tests.py" />
         <option value="$PROJECT_DIR$/apitest/models.py" />
@@ -240,10 +249,16 @@
         <option value="$USER_HOME$/Desktop/athletemodel.py" />
         <option value="$PROJECT_DIR$/apitest/Crud.py" />
         <option value="$PROJECT_DIR$/apitestsys/urls.py" />
-        <option value="$PROJECT_DIR$/apitest/templates/add_project.html" />
-        <option value="$PROJECT_DIR$/apitest/interface.py" />
         <option value="$PROJECT_DIR$/apitest/static/js/app.js" />
+        <option value="$PROJECT_DIR$/apitest/templates/interface_list.html" />
+        <option value="$PROJECT_DIR$/apitest/templates/testcase_list.html" />
+        <option value="$PROJECT_DIR$/apitest/templates/add_interface.html" />
+        <option value="$PROJECT_DIR$/apitest/templates/add_testcase.html" />
+        <option value="$PROJECT_DIR$/apitest/templates/add_project.html" />
+        <option value="$PROJECT_DIR$/apitest/templates/commisson_list.html" />
+        <option value="$PROJECT_DIR$/apitest/templates/base.html" />
         <option value="$PROJECT_DIR$/apitest/templates/project_list.html" />
+        <option value="$PROJECT_DIR$/apitest/interface.py" />
       </list>
     </option>
   </component>
@@ -326,18 +341,6 @@
             <path>
               <item name="apitestsys" type="b2602c69:ProjectViewProjectNode" />
               <item name="apitestsys" type="462c0819:PsiDirectoryNode" />
-              <item name="apitest" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apitestsys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apitestsys" type="462c0819:PsiDirectoryNode" />
-              <item name="apitest" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apitestsys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apitestsys" type="462c0819:PsiDirectoryNode" />
               <item name="apitestsys" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -356,18 +359,18 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\apitestsys\apitest" />
-      <recent name="E:\apitestsys\apitestsys" />
-      <recent name="E:\apitestsys\apitest\util" />
-      <recent name="E:\apitestsys" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\apitestsys\apitest\static\css" />
       <recent name="E:\apitestsys\apitest\static\assets\js\libs" />
       <recent name="E:\apitestsys\apitest\static\js\views" />
       <recent name="E:\apitestsys\apitest\templates" />
       <recent name="E:\apitestsys\apitest\static\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\apitestsys\apitest" />
+      <recent name="E:\apitestsys\apitestsys" />
+      <recent name="E:\apitestsys\apitest\util" />
+      <recent name="E:\apitestsys" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -556,14 +559,14 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3707627" sideWeight="0.33697918" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3358051" sideWeight="0.66302085" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29978815" sideWeight="0.66302085" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1779661" sideWeight="0.74635416" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -572,27 +575,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39574468" sideWeight="0.32135418" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38665253" sideWeight="0.67864585" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16510417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1779661" sideWeight="0.74635416" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -609,53 +591,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="40" />
+      <option name="time" value="41" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apitest/util/runAll.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apitest/templates/add_interface.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apitest/static/js/views/charts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apitest/static/assets/js/libs/pace.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="3547" lean-forward="false" selection-start-line="1" selection-start-column="3547" selection-end-line="1" selection-end-column="3547" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apitest/static/js/views/widgets.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apitest/static/assets/js/libs/Chart.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="1252" lean-forward="false" selection-start-line="11" selection-start-column="1252" selection-end-line="11" selection-end-column="1252" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apitest/static/assets/js/libs/bootstrap.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -866,14 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apitest/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14525">
-          <caret line="581" column="54" lean-forward="false" selection-start-line="581" selection-start-column="54" selection-end-line="581" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apitest/ProjectService.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -881,23 +813,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/apitest/Crud.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1600">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apitest/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apitest/templates/report_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1025">
+          <caret line="41" column="29" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="41" selection-end-column="29" />
+          <folding>
+            <element signature="e#1155#1889#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apitest/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <caret line="0" column="25" lean-forward="true" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apitest/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apitest/templates/interface_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apitest/templates/testcase_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="4" column="96" lean-forward="false" selection-start-line="4" selection-start-column="96" selection-end-line="4" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apitest/templates/add_testcase.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apitestsys/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apitest/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        <state relative-caret-position="217">
+          <caret line="62" column="36" lean-forward="true" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
           <folding>
             <element signature="e#460#1064#0" expanded="false" />
             <element signature="e#1300#1306#0" expanded="false" />
-            <element signature="e#1350#1394#0" expanded="false" />
             <element signature="e#1437#1480#0" expanded="false" />
-            <element signature="e#1519#1562#0" expanded="false" />
             <element signature="e#1607#1652#0" expanded="false" />
             <element signature="e#1692#1736#0" expanded="false" />
             <element signature="e#1782#1827#0" expanded="false" />
@@ -906,73 +905,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apitest/templates/interface_list.html">
+    <entry file="file://$PROJECT_DIR$/apitest/static/assets/js/libs/bootstrap-table.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apitest/Crud.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apitest/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apitest/interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+        <state relative-caret-position="256">
+          <caret line="326" column="24" lean-forward="true" selection-start-line="326" selection-start-column="24" selection-end-line="326" selection-end-column="24" />
           <folding>
-            <element signature="e#24#63#0" expanded="true" />
-            <element signature="e#1295#3032#0" expanded="false" />
-            <element signature="e#3068#3735#0" expanded="false" />
-            <element signature="e#5193#5749#0" expanded="false" />
+            <marker date="1510676172000" expanded="true" signature="20072:20084" ph="..." />
+            <marker date="1510676172000" expanded="true" signature="83173:83179" ph=" " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apitest/templates/report_list.html">
+    <entry file="file://$PROJECT_DIR$/apitest/templates/add_interface.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="41" column="29" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="41" selection-end-column="29" />
+        <state relative-caret-position="450">
+          <caret line="48" column="41" lean-forward="true" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apitest/templates/commisson_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
           <folding>
-            <element signature="e#1155#1889#0#HTML" expanded="false" />
+            <element signature="e#503#1951#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apitest/templates/add_project.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="181" column="46" lean-forward="true" selection-start-line="181" selection-start-column="46" selection-end-line="181" selection-end-column="46" />
+        <state relative-caret-position="-775">
+          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apitestsys/urls.py">
+    <entry file="file://$PROJECT_DIR$/apitest/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="42" column="47" lean-forward="true" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+        <state relative-caret-position="255">
+          <caret line="581" column="0" lean-forward="false" selection-start-line="581" selection-start-column="0" selection-end-line="583" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apitest/templates/project_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="47" column="77" lean-forward="true" selection-start-line="47" selection-start-column="77" selection-end-line="47" selection-end-column="77" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apitest/static/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="475" column="46" lean-forward="true" selection-start-line="475" selection-start-column="46" selection-end-line="475" selection-end-column="46" />
+        <state relative-caret-position="302">
+          <caret line="465" column="37" lean-forward="true" selection-start-line="465" selection-start-column="37" selection-end-line="465" selection-end-column="37" />
           <folding>
             <element signature="n#!!block;n#capitalizeFirstLetter#0" expanded="false" />
             <element signature="n#!!block;n#init#0" expanded="false" />
@@ -992,12 +981,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apitest/templates/project_list.html">
+    <entry file="file://$PROJECT_DIR$/apitest/interface.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="85" column="62" lean-forward="false" selection-start-line="85" selection-start-column="62" selection-end-line="85" selection-end-column="62" />
           <folding>
-            <element signature="e#567#982#0#HTML" expanded="false" />
+            <element signature="e#1295#3032#0" expanded="false" />
+            <element signature="e#3068#3735#0" expanded="false" />
+            <element signature="e#5350#5906#0" expanded="false" />
           </folding>
         </state>
       </provider>
